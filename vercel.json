@@ -1,6 +1,6 @@
 {
   "crons": [
-    { "path": "/api/sync-history", "schedule": "0 */12 * * *" }
+    { "path": "/api/sync-history", "schedule": "0 3 * * *" }
   ],
   "rewrites": [
     { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
