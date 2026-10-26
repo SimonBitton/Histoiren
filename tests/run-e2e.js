@@ -90,6 +90,34 @@ const { chromium } = require('playwright');
     await page.goto(`${base}/timeline`);
     await page.waitForSelector('.event');
     assert.equal(await page.locator('.view-container.active').evaluate(el => getComputedStyle(el).animationName), 'none');
+    // Jump between distant eras while the compact navigation stays visible.
+    for (const viewport of [{ width: 1440, height: 1000 }, { width: 375, height: 812 }, { width: 812, height: 375 }]) {
+      await page.setViewportSize(viewport);
+      await page.goto(`${base}/timeline`);
+      await page.waitForSelector('#timelineJump');
+      await page.selectOption('#timelineJump', 'era-moyen-age');
+      await page.waitForTimeout(80);
+      assert((await page.evaluate(() => scrollY)) > 1000, 'Jump reaches the middle of the chronology');
+      const navigation = await page.locator('.timeline-navigation').boundingBox();
+      const heading = await page.locator('#era-moyen-age h2').boundingBox();
+      assert(navigation.y >= 0 && navigation.y + navigation.height < viewport.height, 'Sticky shortcuts stay on screen');
+      assert(heading.y >= navigation.y + navigation.height, 'Era heading is not obscured by navigation');
+      assert.equal(await page.locator('#era-moyen-age h2').evaluate(el => el === document.activeElement), true);
+      await page.selectOption('#timelineJump', 'era-modernes');
+      await page.waitForTimeout(80);
+      assert.equal(await page.inputValue('#timelineJump'), 'era-modernes');
+      await page.locator('#era-antiquite').evaluate(el => el.scrollIntoView({ block: 'start', behavior: 'instant' }));
+      await page.waitForTimeout(80);
+      assert.equal(await page.inputValue('#timelineJump'), 'era-antiquite', 'Manual scrolling updates the current era');
+      await page.click('[data-timeline-top]');
+      assert.equal(await page.evaluate(() => scrollY), 0, 'Back to top reaches the search');
+      assert.equal(await page.locator('#searchInput').evaluate(el => el === document.activeElement), true);
+      await page.selectOption('#eraFilter', 'modernes');
+      assert.equal(await page.locator('#timelineJump option').count(), 1, 'Jump options respect active filters');
+      await page.fill('#searchInput', 'zzzzzzzzzzzz');
+      await page.waitForSelector('.empty-state');
+      assert.equal(await page.locator('.timeline-navigation').count(), 0, 'No navigation without results');
+    }
     await page.emulateMedia({ colorScheme: 'dark' });
     for (const viewport of [{ width: 1440, height: 1000 }, { width: 375, height: 812 }, { width: 812, height: 375 }]) {
       await page.setViewportSize(viewport);

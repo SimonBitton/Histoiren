@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { bindTimelineNavigation } from './timeline-navigation.js';
 import { compareHistoricalDates, escapeHtml, getCategoryClass, getCategoryLabel, normalizeText, eventMatchesSearch, THEME_DEFINITIONS, getAppleFlagEmojiHtml } from './utils.js';
 import { renderWorldMap } from './worldmap.js';
 import { getContinentOf, getContinentMeta } from './continents.js';
@@ -83,6 +84,16 @@ export function renderTimelineList() {
     html += `<p class="filter-result-count" role="status">${totalMatches} événement${totalMatches > 1 ? 's' : ''} trouvé${totalMatches > 1 ? 's' : ''}</p>`;
   }
 
+  const visibleEras = state.timelineData.eras.filter(era => (groupedByEra.get(era.id) || []).length > 0);
+  if (visibleEras.length) {
+    html += `<nav class="timeline-navigation" aria-label="Navigation dans la chronologie">
+      <div class="filter-field timeline-jump-field"><label for="timelineJump">Aller à une époque</label>
+        <select id="timelineJump">${visibleEras.map(era => `<option value="era-${escapeHtml(era.id)}">${escapeHtml(era.name)}</option>`).join('')}</select>
+      </div>
+      <button class="timeline-top" type="button" data-timeline-top><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 10 6-6 6 6M12 4v16"/></svg><span>Haut de page</span></button>
+    </nav>`;
+  }
+
   html += state.timelineData.eras.map((era) => {
     const eraEvents = groupedByEra.get(era.id) || [];
     if (eraEvents.length === 0 && filtersActive) return '';
@@ -92,7 +103,7 @@ export function renderTimelineList() {
         <div class="era-header">
 
           <div class="era-title-block">
-            <h2>${escapeHtml(era.name)}</h2>
+            <h2 tabindex="-1">${escapeHtml(era.name)}</h2>
             <p>${escapeHtml(era.subtitle)}</p>
           </div>
         </div>
@@ -123,6 +134,7 @@ export function renderTimelineList() {
   container.innerHTML = html;
   bindTimelineClicks(container);
   bindFilterBar(container);
+  bindTimelineNavigation(container);
   observeReveals(container);
 }
 
