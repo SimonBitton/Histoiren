@@ -23,7 +23,8 @@ function toDetailEvent(country, event) {
     context: event.context || `Événement important dans l'histoire de ${country.name}.`,
     category: event.category,
     people: '',
-    era: 'contemporain',
+    era: event.era || 'contemporain',
+    dateVerification: event.dateVerification,
     source: event.source
   };
 }

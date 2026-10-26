@@ -1,10 +1,10 @@
 import { state } from './state.js';
 import { setLastView } from './app-state.js';
-import { renderFriseView, renderTimelineList, renderCountries, renderStats } from './ui-renderer.js';
+import { renderTimelineList, renderCountries, renderStats } from './ui-renderer.js';
 import { buildSidebarContent } from './sidebar.js';
 import { renderLearn } from './quiz.js';
 
-const VALID_VIEWS = new Set(['presentation', 'frise', 'timeline', 'countries', 'apprendre']);
+const VALID_VIEWS = new Set(['presentation', 'timeline', 'countries', 'apprendre']);
 
 function getRouteFromLocation() {
   const cleanPath = (window.location.pathname || '/').replace(/^\/+|\/+$/g, '');
@@ -31,7 +31,6 @@ export function setView(viewName, options = {}) {
   document.querySelectorAll('.nav-tab').forEach(tab => {
     const isActive = tab.dataset.view === viewName;
     tab.classList.toggle('active', isActive);
-    tab.setAttribute('aria-selected', String(isActive));
     if (isActive) tab.setAttribute('aria-current', 'page');
     else tab.removeAttribute('aria-current');
   });
@@ -50,8 +49,7 @@ export function setView(viewName, options = {}) {
 
   if (viewName === 'countries') {
     renderCountries();
-  } else if (viewName === 'frise') {
-    renderFriseView();
+
   } else if (viewName === 'timeline') {
     renderTimelineList();
   } else if (viewName === 'presentation') {
@@ -74,12 +72,9 @@ export function setView(viewName, options = {}) {
 
 function handleRoute() {
   const route = getRouteFromLocation();
-  if (route === 'tuto') {
-    if (window.location.pathname !== '/presentation') {
-      window.history.replaceState({}, '', '/presentation');
-    }
+  if (route === 'frise' || route === 'tuto') {
+    window.history.replaceState({}, '', '/presentation');
     setView('presentation', { updateRoute: false });
-    window.dispatchEvent(new CustomEvent('histoiren:start-tutorial'));
     return;
   }
   if (VALID_VIEWS.has(route)) {

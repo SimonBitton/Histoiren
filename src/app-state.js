@@ -2,11 +2,10 @@ const APP_STATE_KEY = 'histoiren_app_state_v2';
 
 const DEFAULT_APP_STATE = {
   hasVisited: false,
-  onboardingSeen: false,
   lastView: 'presentation'
 };
 
-const VALID_VIEWS = new Set(['presentation', 'frise', 'timeline', 'countries', 'apprendre']);
+const VALID_VIEWS = new Set(['presentation', 'timeline', 'countries', 'apprendre']);
 
 function safeParse(rawValue) {
   if (!rawValue) return { ...DEFAULT_APP_STATE };
@@ -15,7 +14,6 @@ function safeParse(rawValue) {
     if (!parsed || typeof parsed !== 'object') return { ...DEFAULT_APP_STATE };
     return {
       hasVisited: Boolean(parsed.hasVisited),
-      onboardingSeen: Boolean(parsed.onboardingSeen),
       lastView: VALID_VIEWS.has(parsed.lastView) ? parsed.lastView : DEFAULT_APP_STATE.lastView
     };
   } catch {
@@ -33,7 +31,6 @@ export function writeAppState(patch) {
   const current = readAppState();
   const next = {
     hasVisited: patch.hasVisited === undefined ? current.hasVisited : Boolean(patch.hasVisited),
-    onboardingSeen: patch.onboardingSeen === undefined ? current.onboardingSeen : Boolean(patch.onboardingSeen),
     lastView: VALID_VIEWS.has(patch.lastView) ? patch.lastView : current.lastView
   };
   try {
@@ -48,13 +45,6 @@ export function writeAppState(patch) {
 export function markAppVisited() {
   return writeAppState({
     hasVisited: true
-  });
-}
-
-export function markOnboardingSeen() {
-  return writeAppState({
-    hasVisited: true,
-    onboardingSeen: true
   });
 }
 

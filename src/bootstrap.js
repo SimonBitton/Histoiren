@@ -16,13 +16,5 @@
     document.documentElement.dataset.touch = 'true';
   }
 
-  try {
-    var savedTheme = localStorage.getItem('histoiren:theme');
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.dataset.theme = savedTheme === 'dark' || savedTheme === 'light'
-      ? savedTheme
-      : (prefersDark ? 'dark' : 'light');
-  } catch {
-    document.documentElement.dataset.theme = 'light';
-  }
+  document.documentElement.dataset.theme = 'light';
 }());

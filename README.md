@@ -1,178 +1,74 @@
-# Histoiren — Frise chronologique mondiale premium
+# Histoiren — Les repères du monde
 
-Site statique (un seul `index.html`) qui présente une **frise chronologique interactive** de l'histoire mondiale, avec :
-- 📜 Chronologie complète de la Préhistoire à nos jours
-- 🕰️ **Frise interactive zoomable** (glisser / zoomer / cliquer pour ouvrir une fiche)
-- 🌍 Histoire organisée par pays
-- 🎓 **Mode apprentissage** : quiz, flashcards et score de progression
-- 🌙 **Mode sombre** (avec mémorisation du choix)
-- 🔍 **Recherche & filtres avancés** : par personnage, pays, date, thème, époque
-- 🔗 **Événements liés** pour suivre les chaînes historiques
-- 🖼️ **Images & extraits Wikipédia** récupérés automatiquement dans les fiches
-- 📊 Statistiques et analyses
-- 📱 Interface responsive
-- 🏆 Top 50 des dates les plus importantes
-- 📖 **Fiches détaillées** : résumé, causes, conséquences, personnages, contexte
-
-## Nouveautés de cette version
-
-- **Frise interactive** (`src/frise.js`) — bande chronologique à échelle signée-logarithmique : zoom (boutons ou Ctrl+molette), déplacement par glisser, points cliquables.
-- **Filtres avancés** — barre de filtres par époque et par thème (guerres, inventions, personnages, religion, art, exploration, politique) au-dessus de la chronologie.
-- **Recherche multi-champ** — la recherche couvre désormais le nom, le contexte, les personnages, la date, la catégorie et le thème.
-- **Mode apprentissage** (`src/quiz.js`) — quiz de 10 questions générées depuis la base, flashcards, score et meilleur score mémorisé.
-- **Mode sombre** (`src/theme.js`) — bascule en haut à droite, sans clignotement au chargement (script anti-FOUC).
-- **Fiches enrichies** — images et extraits réels via l'API Wikipédia (`src/wiki.js`), causes/conséquences, et **événements liés** (`src/related.js`).
-- **Animations au défilement** — apparition progressive des sections.
-
-## Fonctionnalités principales
-
-### 1. Résumés détaillés
-Chaque événement dispose désormais d'un résumé complet d'au moins 5 lignes comprenant :
-- Contexte historique et période
-- Description détaillée de l'événement
-- Personnages clés impliqués
-- Signification historique
-- Impact et héritage
-
-### 2. Vérification des dates
-Les dates peuvent être vérifiées automatiquement via l'API WikiData :
-```bash
-npm run verify-dates
-```
-
-### 3. Ajout massif d'événements
-Possibilité d'ajouter des centaines de milliers d'événements depuis WikiData :
-```bash
-npm run add-massive-events
-```
-
-## Technologies utilisées
-
-- **HTML5** (structure sémantique)
-- **CSS3** (styles, responsive, animations)
-- **JavaScript (vanilla)** (interactions, filtres, navigation)
-- **WikiData API** (vérification et enrichissement des données)
-
-## Structure du projet
-
-```text
-histoiren/
-├── index.html              # Page principale unique
-├── package.json            # Configuration du projet
-├── README.md               # Ce fichier
-├── css/
-│   ├── base.css           # Styles de base
-│   ├── components.css     # Composants UI
-│   ├── layout.css         # Mise en page
-│   ├── variables.css      # Variables CSS
-│   └── views.css          # Styles spécifiques aux vues
-├── src/
-│   ├── main.js            # Point d'entrée principal
-│   ├── detail-view.js     # Vue détail événement
-│   ├── country-modal.js   # Modal pays + navigation vers détail
-│   ├── router.js          # Gestion de la navigation
-│   ├── state.js           # Gestion de l'état
-│   ├── data-manager.js    # Chargement des données
-│   ├── ui-renderer.js     # Rendu de l'interface
-│   ├── sidebar.js         # Navigation latérale
-│   └── utils.js           # Fonctions utilitaires
-├── data/
-│   ├── timeline.json      # Données de la chronologie
-│   └── countries.json     # Données par pays
-├── scripts/
-│   ├── add-timeline-events.mjs    # Ajout d'événements manuels
-│   ├── generate-countries-from-csv.mjs # Génération countries.json depuis C.csv
-│   ├── import-csv-events.mjs      # Import CSV vers timeline.json
-│   ├── add-massive-events.mjs     # Ajout massif depuis WikiData
-│   └── verify-dates-wikidata.mjs  # Vérification des dates
-└── tests/
-    └── run-e2e.js         # Tests end-to-end
-```
+Atlas historique en français : événements classés par époque et par thème, carte des pays, fiches détaillées, quiz et cartes de révision. L’interface utilise uniquement le thème clair. La frise interactive et le tutoriel ont été retirés ; les anciennes adresses `/frise` et `/tuto` renvoient à l’accueil.
 
 ## Lancer le site
 
-### Option 1 — Ouvrir directement le fichier
+Node.js 22 ou plus récent :
 
-- Ouvre `index.html` dans ton navigateur.
-
-### Option 2 — Servir en local (recommandé)
-
-Depuis la racine du projet :
-
-```bash
-# Avec Python
-python3 -m http.server 8000
-
-# Ou avec npm
+```sh
 npm start
 ```
 
-Puis ouvre `http://localhost:8000` dans ton navigateur.
+Le serveur est disponible sur `http://localhost:8000`. Pour choisir un port :
 
-### Synchronisation « Ce jour dans l'histoire »
+```sh
+PORT=4173 npm start
+```
 
-La fonction `/api/sync-history` est appelée par Vercel toutes les 12 heures (`0 */12 * * *`). En local, elle peut être lancée avec :
+Le serveur local prend en charge les URL de l’application et les en-têtes de sécurité. Le site ne nécessite aucune dépendance d’exécution.
 
-```bash
+## Actualisation quotidienne
+
+Le workflow `.github/workflows/daily-history.yml` s’exécute une fois par jour à **03 h 17 UTC**, soit 04 h 17 en hiver ou 05 h 17 en été à Paris. Il peut aussi être lancé depuis l’onglet Actions de GitHub. La planification fonctionne après publication du workflow sur la branche par défaut du dépôt et activation de GitHub Actions. GitHub peut retarder l’heure effective d’un déclenchement planifié.
+
+Le job teste le pipeline, récupère les données, puis enregistre uniquement `data/day-in-history.json`. Les données sont donc versionnées et consultables sans clé API, sans base KV et sans appels externes supplémentaires par visiteur. Après publication initiale de cette version du site, les pages HTTPS lisent aussi le fichier du dépôt public `SimonBitton/Histoiren` et utilisent la collection valide la plus récente. Cela évite un redéploiement quotidien. En cas d’indisponibilité du dépôt, elles utilisent le fichier inclus dans le site. Le développement HTTP local utilise uniquement le fichier local. Aucun déploiement n’est effectué par le workflow.
+
+Lancer une actualisation locale :
+
+```sh
 npm run sync:history
 ```
 
-En production, configure `KV_REST_API_URL` et `KV_REST_API_TOKEN` avec une base Vercel KV/Upstash pour conserver les données entre les exécutions serverless, ainsi que `CRON_SECRET` pour empêcher les appels publics. Sans les variables KV, le fichier `data/day-in-history.json` est utilisé pour le développement local.
+Deux traitements sont réunis dans une publication atomique :
 
-## Scripts disponibles
+1. **Événements du jour.** L’API publique Wikipédia en français fournit les événements, naissances et décès correspondant au jour à Paris. Les événements apparaissent sur l’accueil et dans la liste ; les naissances et décès sont conservés dans le fichier de données.
+2. **Vérification des dates existantes.** L’API Wikidata est consultée par lots de titres français exacts pour les événements mondiaux et nationaux. Une date ne peut être appliquée que si l’entité correspond exactement, que sa date ponctuelle `P585` est unique, non dépréciée, sourcée, sans incertitude et exprimée dans le calendrier grégorien. Une année peut être précisée avec le mois et le jour quand ils sont établis. Les périodes, dates approximatives, correspondances absentes ou ambiguës et divergences avec les dates éditoriales sont signalées dans `verification.unresolved`, sans modification automatique risquée. Le rapport ne constitue donc pas une certification de toutes les dates.
 
-```bash
-# Lancer le serveur de développement
-npm start
+Les corrections sûres sont conservées dans `verification.corrections` et appliquées au chargement, avec un lien vers Wikidata dans les fiches. Les fichiers éditoriaux `data/timeline.json` et `data/countries.json` ne sont pas réécrits. Une modification manuelle de la date d’origine désactive la correction correspondante. Le rapport indique le nombre total d’entrées, les correspondances exactes, les vérifications sûres, les précisions appliquées et les cas non résolus.
 
-# Ajouter des événements manuels à la chronologie
-npm run add-events
+Si une requête échoue, si la réponse est incomplète ou si le flux est vide, la dernière version reste intacte. Une seconde exécution réussie le même jour ne refait aucun appel API. Les visiteurs voient la date réelle de la collection, y compris si une exécution quotidienne a échoué.
 
-# Ajouter massivement des événements depuis WikiData (100k+)
-npm run add-massive-events
+Audit local sans écriture :
 
-# Vérifier les dates avec WikiData
+```sh
 npm run verify-dates
-
-# Générer les événements par pays depuis C.csv
-npm run build:countries
-
-# Importer C.csv vers la timeline globale
-npm run import:csv-timeline
-
-# Lancer les tests end-to-end
-npm run test:e2e
 ```
 
-## Organisation des époques
+### API et licences
 
-Le projet couvre 5 grandes périodes historiques :
+- [Wikifeeds / Wikipédia](https://www.mediawiki.org/wiki/Wikifeeds_API) : `https://fr.wikipedia.org/api/rest_v1/feed/onthisday/all/MM/DD`. L’URL actuelle a été testée. La documentation annonce une dépréciation progressive de Wikifeeds ; surveiller les futures URL de remplacement. L’adaptateur est isolé dans `scripts/history-api.mjs`.
+- [API Wikibase / Wikidata](https://www.mediawiki.org/wiki/Wikibase/API) : `https://www.wikidata.org/w/api.php`, action `wbgetentities`. Seuls les titres exacts sont utilisés, sans recherche approximative susceptible de confondre des événements.
+- Les requêtes sont identifiées par un `User-Agent` décrivant Histoiren et son dépôt. Les appels de vérification sont séquentiels, par lots limités en nombre et en longueur d’URL.
+- Les textes Wikipédia sont réutilisés avec attribution, liens vers les articles et indication de la licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Les données structurées Wikidata sont sous [CC0](https://www.wikidata.org/wiki/Wikidata:Licensing).
 
-1. **Préhistoire** (≈ 3 300 000 av. J.-C. → ≈ 3 200 av. J.-C.)
-2. **Antiquité** (≈ 3 200 av. J.-C. → 476 ap. J.-C.)
-3. **Moyen Âge** (476 → 1492)
-4. **Temps Modernes** (1492 → 1789)
-5. **Époque Contemporaine** (1789 → nos jours)
+## Vérification
 
-## Catégories d'événements
+```sh
+node --test tests/history.test.mjs
+npm test
+```
 
-- **Politique** : Guerres, traités, révolutions, lois
-- **Science** : Découvertes, inventions, avancées scientifiques
-- **Culture** : Art, littérature, philosophie, religion
-- **Exploration** : Voyages, découvertes géographiques
+Les tests de synchronisation couvrent le fuseau de Paris, le nettoyage et la provenance, les précisions de dates, les calendriers et ambiguïtés, la conservation des données en cas d’échec, les corrections d’affichage et la limite d’une mise à jour par jour. La dépendance de développement Playwright permet les contrôles du navigateur.
 
-## Contribution
+## Organisation
 
-1. Fork le projet
-2. Crée ta branche (`git checkout -b feature/amélioration`)
-3. Commit tes changements (`git commit -am 'Ajoute nouvelle fonctionnalité'`)
-4. Push ta branche (`git push origin feature/amélioration`)
-5. Ouvre une Pull Request
-
-## Licence
-
-Ce projet est open source et peut être utilisé librement.
-
----
-
-Fait avec passion pour l'histoire ❤️
+- `index.html`, `css/`, `assets/` : interface.
+- `src/` : navigation, chargement, événements, pays, fiches, quiz et visualisation de l’accueil.
+- `scripts/history-api.mjs` : récupération du flux quotidien.
+- `scripts/verify-dates-wikidata.mjs` : vérification prudente des dates.
+- `scripts/day-in-history-sync.mjs` : orchestration et publication atomique.
+- `src/history-updates.js` : application des corrections et conversion des événements du jour.
+- `data/day-in-history.json` : dernière collection et rapport de vérification.
+- `.github/workflows/daily-history.yml` : planification quotidienne.
+- `vercel.json` : réécriture des URL de navigation pour l’hébergement Vercel.

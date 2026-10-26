@@ -205,6 +205,10 @@ export function showDetailPage(event) {
   document.getElementById('detailCategory').textContent = getCategoryLabel(event.category);
   document.getElementById('detailCategory').className = `detail-category ${getCategoryClass(event.category)}`;
   document.getElementById('detailDate').textContent = event.date;
+  const verificationNote = document.getElementById('detailDateVerification');
+  const verificationSource = sanitizeExternalUrl(event.dateVerification?.source);
+  verificationNote.hidden = !verificationSource;
+  if (verificationSource) document.getElementById('detailDateVerificationLink').href = verificationSource;
   document.getElementById('detailTitle').textContent = event.name;
   document.getElementById('detailSummary').textContent = generateDetailedSummary(event);
 

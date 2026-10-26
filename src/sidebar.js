@@ -131,8 +131,7 @@ export function buildSidebarContent() {
   if (!sidebarLinks) return;
 
   const hideSidebar = state.currentView === 'presentation'
-    || state.currentView === 'apprendre'
-    || state.currentView === 'frise';
+    || state.currentView === 'apprendre';
 
   if (state.currentView === 'timeline') {
     if (quickNav) quickNav.hidden = false;

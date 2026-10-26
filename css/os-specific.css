@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════
    OS-SPECIFIC — Rendu cohérent multiplateforme
-   Attributs : html[data-os] html[data-touch] html[data-theme]
+   Attributs : html[data-os] html[data-touch]
 ══════════════════════════════════════════════════ */
 
 /* ── Emojis Twemoji (Windows / Linux) ── */
@@ -92,10 +92,7 @@ body.os-ios select {
   font-size: 16px;
 }
 
-html[data-os="ios"] .frise-viewport,
-body.os-ios .frise-viewport {
-  -webkit-overflow-scrolling: touch;
-}
+
 
 /* ── Android ── */
 html[data-os="android"],
@@ -210,23 +207,7 @@ html[data-touch="true"] #main-content {
   overscroll-behavior-x: none;
 }
 
-/* ── Mode sombre par OS ── */
-:root[data-theme="dark"][data-os="windows"],
-:root[data-theme="dark"] body.os-windows {
-  --color-background: #111113;
-}
-
-:root[data-theme="dark"][data-os="mac"],
-:root[data-theme="dark"] body.os-mac,
-:root[data-theme="dark"][data-os="ios"],
-:root[data-theme="dark"] body.os-ios {
-  --color-background: #0f0f12;
-}
-
-:root[data-theme="dark"][data-os="android"],
-:root[data-theme="dark"] body.os-android {
-  --color-background: #0e0e10;
-}
+/* Colors inherit the shared theme; OS adaptations only affect native rendering. */
 
 /* ── Fallback classes body ── */
 body.os-mac { --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }

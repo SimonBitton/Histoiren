@@ -12,13 +12,13 @@ export const state = {
   countryContinent: 'all',
   currentView: persistedAppState.lastView || 'presentation',
   timelineData: null,
+  historyUpdates: null,
   countriesData: [],
   eventById: null,
   sidebarOpen: false,
   detailSource: 'timeline',
   detailCountryId: null,
-  hasVisited: Boolean(persistedAppState.hasVisited),
-  onboardingSeen: Boolean(persistedAppState.onboardingSeen)
+  hasVisited: Boolean(persistedAppState.hasVisited)
 };
 
 export const eraConfigs = {

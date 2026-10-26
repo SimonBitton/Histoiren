@@ -1,0 +1,26 @@
+# Local material and maintenance tools are not part of the public site.
+.git/
+.github/
+node_modules/
+.npm-cache/
+.idea/
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+a
+README*
+SECURITY.md
+dates_avant_independance.md
+scripts/
+tests/
+eslint.config.mjs
+data/*.bak
+data/*.log
+data/*.tmp
+
+outputs/

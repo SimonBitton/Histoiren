@@ -199,6 +199,7 @@ export function escapeHtml(value) {
 
 export function getCategoryClass(category) {
   const normalizedLabel = normalizeCategory(category);
+  if (normalizedLabel === 'histoire') return 'cat-histoire';
   if (normalizedLabel === 'science') return 'cat-science';
   if (normalizedLabel === 'culture') return 'cat-culture';
   return 'cat-politique';
@@ -206,6 +207,7 @@ export function getCategoryClass(category) {
 
 export function normalizeCategory(category) {
   const normalized = normalizeText(category);
+  if (normalized === 'histoire') return 'histoire';
   if (normalized.includes('science')) return 'science';
   if (normalized.includes('culture') || normalized.includes('exploration')) return 'culture';
   return 'politique';
@@ -213,6 +215,7 @@ export function normalizeCategory(category) {
 
 export function getCategoryLabel(category) {
   const normalized = normalizeCategory(category);
+  if (normalized === 'histoire') return 'Histoire';
   if (normalized === 'science') return 'Science';
   if (normalized === 'culture') return 'Culture';
   return 'Politique';

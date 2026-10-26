@@ -84,23 +84,23 @@ function renderMenu() {
   root().innerHTML = `
     <div class="quiz-menu">
       <div class="quiz-intro">
-        <p>Teste tes connaissances avec un quiz de ${QUESTION_COUNT} questions, ou révise avec des flashcards.</p>
-        ${best > 0 ? `<p class="quiz-best">🏆 Meilleur score : <strong>${best}/${QUESTION_COUNT}</strong></p>` : ''}
+        <p>Testez vos connaissances en ${QUESTION_COUNT} questions ou révisez à votre rythme avec les cartes.</p>
+        ${best > 0 ? `<p class="quiz-best">Meilleur score : <strong>${best}/${QUESTION_COUNT}</strong></p>` : ''}
       </div>
 
       <div class="quiz-era-select">
-        <label class="filter-label">Choisis une époque</label>
-        <div class="filter-chips">
+        <p class="filter-label" id="quizEraLabel">Choisissez une époque</p>
+        <div class="filter-chips" role="group" aria-labelledby="quizEraLabel">
           ${eras.map((era) => `
             <button class="filter-chip ${quiz.era === era.id ? 'active' : ''}" data-quiz-era="${escapeHtml(era.id)}" type="button" aria-pressed="${quiz.era === era.id}">
-              <span aria-hidden="true">${escapeHtml(era.icon || '')}</span> ${escapeHtml(era.name)}
+              ${escapeHtml(era.name)}
             </button>`).join('')}
         </div>
       </div>
 
       <div class="quiz-actions">
-        <button class="quiz-start-btn primary" data-quiz-start="quiz" type="button">🎯 Lancer le quiz</button>
-        <button class="quiz-start-btn" data-quiz-start="flashcards" type="button">🃏 Flashcards</button>
+        <button class="quiz-start-btn primary" data-quiz-start="quiz" type="button">Lancer le quiz · 10 questions</button>
+        <button class="quiz-start-btn" data-quiz-start="flashcards" type="button">Cartes de révision</button>
       </div>
     </div>
   `;
@@ -119,12 +119,13 @@ function renderQuiz() {
         <span>Score : ${quiz.score}</span>
       </div>
       <p class="quiz-prompt">${escapeHtml(q.prompt)}</p>
-      <p class="quiz-subject">${escapeHtml(q.subject)}</p>
+      <p class="quiz-subject" tabindex="-1">${escapeHtml(q.subject)}</p>
       <div class="quiz-options">
         ${q.options.map((opt) => `
           <button class="quiz-option" data-quiz-answer="${escapeHtml(opt)}" type="button">${escapeHtml(opt)}</button>
         `).join('')}
       </div>
+      <p id="quizFeedback" class="quiz-feedback" role="status"></p>
       <button class="quiz-next" data-quiz-next type="button" hidden>Suivant →</button>
     </div>
   `;
@@ -142,9 +143,12 @@ function handleAnswer(value) {
     if (btn.dataset.quizAnswer === q.correct) btn.classList.add('correct');
     else if (btn.dataset.quizAnswer === value) btn.classList.add('wrong');
   });
+  const feedback = root().querySelector('#quizFeedback');
+  if (feedback) feedback.textContent = correct ? 'Bonne réponse !' : `La bonne réponse est : ${q.correct}`;
   const nextBtn = root().querySelector('[data-quiz-next]');
   if (nextBtn) {
     nextBtn.hidden = false;
+    nextBtn.focus({ preventScroll: true });
     nextBtn.textContent = quiz.index + 1 >= quiz.questions.length ? 'Voir le résultat →' : 'Suivant →';
   }
 }
@@ -153,7 +157,10 @@ function nextQuestion() {
   quiz.index += 1;
   quiz.answered = false;
   if (quiz.index >= quiz.questions.length) renderResult();
-  else renderQuiz();
+  else {
+    renderQuiz();
+    root().querySelector('.quiz-subject')?.focus({ preventScroll: true });
+  }
 }
 
 function renderResult() {
@@ -174,9 +181,9 @@ function renderResult() {
     <div class="quiz-result">
       <div class="quiz-score-circle" style="--p:${pct}%"><strong>${quiz.score}</strong><span>/ ${total}</span></div>
       <p class="quiz-result-msg">${message}</p>
-      ${isRecord ? '<p class="quiz-best">🎉 Nouveau record !</p>' : ''}
+      ${isRecord ? '<p class="quiz-best">Nouveau record !</p>' : ''}
       <div class="quiz-actions">
-        <button class="quiz-start-btn primary" data-quiz-start="quiz" type="button">🔁 Rejouer</button>
+        <button class="quiz-start-btn primary" data-quiz-start="quiz" type="button">Rejouer</button>
         <button class="quiz-start-btn" data-quiz-menu type="button">← Menu</button>
       </div>
     </div>
@@ -197,7 +204,7 @@ function renderFlashcards() {
     root().innerHTML = `
       <div class="flashcard-wrap">
         <div class="quiz-meta"><span>Carte ${idx + 1} / ${cards.length}</span><span>${escapeHtml(eraName(card.era))}</span></div>
-        <div class="flashcard" data-flip tabindex="0" role="button" aria-label="Retourner la carte">
+        <div class="flashcard" data-flip tabindex="0" role="button" aria-label="Afficher la réponse" aria-pressed="false">
           <div class="flashcard-inner">
             <div class="flashcard-face flashcard-front">
               <span class="flashcard-hint">Quel est cet événement ?</span>
@@ -217,9 +224,17 @@ function renderFlashcards() {
       </div>
     `;
     const flashEl = root().querySelector('[data-flip]');
-    flashEl?.addEventListener('click', () => flashEl.classList.toggle('flipped'));
+    const flip = () => {
+      const flipped = flashEl.classList.toggle('flipped');
+      flashEl.setAttribute('aria-pressed', String(flipped));
+      flashEl.setAttribute('aria-label', flipped ? 'Afficher la question' : 'Afficher la réponse');
+      flashEl.querySelector('.flashcard-front').setAttribute('aria-hidden', String(flipped));
+      flashEl.querySelector('.flashcard-back').setAttribute('aria-hidden', String(!flipped));
+    };
+    flashEl?.querySelector('.flashcard-back').setAttribute('aria-hidden', 'true');
+    flashEl?.addEventListener('click', flip);
     flashEl?.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flashEl.classList.toggle('flipped'); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); }
     });
     root().querySelector('[data-flash-prev]')?.addEventListener('click', () => { if (idx > 0) { idx--; draw(); } });
     root().querySelector('[data-flash-next]')?.addEventListener('click', () => { if (idx < cards.length - 1) { idx++; draw(); } });

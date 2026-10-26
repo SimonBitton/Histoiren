@@ -1,5 +1,6 @@
 const browserGlobals = {
   AbortController: 'readonly',
+  AbortSignal: 'readonly',
   CSS: 'readonly',
   CustomEvent: 'readonly',
   Event: 'readonly',

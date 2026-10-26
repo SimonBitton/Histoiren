@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" fill="none">
+ <defs>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#c2d0a3" stroke-opacity=".065" stroke-width=".7"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#92a775" stop-opacity=".19"/><stop offset="1" stop-color="#23483d" stop-opacity="0"/></radialGradient>
+  <clipPath id="sphere"><circle cx="320" cy="320" r="172"/></clipPath>
+ </defs>
+ <path fill="#23483d" d="M0 0h640v640H0z"/><path fill="url(#grid)" d="M0 0h640v640H0z"/><circle cx="320" cy="320" r="285" fill="url(#halo)"/>
+ <g stroke="#b5c39a" stroke-opacity=".16" stroke-width=".7"><circle cx="320" cy="320" r="245"/><circle cx="320" cy="320" r="224"/><path d="M320 64v512M64 320h512" stroke-dasharray="3 7"/><path d="M140 140l360 360M140 500l360-360" stroke-dasharray="2 9"/></g>
+ <g transform="rotate(-23 320 320)" stroke="#bcc89c" stroke-width=".8">
+  <circle cx="320" cy="320" r="172" stroke-opacity=".65"/>
+  <g clip-path="url(#sphere)" stroke-opacity=".35"><ellipse cx="320" cy="320" rx="60" ry="172"/><ellipse cx="320" cy="320" rx="120" ry="172"/><ellipse cx="320" cy="320" rx="157" ry="172"/><path d="M320 148v344"/><ellipse cx="320" cy="320" rx="172" ry="56"/><ellipse cx="320" cy="320" rx="172" ry="115"/><ellipse cx="320" cy="320" rx="172" ry="155"/><path d="M148 320h344"/></g>
+  <ellipse cx="320" cy="320" rx="225" ry="76" stroke="#d3bf8e" stroke-width="1.1" transform="rotate(-23 320 320)"/>
+  <ellipse cx="320" cy="320" rx="198" ry="190" stroke-opacity=".25"/>
+  <circle cx="320" cy="320" r="206" stroke-opacity=".14" stroke-dasharray="1 8"/>
+ </g>
+ <g stroke="#c5ceac" stroke-opacity=".5" stroke-width=".8"><path d="M310 68h20m-10-10v20M310 572h20m-10-10v20M58 310v20m-10-10h20M582 310v20m-10-10h20"/><path d="M151 201h-30v-27M462 410h42v31"/></g>
+ <g fill="#dac69a"><circle cx="151" cy="201" r="3"/><circle cx="462" cy="410" r="3"/><circle cx="407" cy="166" r="2"/><circle cx="196" cy="430" r="2"/></g>
+ <g fill="#c5ceac" fill-opacity=".65" font-family="Georgia,serif" font-size="10" text-anchor="middle"><text x="320" y="49">N</text><text x="320" y="602">S</text><text x="36" y="324">O</text><text x="604" y="324">E</text></g>
+ <path d="m320 85 3 10-3-2-3 2 3-10Z" fill="#dac69a" fill-opacity=".7"/>
+</svg>

@@ -6,13 +6,9 @@ import { renderActiveTimelineView, renderCountries } from './ui-renderer.js';
 import { showDetailPage } from './detail-view.js';
 import { showCountryDetail, closeCountryModal } from './country-modal.js';
 import { getKeyModifier } from './os-detect.js';
-import { maybeStartOnboarding } from './onboarding.js';
 import { markAppVisited } from './app-state.js';
-import { initTheme } from './theme.js';
 import { initLearn } from './quiz.js';
 import { debounce } from './utils.js';
-import { initChronosphere } from './chronosphere.js';
-import { initAmbientMotion } from './ambient-motion.js';
 
 const MAX_SEARCH_LENGTH = 120;
 
@@ -41,12 +37,10 @@ function cleanupDebugBadges() {
 
 function bindSearch() {
   const searchInput = document.getElementById('searchInput');
-  const friseSearchInput = document.getElementById('friseSearchInput');
   const countrySearchInput = document.getElementById('countrySearchInput');
 
   const syncSearchInputs = () => {
     if (searchInput && searchInput.value !== state.timelineSearch) searchInput.value = state.timelineSearch;
-    if (friseSearchInput && friseSearchInput.value !== state.timelineSearch) friseSearchInput.value = state.timelineSearch;
     if (countrySearchInput && countrySearchInput.value !== state.countrySearch) countrySearchInput.value = state.countrySearch;
   };
 
@@ -63,9 +57,6 @@ function bindSearch() {
     searchInput.addEventListener('input', onTimelineSearch);
   }
 
-  if (friseSearchInput) {
-    friseSearchInput.addEventListener('input', onTimelineSearch);
-  }
 
   if (countrySearchInput) {
     const onCountrySearch = debounce((event) => {
@@ -84,9 +75,7 @@ function bindSearch() {
       if (activeView.id === 'view-timeline' && searchInput) {
         searchInput.focus();
         searchInput.select();
-      } else if (activeView.id === 'view-frise' && friseSearchInput) {
-        friseSearchInput.focus();
-        friseSearchInput.select();
+
       } else if (activeView.id === 'view-countries' && countrySearchInput) {
         countrySearchInput.focus();
         countrySearchInput.select();
@@ -96,12 +85,10 @@ function bindSearch() {
     // Échap pour effacer la recherche
     if (event.key === 'Escape') {
       if (document.activeElement === searchInput
-        || document.activeElement === friseSearchInput
         || document.activeElement === countrySearchInput) {
         document.activeElement.value = '';
         document.activeElement.dispatchEvent(new Event('input'));
-        document.activeElement.blur();
-        syncSearchInputs();
+
       }
     }
   });
@@ -122,42 +109,6 @@ function bindHomeNavigation() {
     if (!entry) return;
     setView(entry.dataset.homeView);
   });
-}
-
-function bindTouchNavigation() {
-  const root = document.getElementById('main-content');
-  if (!root) return;
-
-  let startX = 0;
-  let startY = 0;
-  let isTracking = false;
-  const order = ['frise', 'timeline', 'presentation', 'countries', 'apprendre'];
-
-  root.addEventListener('touchstart', (event) => {
-    if (event.touches.length !== 1) return;
-    if (event.target.closest('input, textarea, button, a, .country-modal, .detail-page, .frise, .frise-viewport, .onboarding-overlay')) return;
-    startX = event.touches[0].clientX;
-    startY = event.touches[0].clientY;
-    isTracking = true;
-  }, { passive: true });
-
-  root.addEventListener('touchend', (event) => {
-    if (!isTracking || event.changedTouches.length !== 1) return;
-    isTracking = false;
-
-    const deltaX = event.changedTouches[0].clientX - startX;
-    const deltaY = event.changedTouches[0].clientY - startY;
-    if (Math.abs(deltaY) > 40 || Math.abs(deltaX) < 70) return;
-
-    const currentIndex = order.indexOf(state.currentView);
-    if (currentIndex === -1) return;
-
-    if (deltaX < 0 && currentIndex < order.length - 1) {
-      setView(order[currentIndex + 1]);
-    } else if (deltaX > 0 && currentIndex > 0) {
-      setView(order[currentIndex - 1]);
-    }
-  }, { passive: true });
 }
 
 async function init() {
@@ -185,13 +136,7 @@ async function init() {
   }
 
   cleanupDebugBadges();
-  initTheme();
   initLearn();
-  let tutorialQueued = false;
-  window.addEventListener('histoiren:start-tutorial', () => {
-    tutorialQueued = true;
-    maybeStartOnboarding(true);
-  });
   initRouter();
   window.addEventListener('histoiren:set-view', (event) => {
     const targetView = event.detail?.view;
@@ -200,9 +145,14 @@ async function init() {
   window.addEventListener('histoiren:countries-refresh', () => renderCountries());
   bindSearch();
   bindHomeNavigation();
-  bindTouchNavigation();
-  initChronosphere(state.timelineData.events);
-  initAmbientMotion();
+  document.getElementById('homeSearchForm')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    state.timelineSearch = document.getElementById('homeSearchInput').value.trim().slice(0, MAX_SEARCH_LENGTH);
+    state.timelineEra = 'all';
+    state.timelineTheme = 'all';
+    setView('timeline');
+    document.getElementById('searchInput')?.focus();
+  });
   state.hasVisited = true;
   markAppVisited();
 
@@ -210,7 +160,6 @@ async function init() {
   if (sidebarToggle) sidebarToggle.addEventListener('click', toggleSidebar);
 
   buildSidebarContent();
-  if (!tutorialQueued) maybeStartOnboarding();
 }
 
 window.showDetail = function showDetail(id, source = 'timeline') {

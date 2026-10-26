@@ -1,6 +1,5 @@
-import { state, eraConfigs } from './state.js';
+import { state } from './state.js';
 import { compareHistoricalDates, escapeHtml, getCategoryClass, getCategoryLabel, normalizeText, eventMatchesSearch, THEME_DEFINITIONS, getAppleFlagEmojiHtml } from './utils.js';
-import { renderFriseBand } from './frise.js';
 import { renderWorldMap } from './worldmap.js';
 import { getContinentOf, getContinentMeta } from './continents.js';
 
@@ -30,45 +29,33 @@ function hasActiveFilters(search) {
 }
 
 function renderFilterBar() {
-  const eras = [{ id: 'all', name: 'Toutes', icon: '✨' }, ...(state.timelineData?.eras || [])];
-  const themes = [{ key: 'all', label: 'Tous', icon: '✨' }, ...THEME_DEFINITIONS];
-
-  const eraChips = eras.map((era) => `
-    <button class="filter-chip ${state.timelineEra === era.id ? 'active' : ''}" data-filter="era" data-value="${escapeHtml(era.id)}" type="button" aria-pressed="${state.timelineEra === era.id}">
-      <span aria-hidden="true">${escapeHtml(era.icon || '')}</span> ${escapeHtml(era.name)}
-    </button>
-  `).join('');
-
-  const themeChips = themes.map((theme) => `
-    <button class="filter-chip ${state.timelineTheme === theme.key ? 'active' : ''}" data-filter="theme" data-value="${escapeHtml(theme.key)}" type="button" aria-pressed="${state.timelineTheme === theme.key}">
-      <span aria-hidden="true">${escapeHtml(theme.icon || '')}</span> ${escapeHtml(theme.label)}
-    </button>
-  `).join('');
-
-  return `
-    <div class="filter-bar" id="timelineFilterBar">
-      <div class="filter-row" role="group" aria-label="Filtrer par époque">
-        <span class="filter-label">Époque</span>
-        <div class="filter-chips">${eraChips}</div>
-      </div>
-      <div class="filter-row" role="group" aria-label="Filtrer par thème">
-        <span class="filter-label">Thème</span>
-        <div class="filter-chips">${themeChips}</div>
-      </div>
-    </div>
-  `;
+  const eras = [{ id: 'all', name: 'Toutes les époques' }, ...(state.timelineData?.eras || [])];
+  const themes = [{ key: 'all', label: 'Tous les thèmes' }, ...THEME_DEFINITIONS];
+  return `<div class="filter-bar" id="timelineFilterBar">
+    <div class="filter-field"><label for="eraFilter">Époque</label><select id="eraFilter" data-filter="era">${eras.map(era => `<option value="${escapeHtml(era.id)}" ${state.timelineEra === era.id ? 'selected' : ''}>${escapeHtml(era.name)}</option>`).join('')}</select></div>
+    <div class="filter-field"><label for="themeFilter">Thème</label><select id="themeFilter" data-filter="theme">${themes.map(theme => `<option value="${escapeHtml(theme.key)}" ${state.timelineTheme === theme.key ? 'selected' : ''}>${escapeHtml(theme.label)}</option>`).join('')}</select></div>
+    ${hasActiveFilters(state.timelineSearch) ? '<button type="button" class="reset-filters" data-reset-filters>Tout effacer</button>' : ''}
+  </div>`;
 }
 
 function bindFilterBar(container) {
   const bar = container.querySelector('#timelineFilterBar');
-  if (!bar) return;
-  bar.addEventListener('click', (event) => {
-    const chip = event.target.closest('.filter-chip');
-    if (!chip) return;
-    const { filter, value } = chip.dataset;
-    if (filter === 'era') state.timelineEra = value;
-    if (filter === 'theme') state.timelineTheme = value;
+  bar?.addEventListener('change', (event) => {
+    const { filter } = event.target.dataset;
+    if (!filter) return;
+    if (filter === 'era') state.timelineEra = event.target.value;
+    if (filter === 'theme') state.timelineTheme = event.target.value;
+    const focusId = event.target.id;
     renderActiveTimelineView();
+    document.getElementById(focusId)?.focus({ preventScroll: true });
+  });
+  bar?.querySelector('[data-reset-filters]')?.addEventListener('click', () => {
+    state.timelineSearch = '';
+    state.timelineEra = 'all';
+    state.timelineTheme = 'all';
+    window.dispatchEvent(new Event('histoiren:sync-search-inputs'));
+    renderActiveTimelineView();
+    document.getElementById('searchInput')?.focus();
   });
 }
 
@@ -81,30 +68,7 @@ function getTimelineFilterData() {
 }
 
 export function renderActiveTimelineView() {
-  if (state.currentView === 'frise') renderFriseView();
-  else if (state.currentView === 'timeline') renderTimelineList();
-}
-
-export function renderFriseView() {
-  const container = document.getElementById('friseContent');
-  if (!container || !state.timelineData) return;
-
-  const { filtersActive, filteredFlat, totalMatches } = getTimelineFilterData();
-
-  let html = renderFilterBar();
-  html += '<div id="friseBandSlot"></div>';
-
-  if (filtersActive) {
-    html += `<p class="filter-result-count" role="status">${totalMatches} événement${totalMatches > 1 ? 's' : ''} trouvé${totalMatches > 1 ? 's' : ''}</p>`;
-  }
-
-  if (filtersActive && totalMatches === 0) {
-    html += '<p class="empty-state">Aucun événement ne correspond à ces critères. Essayez d\'élargir vos filtres.</p>';
-  }
-
-  container.innerHTML = html;
-  bindFilterBar(container);
-  renderFriseBand(document.getElementById('friseBandSlot'), filteredFlat);
+  if (state.currentView === 'timeline') renderTimelineList();
 }
 
 export function renderTimelineList() {
@@ -115,7 +79,7 @@ export function renderTimelineList() {
 
   let html = renderFilterBar();
 
-  if (filtersActive) {
+  {
     html += `<p class="filter-result-count" role="status">${totalMatches} événement${totalMatches > 1 ? 's' : ''} trouvé${totalMatches > 1 ? 's' : ''}</p>`;
   }
 
@@ -126,7 +90,7 @@ export function renderTimelineList() {
     return `
       <section class="era-section reveal" id="era-${escapeHtml(era.id)}">
         <div class="era-header">
-          <div class="era-badge" aria-hidden="true">${escapeHtml(era.icon)}</div>
+
           <div class="era-title-block">
             <h2>${escapeHtml(era.name)}</h2>
             <p>${escapeHtml(era.subtitle)}</p>
@@ -156,50 +120,6 @@ export function renderTimelineList() {
     html += '<p class="empty-state">Aucun événement ne correspond à ces critères. Essayez d\'élargir vos filtres.</p>';
   }
 
-  if (!filtersActive && state.timelineData.events.length > 0) {
-    const majorEvents = state.timelineData.events.filter((event) => event.major);
-    const nonMajorEvents = state.timelineData.events.filter((event) => !event.major);
-
-    const sortedEvents = [...majorEvents, ...nonMajorEvents]
-      .sort((left, right) => {
-        const eraOrder = ['prehist', 'antiquite', 'moyen-age', 'modernes', 'contemporain'];
-        const leftMajor = left.major ? 1 : 0;
-        const rightMajor = right.major ? 1 : 0;
-        if (leftMajor !== rightMajor) return rightMajor - leftMajor;
-        return eraOrder.indexOf(left.era) - eraOrder.indexOf(right.era);
-      })
-      .slice(0, 50);
-
-    html += `
-      <section class="era-section top50-section" id="top50-section">
-        <div class="era-header">
-          <div class="era-badge">🏆</div>
-          <div class="era-title-block">
-            <h2>Top 50 des Dates les Plus Importantes</h2>
-            <p>Les événements qui ont le plus marqué l'histoire de l'humanité</p>
-          </div>
-        </div>
-        <div class="events-list top50-list">
-          ${sortedEvents.map((event, index) => `
-            <button class="event top50-event ${event.major ? 'major' : ''}" data-id="${escapeHtml(event.id)}" type="button">
-              <span class="event-dot" aria-hidden="true"></span>
-              <div class="event-content">
-                <span class="top50-rank">#${index + 1}</span>
-                <span class="event-date">${escapeHtml(event.date)}</span>
-                <div class="event-text">
-                  <span class="event-name">${escapeHtml(event.name)}</span>
-                  <span class="event-context">${escapeHtml(event.context)}</span>
-                  ${event.people ? `<span class="event-people">${escapeHtml(event.people)}</span>` : ''}
-                </div>
-                <span class="event-cat ${getCategoryClass(event.category)}">${escapeHtml(getCategoryLabel(event.category))}</span>
-              </div>
-            </button>
-          `).join('')}
-        </div>
-      </section>
-    `;
-  }
-
   container.innerHTML = html;
   bindTimelineClicks(container);
   bindFilterBar(container);
@@ -213,12 +133,6 @@ function bindTimelineClicks(container) {
     const eventId = eventCard.dataset.id;
     if (eventId && window.showDetail) window.showDetail(eventId);
   };
-}
-
-/** @deprecated Use renderActiveTimelineView, renderFriseView or renderTimelineList */
-export function renderTimeline() {
-  renderFriseView();
-  renderTimelineList();
 }
 
 let revealObserver = null;
@@ -288,7 +202,7 @@ function renderContinentBanner() {
   const count = state.countriesData.filter((c) => getContinentOf(c.name) === state.countryContinent).length;
   banner.hidden = false;
   banner.innerHTML = `
-    <span class="continent-banner-label">${meta?.emoji || '🌍'} ${escapeHtml(meta?.label || '')} · ${count} pays</span>
+    <span class="continent-banner-label">${escapeHtml(meta?.label || '')} · ${count} pays</span>
     <button class="continent-banner-reset" type="button" data-continent-reset>✕ Voir tous les pays</button>
   `;
   banner.querySelector('[data-continent-reset]')?.addEventListener('click', () => {
@@ -298,61 +212,33 @@ function renderContinentBanner() {
 }
 
 export function renderStats() {
+  renderDailyHistory();
   const container = document.getElementById('presentationStats');
   if (!container) return;
 
   const totalEvents = state.timelineData?.events.length || 0;
   const totalCountries = state.countriesData?.length || 0;
 
-  const categories = {};
-  state.timelineData?.events.forEach((event) => {
-    const mapped = getCategoryLabel(event.category);
-    categories[mapped] = (categories[mapped] || 0) + 1;
-  });
+  container.innerHTML = `<p class="collection-summary"><strong>${totalEvents.toLocaleString('fr-FR')}</strong> événements <span aria-hidden="true">·</span> <strong>${totalCountries}</strong> pays <span aria-hidden="true">·</span> <strong>${state.timelineData?.eras.length || 0}</strong> époques à explorer</p>`;
+}
 
-  const eraStats = {};
-  state.timelineData?.events.forEach((event) => {
-    eraStats[event.era] = (eraStats[event.era] || 0) + 1;
-  });
 
-  const categoryMax = Math.max(1, ...Object.values(categories));
-  const eraMax = Math.max(1, ...Object.values(eraStats));
-  const coverageRows = (entries, max, type) => entries.map(([key, count]) => {
-    const label = type === 'era' ? (eraConfigs[key]?.label || key) : key;
-    const percentage = Math.max(3, Math.round((count / max) * 100));
-    return `
-      <div class="coverage-row">
-        <span>${escapeHtml(label)}</span>
-        <div class="coverage-track" role="img" aria-label="${escapeHtml(label)} : ${count} événements">
-          <i data-coverage="${percentage}"></i>
-        </div>
-        <strong>${count}</strong>
-      </div>
-    `;
-  }).join('');
-
+function renderDailyHistory() {
+  const container = document.getElementById('dailyHistory');
+  const snapshot = state.historyUpdates;
+  if (!container || !/^\d{4}-\d{2}-\d{2}$/.test(snapshot?.date || '') || !Number.isFinite(Date.parse(snapshot.lastUpdate)) || !Array.isArray(snapshot.events)) return;
+  const events = state.timelineData.events.filter(event => event._daily);
+  if (!events.length) return;
+  const chosen = [...events].sort((left, right) => Number(right._highlighted) - Number(left._highlighted)).slice(0, 3);
+  const formatted = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', timeZone: 'Europe/Paris' }).format(new Date(`${snapshot.date}T12:00:00Z`));
+  const updated = new Intl.DateTimeFormat('fr-FR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date(snapshot.lastUpdate));
+  container.hidden = false;
   container.innerHTML = `
-    <div class="collection-ledger">
-      <dl class="collection-totals">
-        <div><dt>Événements mondiaux</dt><dd>${totalEvents}</dd></div>
-        <div><dt>Pays documentés</dt><dd>${totalCountries}</dd></div>
-        <div><dt>Époques structurantes</dt><dd>${state.timelineData?.eras.length || 0}</dd></div>
-        <div><dt>Entrées nationales</dt><dd>${state.countriesData.reduce((sum, country) => sum + country.events.length, 0).toLocaleString('fr-FR')}</dd></div>
-      </dl>
-      <div class="coverage-panels">
-        <section class="coverage-panel" aria-labelledby="category-coverage-title">
-          <h3 id="category-coverage-title">Répartition thématique</h3>
-          ${coverageRows(Object.entries(categories), categoryMax, 'category')}
-        </section>
-        <section class="coverage-panel" aria-labelledby="era-coverage-title">
-          <h3 id="era-coverage-title">Couverture par époque</h3>
-          ${coverageRows(Object.entries(eraStats), eraMax, 'era')}
-        </section>
-      </div>
-    </div>
-  `;
-
-  container.querySelectorAll('[data-coverage]').forEach((bar) => {
-    bar.style.setProperty('--coverage', `${bar.dataset.coverage}%`);
-  });
+    <div class="daily-heading"><div><div class="section-folio">AU FIL DES DATES · ${escapeHtml(formatted)}</div><h2 id="dailyHistoryTitle">À cette date dans l’histoire</h2></div><p>Collection du ${escapeHtml(snapshot.date)}<br>Actualisée le ${escapeHtml(updated)}</p></div>
+    <div class="daily-events">${chosen.map(event => `<button type="button" class="daily-event" data-daily-id="${escapeHtml(event.id)}"><span>${escapeHtml(event.date)}</span><strong>${escapeHtml(event.name)}</strong><small>Découvrir l’événement <span aria-hidden="true">↗</span></small></button>`).join('')}</div>
+    <p class="daily-attribution">Source : <a href="https://fr.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipédia en français</a> · Textes sous <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. ${snapshot.verification?.counts?.verified || 0} dates existantes vérifiées lors de cette actualisation.</p>`;
+  container.onclick = event => {
+    const card = event.target.closest('[data-daily-id]');
+    if (card) window.showDetail(card.dataset.dailyId, 'timeline');
+  };
 }

@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { applyCorrections, dailyEvents, newestUpdates } from './history-updates.js';
 import { mergeTimelineEvents, detectEventThemes, parseHistoricalDate } from './utils.js';
 
 const MAX_JSON_CHARACTERS = 5_000_000;
@@ -102,6 +103,12 @@ export async function loadData() {
   const controller = new AbortController();
   const timeoutId = window.setTimeout(() => controller.abort(), 10000);
   try {
+    const bundledUpdates = fetch('data/day-in-history.json', { signal: controller.signal, cache: 'no-cache' }).then(response => response.ok ? readBoundedJson(response, 'day-in-history.json') : null).catch(() => null);
+    // The public repository is the published data store: daily updates do not require a new deployment.
+    const publishedUpdates = window.location.protocol === 'https:'
+      ? fetch('https://raw.githubusercontent.com/SimonBitton/Histoiren/main/data/day-in-history.json', { signal: AbortSignal.timeout(4000), cache: 'no-cache' }).then(response => response.ok ? readBoundedJson(response, 'published history') : null).catch(() => null)
+      : Promise.resolve(null);
+    const updatesPromise = Promise.all([bundledUpdates, publishedUpdates]).then(([bundled, published]) => newestUpdates(bundled, published));
     const [timelineRes, countriesRes] = await Promise.all([
       fetch('data/timeline.json', { signal: controller.signal }),
       fetch('data/countries.json', { signal: controller.signal })
@@ -118,11 +125,15 @@ export async function loadData() {
     validateTimelineData(timelineData);
     validateCountriesData(countriesData);
 
+    const snapshot = await updatesPromise;
+    state.historyUpdates = snapshot;
+    const updatedEvents = applyCorrections(timelineData.events, snapshot);
+    const incomingEvents = dailyEvents(snapshot);
     state.timelineData = {
       ...timelineData,
-      events: mergeTimelineEvents(timelineData.events)
+      events: mergeTimelineEvents([...updatedEvents, ...incomingEvents])
     };
-    state.countriesData = countriesData;
+    state.countriesData = countriesData.map(country => ({ ...country, events: applyCorrections(country.events, snapshot, country.id) }));
 
     if (state.timelineData && Array.isArray(state.timelineData.events)) {
       state.eventById = new Map();
@@ -131,7 +142,7 @@ export async function loadData() {
         const requestedId = typeof event.id === 'string' && event.id ? event.id : `evt-${idx}`;
         event.id = usedIds.has(requestedId) ? `${requestedId}-${idx}` : requestedId;
         usedIds.add(event.id);
-        // Enrichissement : thèmes (filtres) + année numérique (frise interactive)
+        // Enrichissement : thèmes et année pour les fiches et la visualisation.
         event._themes = detectEventThemes(event);
         const parsed = parseHistoricalDate(event.date);
         event._year = parsed ? parsed.year : null;
