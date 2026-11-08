@@ -271,3 +271,36 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 }
 #view-timeline .event { scroll-margin-top: 200px; scroll-margin-bottom: 100px; }
 @media (max-width: 767px) { #view-timeline .event { scroll-margin-top: 112px; } }
+
+/* A real reading spine for the chronology: the era is the chapter, the date is the anchor. */
+#view-timeline .era-section { margin-bottom: 56px; }
+#view-timeline .era-header { display: block; padding: 0 0 20px; margin-bottom: 18px; border-bottom-color: var(--color-primary); border-bottom-width: 2px; }
+#view-timeline .era-kicker { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; color: var(--color-primary); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+#view-timeline .era-index { display: inline-grid; place-items: center; width: 28px; height: 24px; border-radius: 6px; background: var(--color-primary); color: var(--color-primary-foreground); font-size: 11px; letter-spacing: .04em; }
+#view-timeline .era-count { margin-left: auto; color: var(--color-text-muted); font-size: 12px; font-weight: 600; letter-spacing: .02em; text-transform: none; }
+#view-timeline .era-title-block h2 { font-size: clamp(25px, 3vw, 32px); letter-spacing: -.02em; }
+#view-timeline .era-title-block p { max-width: 72ch; margin-top: 6px; line-height: 1.55; }
+#view-timeline .events-list { position: relative; gap: 12px; padding-left: 28px; }
+#view-timeline .events-list::before { content: ''; position: absolute; top: 12px; bottom: 12px; left: 8px; width: 2px; border-radius: 2px; background: var(--color-border); }
+#view-timeline .event { position: relative; overflow: visible; border-radius: 12px; }
+#view-timeline .event::before { content: ''; display: block; position: absolute; z-index: 1; top: 28px; left: -26px; width: 10px; height: 10px; border: 3px solid var(--color-background); border-radius: 50%; background: var(--color-primary); box-shadow: 0 0 0 1px var(--color-primary); }
+#view-timeline .event.major::before { background: var(--color-warning); box-shadow: 0 0 0 1px var(--color-warning); }
+#view-timeline .event-marker { display: none; }
+#view-timeline .event-content { grid-template-columns: 132px minmax(0, 1fr) auto; gap: 24px; padding: 20px 22px; }
+#view-timeline .event-date { color: var(--color-primary); font-size: 14px; line-height: 1.5; }
+#view-timeline .event-name { font-size: 17px; line-height: 1.4; }
+#view-timeline .event-context { margin-top: 7px; font-size: 15px; line-height: 1.55; }
+#view-timeline .event.major { box-shadow: inset 3px 0 0 var(--color-primary); }
+#view-timeline .event.major .event-date { font-weight: 700; }
+
+@media (max-width: 767px) {
+  #view-timeline .era-section { margin-bottom: 42px; }
+  #view-timeline .era-header { padding-bottom: 16px; margin-bottom: 14px; }
+  #view-timeline .era-kicker { margin-bottom: 8px; }
+  #view-timeline .events-list { gap: 10px; padding-left: 20px; }
+  #view-timeline .events-list::before { left: 6px; }
+  #view-timeline .event::before { top: 23px; left: -20px; width: 8px; height: 8px; border-width: 2px; }
+  #view-timeline .event-content { gap: 7px; padding: 16px 18px; }
+  #view-timeline .event-date { font-size: 14px; }
+  #view-timeline .event-name { font-size: 17px; }
+}

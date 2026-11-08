@@ -94,14 +94,14 @@ export function renderTimelineList() {
     </nav>`;
   }
 
-  html += state.timelineData.eras.map((era) => {
+  html += state.timelineData.eras.map((era, eraIndex) => {
     const eraEvents = groupedByEra.get(era.id) || [];
     if (eraEvents.length === 0 && filtersActive) return '';
 
     return `
       <section class="era-section reveal" id="era-${escapeHtml(era.id)}">
         <div class="era-header">
-
+          <div class="era-kicker"><span class="era-index">${String(eraIndex + 1).padStart(2, '0')}</span><span>Époque</span><span class="era-count">${eraEvents.length} événement${eraEvents.length > 1 ? 's' : ''}</span></div>
           <div class="era-title-block">
             <h2 tabindex="-1">${escapeHtml(era.name)}</h2>
             <p>${escapeHtml(era.subtitle)}</p>
@@ -110,7 +110,7 @@ export function renderTimelineList() {
         <div class="events-list">
           ${eraEvents.map((event) => `
             <button class="event ${event.major ? 'major' : ''}" data-id="${escapeHtml(event.id)}" type="button">
-              <span class="event-dot" aria-hidden="true"></span>
+              <span class="event-marker" aria-hidden="true"><span class="event-dot"></span></span>
               <div class="event-content">
                 <span class="event-date">${escapeHtml(event.date)}</span>
                 <div class="event-text">
