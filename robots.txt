@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://histoiren.vercel.app/sitemap.xml

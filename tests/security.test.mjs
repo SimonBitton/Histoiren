@@ -9,7 +9,7 @@ test('la page ne charge aucun JavaScript tiers et n’embarque aucun script inli
   const scriptTags = [...html.matchAll(/<script\b([^>]*)>/gi)].map((match) => match[1]);
   assert.ok(scriptTags.length >= 2);
   scriptTags.forEach((attributes) => {
-    assert.match(attributes, /\bsrc="(?:src\/)[^"]+"/i);
+    assert.match(attributes, /\bsrc="\/?src\/[^\"]+"/i);
     assert.doesNotMatch(attributes, /https?:\/\//i);
   });
 });

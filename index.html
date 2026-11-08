@@ -4,30 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Histoiren — Les repères du monde</title>
-  <meta name="description" content="Explorez les événements de l’histoire mondiale, les pays et les dates qui ont façonné le monde.">
+  <meta name="description" content="Explorez les événements, les pays et les grandes dates de l’histoire mondiale dans un atlas clair et interactif.">
   <meta name="theme-color" content="#254f42">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://histoiren.vercel.app/">
+  <link rel="icon" type="image/png" href="/favicon-histoiren.png">
   <meta property="og:title" content="Histoiren — Les repères du monde">
-  <meta property="og:description" content="L’histoire mondiale, par événement, par époque et par pays.">
+  <meta property="og:description" content="Explorez les événements, les pays et les grandes dates de l’histoire mondiale dans un atlas clair et interactif.">
+  <meta property="og:url" content="https://histoiren.vercel.app/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="favicon-histoiren.png">
-  <link rel="icon" type="image/png" href="favicon-histoiren.png">
+  <meta property="og:site_name" content="Histoiren">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://histoiren.vercel.app/assets/histoiren-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Histoiren, les repères du monde — atlas historique">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Histoiren — Les repères du monde">
+  <meta name="twitter:description" content="Explorez les événements, les pays et les grandes dates de l’histoire mondiale dans un atlas clair et interactif.">
+  <meta name="twitter:image" content="https://histoiren.vercel.app/assets/histoiren-social.png">
+  <meta name="twitter:image:alt" content="Histoiren, les repères du monde — atlas historique">
 
-  <script src="src/bootstrap.js"></script>
+  <script src="/src/bootstrap.js"></script>
 
   <!-- Polices système natives (pas de chargement externe) -->
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/views.css">
-  <link rel="stylesheet" href="css/features.css">
-  <link rel="stylesheet" href="css/os-specific.css">
-  <link rel="stylesheet" href="css/editorial.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/views.css">
+  <link rel="stylesheet" href="/css/features.css">
+  <link rel="stylesheet" href="/css/os-specific.css">
+  <link rel="stylesheet" href="/css/editorial.css">
 
   <!-- OS Detection & Adaptations (must be early to avoid FOUC) -->
-  <script src="src/os-detect.js" type="module"></script>
+  <script src="/src/os-detect.js" type="module"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Aller au contenu</a>
@@ -257,12 +271,19 @@
   </main>
 
   <footer>
-    <a class="footer-brand" href="/">Histoiren<span>Les repères du monde.</span></a><p>Une invitation à comprendre l’histoire.<br>&copy; 2026 · Créé par Simon Bitton</p>
+    <a class="footer-brand" href="/">Histoiren<span>Les repères du monde.</span></a>
+    <div class="footer-meta">
+      <p>Une invitation à comprendre l’histoire.<br>&copy; 2026 · Créé par Simon Bitton</p>
+      <p class="footer-portfolio">
+        <span>Envie de découvrir mes autres projets&nbsp;?</span>
+        <a href="https://simon-b-one.vercel.app" target="_blank" rel="noopener noreferrer">Découvrir mes créations&nbsp;→</a>
+      </p>
+    </div>
   </footer>
 
   <div id="appStatus" class="app-status" role="status" aria-live="polite" hidden></div>
 
   <!-- Scripts -->
-  <script type="module" src="src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

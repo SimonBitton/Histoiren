@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Apprendre l’histoire — Histoiren</title>
+  <meta name="description" content="Retenez les dates et les événements avec les quiz et les cartes de révision d’Histoiren.">
+  <meta name="theme-color" content="#254f42">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://histoiren.vercel.app/apprendre">
+  <link rel="icon" type="image/png" href="/favicon-histoiren.png">
+  <meta property="og:title" content="Apprendre l’histoire — Histoiren">
+  <meta property="og:description" content="Retenez les dates et les événements avec les quiz et les cartes de révision d’Histoiren.">
+  <meta property="og:url" content="https://histoiren.vercel.app/apprendre">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Histoiren">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://histoiren.vercel.app/assets/histoiren-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Histoiren, les repères du monde — atlas historique">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Apprendre l’histoire — Histoiren">
+  <meta name="twitter:description" content="Retenez les dates et les événements avec les quiz et les cartes de révision d’Histoiren.">
+  <meta name="twitter:image" content="https://histoiren.vercel.app/assets/histoiren-social.png">
+  <meta name="twitter:image:alt" content="Histoiren, les repères du monde — atlas historique">
+
+  <script src="/src/bootstrap.js"></script>
+
+  <!-- Polices système natives (pas de chargement externe) -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/views.css">
+  <link rel="stylesheet" href="/css/features.css">
+  <link rel="stylesheet" href="/css/os-specific.css">
+  <link rel="stylesheet" href="/css/editorial.css">
+
+  <!-- OS Detection & Adaptations (must be early to avoid FOUC) -->
+  <script src="/src/os-detect.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <noscript>
+    <div class="noscript-message">
+      <h1>JavaScript requis</h1>
+      <p>Veuillez activer JavaScript pour utiliser Histoiren.</p>
+    </div>
+  </noscript>
+
+  <nav class="main-nav" aria-label="Navigation principale">
+    <button class="nav-brand nav-tab" id="tab-presentation" data-view="presentation" type="button" aria-controls="view-presentation" aria-current="page">
+      <span class="nav-brand-mark" aria-hidden="true">H</span>
+      <span class="home-nav-label">Accueil</span><span class="nav-brand-copy"><strong>Histoiren</strong><small>Explorer et comprendre l’histoire</small></span>
+    </button>
+    <div class="nav-track">
+      <button class="nav-tab" id="tab-timeline" data-view="timeline" type="button" aria-controls="view-timeline"><svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><span class="nav-label">Événements</span></button>
+      <button class="nav-tab" id="tab-countries" data-view="countries" type="button" aria-controls="view-countries"><svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg><span class="nav-label">Pays</span></button>
+      <button class="nav-tab" id="tab-apprendre" data-view="apprendre" type="button" aria-controls="view-apprendre"><svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Zm4 3v5c3 3 7 3 10 0v-5m4-3v7"/></svg><span class="nav-label">Apprendre</span></button>
+    </div>
+  </nav>
+
+  <!-- Bouton toggle sidebar -->
+  <button id="sidebarToggle" class="sidebar-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <!-- Sidebar -->
+  <aside class="quick-nav" id="quickNav" aria-label="Navigation rapide" hidden>
+    <div class="quick-nav-title">Accès rapide</div>
+    <div class="quick-nav-links" id="quickNavLinks">
+      <!-- Contenu injecté par sidebar.js -->
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ── Vue Présentation ── -->
+    <div id="view-presentation" class="view-container active" role="region" aria-labelledby="tab-presentation">
+      <header class="home-header">
+        <p class="section-folio">VOTRE ATLAS HISTORIQUE</p>
+        <h1>L’histoire à portée de main.</h1>
+        <p>Retrouvez une date, découvrez un pays ou testez vos connaissances.</p>
+        <form id="homeSearchForm" class="home-search" role="search">
+          <label for="homeSearchInput">Que souhaitez-vous découvrir ?</label>
+          <div class="home-search-row"><input id="homeSearchInput" type="search" placeholder="Un événement, une date, un personnage…" maxlength="120" required><button type="submit">Rechercher <span aria-hidden="true">→</span></button></div>
+        </form>
+      </header>
+      <section class="home-destinations" aria-label="Explorer Histoiren">
+        <button type="button" data-home-view="timeline" class="destination-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h1M3 12h1M3 18h1"/></svg><strong>Événements</strong><span>Parcourez l’histoire par époque et par thème.</span><small>Explorer les événements <span aria-hidden="true">→</span></small></button>
+        <button type="button" data-home-view="countries" class="destination-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18 18 18 0 0 1 0-18"/></svg><strong>Pays</strong><span>Découvrez les grandes dates de chaque pays.</span><small>Consulter l’atlas <span aria-hidden="true">→</span></small></button>
+        <button type="button" data-home-view="apprendre" class="destination-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5C8 2 3 4 3 4v15s5-2 9 1c4-3 9-1 9-1V4s-5-2-9 1Zm0 0v15"/></svg><strong>Apprendre</strong><span>Retenez les dates avec les quiz et les cartes de révision.</span><small>Commencer à réviser <span aria-hidden="true">→</span></small></button>
+      </section>
+      <section id="dailyHistory" class="daily-history" aria-labelledby="dailyHistoryTitle" hidden></section>
+      <section class="home-collection" aria-label="Contenu de l’atlas"><div id="presentationStats" class="stats-content"></div></section>
+    </div>
+
+    <!-- ── Vue Liste chronologique ── -->
+    <div id="view-timeline" class="view-container" role="region" aria-labelledby="tab-timeline">
+      <header class="view-header">
+
+        <h1>Événements</h1>
+        <p>Recherchez un événement, un personnage ou une date, puis filtrez par période et par thème.</p>
+
+        <div class="search-container search-container-offset">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <label for="searchInput" class="sr-only">Rechercher un événement</label>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Rechercher un événement, une date, un personnage…"
+            aria-label="Rechercher dans la chronologie"
+            autocomplete="off"
+          >
+        </div>
+      </header>
+
+      <div id="timelineContent" aria-live="polite">
+        <!-- Sections d'époques injectées par ui-renderer.js -->
+      </div>
+    </div>
+
+    <!-- ── Vue Pays ── -->
+    <div id="view-countries" class="view-container" role="region" aria-labelledby="tab-countries">
+      <header class="view-header">
+
+        <h1>Pays</h1>
+        <p>Recherchez un pays pour consulter ses événements historiques.</p>
+      </header>
+
+
+      <div class="countries-toolbar">
+        <div class="search-container search-container-offset countries-search">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <label for="countrySearchInput" class="sr-only">Rechercher un pays</label>
+          <input
+            type="search"
+            id="countrySearchInput"
+            placeholder="Rechercher un pays…"
+            aria-label="Rechercher un pays"
+            autocomplete="off"
+          >
+        </div>
+      </div>
+
+      <details class="map-disclosure"><summary>Explorer par continent</summary><div id="worldMapContainer" class="worldmap-container"></div></details>
+
+      <div id="continentBanner" class="continent-banner" hidden></div>
+
+      <div id="countriesGrid" class="countries-grid" aria-live="polite">
+        <!-- Grille de pays injectée par ui-renderer.js -->
+      </div>
+    </div>
+
+    <!-- ── Vue Apprendre (Quiz & Flashcards) ── -->
+    <div id="view-apprendre" class="view-container" role="region" aria-labelledby="tab-apprendre">
+      <header class="view-header">
+
+        <h1>Apprendre</h1>
+        <p>Choisissez une époque, répondez sans indice, puis révisez les dates qui résistent.</p>
+      </header>
+      <div id="quizRoot" class="quiz-root" aria-live="polite">
+        <!-- Contenu injecté par quiz.js -->
+      </div>
+    </div>
+
+    <!-- ── Page de détail ── -->
+    <div id="detailPage" class="detail-page" role="dialog" aria-modal="true" aria-labelledby="detailTitle" hidden>
+      <div class="detail-shell">
+
+        <div class="detail-header">
+          <button id="detailBackBtn" class="detail-back-btn" aria-label="Retour">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Retour
+          </button>
+          <div class="detail-badge" id="detailBadge" aria-hidden="true"></div>
+        </div>
+
+        <div class="detail-content">
+          <div class="detail-meta-top">
+            <span id="detailCategory" class="detail-category"></span>
+            <span id="detailDate" class="detail-date-large"></span>
+          </div>
+
+          <p id="detailDateVerification" class="detail-date-verification" hidden>Date vérifiée avec <a id="detailDateVerificationLink" target="_blank" rel="noopener noreferrer">Wikidata</a>.</p>
+
+          <h1 id="detailTitle" class="detail-title"></h1>
+
+          <figure id="detailFigure" class="detail-figure" hidden>
+            <img id="detailImage" class="detail-image" alt="" loading="lazy">
+            <figcaption id="detailImageCaption" class="detail-image-caption"></figcaption>
+          </figure>
+
+          <div class="detail-body">
+            <div class="detail-section">
+              <h3>Résumé</h3>
+              <p id="detailSummary" class="detail-summary"></p>
+            </div>
+
+            <div class="detail-section" id="detailWikiSection" hidden>
+              <h3>Éclairage encyclopédique <span class="detail-source-tag">d’après Wikipédia</span></h3>
+              <p id="detailWikiExtract" class="detail-context-text"></p>
+            </div>
+
+            <div class="detail-grid-two">
+              <div class="detail-section detail-causes" id="detailCausesSection">
+                <h3>Causes</h3>
+                <p id="detailCauses" class="detail-context-text"></p>
+              </div>
+              <div class="detail-section detail-consequences" id="detailConsequencesSection">
+                <h3>Conséquences</h3>
+                <p id="detailConsequences" class="detail-context-text"></p>
+              </div>
+            </div>
+
+            <div class="detail-section" id="detailPeopleSection" hidden>
+              <h3>Personnages clés</h3>
+              <p id="detailPeople" class="detail-people"></p>
+            </div>
+
+            <div class="detail-section" id="detailContextSection" hidden>
+              <h3>Contexte historique</h3>
+              <p id="detailContext" class="detail-context-text"></p>
+            </div>
+
+            <div class="detail-section" id="detailRelatedSection" hidden>
+              <h3>Événements liés</h3>
+              <div id="detailRelated" class="detail-related"></div>
+            </div>
+
+            <div class="detail-actions">
+              <a id="detailSearchLink" href="#" target="_blank" rel="noopener noreferrer" class="detail-action-btn primary">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Rechercher sur Google
+              </a>
+              <a id="detailWikipediaLink" href="#" target="_blank" rel="noopener noreferrer" class="detail-action-btn secondary" hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor"/>
+                  <path d="M11 7h2v2h-2zm0 4h2v6h-2z" fill="currentColor"/>
+                </svg>
+                Article Wikipédia
+              </a>
+              <a id="detailPressLink" href="#" target="_blank" rel="noopener noreferrer" class="detail-action-btn tertiary" hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 9h18M7 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                Consulter la source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="/">Histoiren<span>Les repères du monde.</span></a>
+    <div class="footer-meta">
+      <p>Une invitation à comprendre l’histoire.<br>&copy; 2026 · Créé par Simon Bitton</p>
+      <p class="footer-portfolio">
+        <span>Envie de découvrir mes autres projets&nbsp;?</span>
+        <a href="https://simon-b-one.vercel.app" target="_blank" rel="noopener noreferrer">Découvrir mes créations&nbsp;→</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="appStatus" class="app-status" role="status" aria-live="polite" hidden></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

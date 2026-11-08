@@ -53,7 +53,7 @@ export default [
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
-      globals: { console: 'readonly', process: 'readonly', URL: 'readonly' }
+      globals: { console: 'readonly', process: 'readonly', URL: 'readonly', Response: 'readonly' }
     },
     rules: {
       'no-undef': 'error',

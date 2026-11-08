@@ -16,7 +16,9 @@ a
 README*
 SECURITY.md
 dates_avant_independance.md
-scripts/
+scripts/*
+!scripts/build-pages.mjs
+!scripts/page-template.html
 tests/
 eslint.config.mjs
 data/*.bak

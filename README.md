@@ -61,6 +61,12 @@ npm test
 
 Les tests de synchronisation couvrent le fuseau de Paris, le nettoyage et la provenance, les précisions de dates, les calendriers et ambiguïtés, la conservation des données en cas d’échec, les corrections d’affichage et la limite d’une mise à jour par jour. La dépendance de développement Playwright permet les contrôles du navigateur.
 
+### Métadonnées de partage
+
+`npm run build` génère les pages HTML de l’accueil, des événements, des pays et de l’apprentissage à partir de `scripts/page-template.html` et de la configuration centralisée dans `scripts/build-pages.mjs`. Il produit aussi `robots.txt`, `sitemap.xml` et le dossier de déploiement `public/`, limité aux ressources du site. Après une modification du texte, relancer cette commande et versionner les fichiers générés à la racine. Les aperçus utilisent l’image `assets/histoiren-social.png` (1200 × 630) et l’URL canonique `https://histoiren.vercel.app`. La route `/presentation` est un alias de l’accueil.
+
+Après publication, contrôler les URL publiques dans [Meta Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/) et [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/). Le [validateur X historique](https://cards-dev.twitter.com/validator) peut demander une connexion et n’offre plus toujours un aperçu. Les plateformes peuvent conserver une ancienne carte en cache ; leur outil de réinspection permet généralement d’en demander une nouvelle lecture.
+
 ## Organisation
 
 - `index.html`, `css/`, `assets/` : interface.

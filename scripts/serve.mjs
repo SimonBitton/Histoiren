@@ -14,7 +14,9 @@ const MIME_TYPES = {
   '.json': 'application/json; charset=utf-8',
   '.md': 'text/markdown; charset=utf-8',
   '.png': 'image/png',
-  '.svg': 'image/svg+xml'
+  '.svg': 'image/svg+xml',
+  '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml; charset=utf-8'
 };
 
 const SECURITY_HEADERS = {
@@ -47,7 +49,11 @@ const server = createServer(async (request, response) => {
   }
 
   const relativeRequest = pathname.replace(/^\/+/, '');
-  const requestedPath = extname(relativeRequest) ? relativeRequest : 'index.html';
+  const publicPages = new Set(['presentation', 'timeline', 'countries', 'apprendre']);
+  const route = relativeRequest.replace(/\/$/, '');
+  const requestedPath = publicPages.has(route)
+    ? `${route}.html`
+    : extname(relativeRequest) ? relativeRequest : 'index.html';
   const filePath = resolve(root, requestedPath);
   const pathFromRoot = relative(root, filePath);
   if (pathFromRoot.startsWith('..') || pathFromRoot.includes('\0')) {

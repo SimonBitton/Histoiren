@@ -1,5 +1,10 @@
 {
+  "outputDirectory": "public",
   "rewrites": [
+    { "source": "/presentation", "destination": "/presentation.html" },
+    { "source": "/timeline", "destination": "/timeline.html" },
+    { "source": "/countries", "destination": "/countries.html" },
+    { "source": "/apprendre", "destination": "/apprendre.html" },
     {
       "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
