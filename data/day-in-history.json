@@ -1,1665 +1,1629 @@
 {
-  "date": "2026-11-22",
-  "lastUpdate": "2026-11-22T11:13:55.728Z",
+  "date": "2026-11-23",
+  "lastUpdate": "2026-11-23T12:24:33.695Z",
   "source": "Wikipédia en français",
-  "sourceUrl": "https://fr.wikipedia.org/wiki/22_novembre",
+  "sourceUrl": "https://fr.wikipedia.org/wiki/23_novembre",
   "events": [
     {
-      "year": 498,
-      "description": "Symmaque et Laurent sont élus respectivement pape et antipape.",
-      "source": "https://fr.wikipedia.org/wiki/Symmaque_(pape)",
+      "year": 1248,
+      "description": "Séville tombe aux mains de Ferdinand III de Castille.",
+      "source": "https://fr.wikipedia.org/wiki/S%C3%A9ville",
       "highlighted": false
     },
     {
-      "year": 845,
-      "description": "bataille de Ballon.",
-      "source": "https://fr.wikipedia.org/wiki/Bataille_de_Ballon",
+      "year": 1407,
+      "description": "assassinat de Louis d'Orléans à Paris, par des sbires de son cousin duc de Bourgogne.",
+      "source": "https://fr.wikipedia.org/wiki/Assassinat_de_Louis_Ier_d'Orl%C3%A9ans",
       "highlighted": false
     },
     {
-      "year": 1307,
-      "description": "fulmination de la bulle Pastoralis preeminentie, ordonnant l'arrestation des membres de l'ordre du Temple.",
-      "source": "https://fr.wikipedia.org/wiki/Pastoralis_preeminentie",
+      "year": 1644,
+      "description": "parution de l'Areopagitica, de John Milton.",
+      "source": "https://fr.wikipedia.org/wiki/Areopagitica",
       "highlighted": false
     },
     {
-      "year": 1574,
-      "description": "découverte de l'archipel Juan Fernández.",
-      "source": "https://fr.wikipedia.org/wiki/Archipel_Juan_Fern%C3%A1ndez",
+      "year": 1654,
+      "description": "« Nuit de feu », de Blaise Pascal.",
+      "source": "https://fr.wikipedia.org/wiki/M%C3%A9morial_(Blaise_Pascal)",
       "highlighted": false
     },
     {
-      "year": 1718,
-      "description": "bataille de l'île d'Ocracoke.",
-      "source": "https://fr.wikipedia.org/wiki/Bataille_de_l'%C3%AEle_d'Ocracoke",
+      "year": 1793,
+      "description": "combat d'Ambon et combat de Trébiguet, pendant la Chouannerie.",
+      "source": "https://fr.wikipedia.org/wiki/Combat_d'Ambon",
       "highlighted": false
     },
     {
-      "year": 1809,
-      "description": "fin de la bataille de Sankt Leonhard in Passeier, lors de la rébellion du Tyrol.",
-      "source": "https://fr.wikipedia.org/wiki/Bataille_de_Sankt_Leonhard_in_Passeier",
+      "year": 1793,
+      "description": "la Sejm de Grodno accepte le deuxième partage de la Pologne.",
+      "source": "https://fr.wikipedia.org/wiki/Di%C3%A8te_de_Grodno",
       "highlighted": false
     },
     {
-      "year": 1831,
-      "description": "les canuts prennent possession de Lyon.",
-      "source": "https://fr.wikipedia.org/wiki/Canut",
+      "year": 1808,
+      "description": "victoire française à Tudela (campagne napoléonienne d'Espagne).",
+      "source": "https://fr.wikipedia.org/wiki/Bataille_de_Tudela",
       "highlighted": false
     },
     {
-      "year": 1883,
-      "description": "couronnement de Ranavalona III, reine de Madagascar.",
-      "source": "https://fr.wikipedia.org/wiki/Ranavalona_III",
+      "year": 1837,
+      "description": "victoire des patriotes à Saint-Denis (rébellion des Patriotes), au Québec.",
+      "source": "https://fr.wikipedia.org/wiki/Bataille_de_Saint-Denis_(Qu%C3%A9bec)",
       "highlighted": false
     },
     {
-      "year": 1908,
-      "description": "le Congrès de Monastir normalise et unifie l'alphabet albanais.",
-      "source": "https://fr.wikipedia.org/wiki/Congr%C3%A8s_de_Monastir",
+      "year": 1863,
+      "description": "début de la bataille de Chattanooga (guerre de Sécession).",
+      "source": "https://fr.wikipedia.org/wiki/Bataille_de_Chattanooga",
+      "highlighted": false
+    },
+    {
+      "year": 1867,
+      "description": "exécution des martyrs de Manchester.",
+      "source": "https://fr.wikipedia.org/wiki/Martyrs_de_Manchester",
+      "highlighted": false
+    },
+    {
+      "year": 1868,
+      "description": "Louis Arthur Ducos du Hauron dépose un brevet pour un procédé de photographie en couleurs par la méthode dite des trois couleurs (synthèses additive et soustractive).",
+      "source": "https://fr.wikipedia.org/wiki/Louis_Ducos_du_Hauron",
+      "highlighted": false
+    },
+    {
+      "year": 1890,
+      "description": "Wilhelmine devient reine des Pays-Bas.",
+      "source": "https://fr.wikipedia.org/wiki/Wilhelmine_(reine_des_Pays-Bas)",
+      "highlighted": false
+    },
+    {
+      "year": 1891,
+      "description": "démission du président brésilien Manuel Deodoro da Fonseca.",
+      "source": "https://fr.wikipedia.org/wiki/Liste_des_pr%C3%A9sidents_du_Br%C3%A9sil",
+      "highlighted": false
+    },
+    {
+      "year": 1910,
+      "description": "Alfred Ander est le dernier condamné à mort exécuté en Suède.",
+      "source": "https://fr.wikipedia.org/wiki/Alfred_Ander",
       "highlighted": false
     },
     {
       "year": 1918,
-      "description": "Abdication du grand-duc Frédéric II de Bade, et du prince Gonthier-Victor de Schwarzbourg.",
-      "source": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_(grand-duc_de_Bade)",
+      "description": "abdication du duc Charles-Édouard de Saxe-Cobourg-Gotha, fils du duc Léopold d'Albany et neveu par alliance du Kaiser.",
+      "source": "https://fr.wikipedia.org/wiki/Charles-%C3%89douard_de_Saxe-Cobourg_et_Gotha",
       "highlighted": false
     },
     {
-      "year": 1918,
-      "description": "Entrée des troupes françaises dans Strasbourg.",
-      "source": "https://fr.wikipedia.org/wiki/Strasbourg",
+      "year": 1936,
+      "description": "parution du premier numéro du magazine américain Life.",
+      "source": "https://fr.wikipedia.org/wiki/Life",
       "highlighted": false
     },
     {
-      "year": 1918,
-      "description": "Le roi des Belges Albert Ier rentre à Bruxelles.",
-      "source": "https://fr.wikipedia.org/wiki/Albert_Ier_(roi_des_Belges)",
+      "year": 1946,
+      "description": "bombardement de Hải Phòng, au début de la guerre d'Indochine.",
+      "source": "https://fr.wikipedia.org/wiki/Ha%C3%AFphong",
       "highlighted": false
     },
     {
-      "year": 1928,
-      "description": "création du Boléro de Maurice Ravel.",
-      "source": "https://fr.wikipedia.org/wiki/Bol%C3%A9ro_(Ravel)",
-      "highlighted": false
-    },
-    {
-      "year": 1934,
-      "description": "début de la crise d'Abyssinie.",
-      "source": "https://fr.wikipedia.org/wiki/Crise_d'Abyssinie",
-      "highlighted": false
-    },
-    {
-      "year": 1940,
-      "description": "les forces grecques prennent Korçë, pendant la guerre italo-grecque.",
-      "source": "https://fr.wikipedia.org/wiki/Koritza",
-      "highlighted": false
-    },
-    {
-      "year": 1943,
-      "description": "Le Liban proclame son indépendance. Un pacte national, non écrit, institue un système politique confessionnel, pour maintenir l'équilibre entre dix-huit communautés.",
-      "source": "https://fr.wikipedia.org/wiki/Liban",
-      "highlighted": false
-    },
-    {
-      "year": 1943,
-      "description": "ouverture de la conférence du Caire, en Égypte.",
-      "source": "https://fr.wikipedia.org/wiki/Conf%C3%A9rence_du_Caire_de_1943",
-      "highlighted": false
-    },
-    {
-      "year": 1944,
-      "description": "les troupes Allemandes se retirent de Metz après quatre jours de combat. Le Fort Jeanne d'Arc ne se rendra que le 13 décembre.",
-      "source": "https://fr.wikipedia.org/wiki/Metz",
-      "highlighted": false
-    },
-    {
-      "year": 1947,
-      "description": "Antonin Artaud enregistre, pour la Radiodiffusion française, Pour en finir avec le jugement de Dieu.",
-      "source": "https://fr.wikipedia.org/wiki/Antonin_Artaud",
-      "highlighted": false
-    },
-    {
-      "year": 1955,
-      "description": "test de la RDS-37, la première bombe H soviétique.",
-      "source": "https://fr.wikipedia.org/wiki/RDS-37",
+      "year": 1950,
+      "description": "En France, une loi fit du vol à main armée un crime capital,,.",
+      "source": "https://fr.wikipedia.org/wiki/France",
       "highlighted": false
     },
     {
       "year": 1963,
-      "description": "assassinat de John F. Kennedy.",
-      "source": "https://fr.wikipedia.org/wiki/Assassinat_de_John_F._Kennedy",
+      "description": "diffusion de An Unearthly Child, premier épisode de la série Doctor Who, au Royaume-Uni.",
+      "source": "https://fr.wikipedia.org/wiki/An_Unearthly_Child",
       "highlighted": false
     },
     {
-      "year": 1963,
-      "description": "Les Beatles sortent l'album With The Beatles.",
-      "source": "https://fr.wikipedia.org/wiki/The_Beatles",
+      "year": 1970,
+      "description": "parution du premier numéro du journal satirique français Charlie Hebdo.",
+      "source": "https://fr.wikipedia.org/wiki/Journal",
       "highlighted": false
     },
     {
-      "year": 1966,
-      "description": "l'internationale situationniste publie le pamphlet De la misère en milieu étudiant.",
-      "source": "https://fr.wikipedia.org/wiki/De_la_mis%C3%A8re_en_milieu_%C3%A9tudiant",
+      "year": 1976,
+      "description": "Jacques Mayol atteint 100 mètres de profondeur sous-marine en apnée.",
+      "source": "https://fr.wikipedia.org/wiki/Jacques_Mayol",
       "highlighted": false
     },
     {
-      "year": 1967,
-      "description": "résolution 242 du Conseil de sécurité des Nations unies, sur le Moyen-Orient.",
-      "source": "https://fr.wikipedia.org/wiki/R%C3%A9solution_242_du_Conseil_de_s%C3%A9curit%C3%A9_des_Nations_unies",
+      "year": 1980,
+      "description": "tremblement de terre dans l'Irpinia, en Italie.",
+      "source": "https://fr.wikipedia.org/wiki/S%C3%A9isme_du_23_novembre_1980_en_Irpinia",
+      "highlighted": true
+    },
+    {
+      "year": 1991,
+      "description": "Freddie Mercury annonce à ses fans qu'il est atteint du sida, un jour avant sa mort.",
+      "source": "https://fr.wikipedia.org/wiki/Freddie_Mercury",
       "highlighted": false
     },
     {
-      "year": 1967,
-      "description": "retrait des forces armées d'Israël de territoires occupés dans le récent conflit de la guerre des Six Jours, en échange de la paix et de la reconnaissance d'Israël.",
-      "source": "https://fr.wikipedia.org/wiki/Isra%C3%ABl",
+      "year": 1996,
+      "description": "les cendres d'André Malraux sont transférées au Panthéon, vingt ans jour pour jour après sa mort.",
+      "source": "https://fr.wikipedia.org/wiki/Andr%C3%A9_Malraux",
       "highlighted": false
     },
     {
-      "year": 1968,
-      "description": "ils sortent un album sans nom à part entière, plus connu sous le nom d'« album blanc » (The white album).",
-      "source": "https://fr.wikipedia.org/wiki/The_Beatles_(album)",
-      "highlighted": false
-    },
-    {
-      "year": 1974,
-      "description": "l’Assemblée générale des Nations unies accorde le statut d’observateur à l’OLP.",
-      "source": "https://fr.wikipedia.org/wiki/Assembl%C3%A9e_g%C3%A9n%C3%A9rale_des_Nations_unies",
-      "highlighted": false
-    },
-    {
-      "year": 1975,
-      "description": "Juan Carlos Ier est proclamé roi d’Espagne.",
-      "source": "https://fr.wikipedia.org/wiki/Juan_Carlos_Ier",
-      "highlighted": false
-    },
-    {
-      "year": 1977,
-      "description": "première liaison commerciale Paris - New York de l'avion supersonique européen Concorde.",
-      "source": "https://fr.wikipedia.org/wiki/A%C3%A9roport_de_Paris-Charles-de-Gaulle",
-      "highlighted": false
-    },
-    {
-      "year": 1990,
-      "description": "démission de Margaret Thatcher du poste de Premier ministre britannique.",
-      "source": "https://fr.wikipedia.org/wiki/Margaret_Thatcher",
+      "year": 2002,
+      "description": "la navigatrice anglaise Ellen McArthur remporte la Route du Rhum en monocoque à Pointe-à-pitre en Guadeloupe, y arrosant sa victoire d'un ti-punch avec le vainqueur breton Michel Desjoyeaux qui seul l'a précédée en multicoque quelques heures auparavant (même duo dans le même ordre qu'en tête à l'arrivée du tour de l'Antarctique, le Vendée-Globe, l'année précédente).",
+      "source": "https://fr.wikipedia.org/wiki/2002_en_sport",
       "highlighted": false
     },
     {
       "year": 2003,
-      "description": "attaque d'un vol DHL à Bagdad.",
-      "source": "https://fr.wikipedia.org/wiki/Attaque_du_vol_DHL_en_2003_%C3%A0_Bagdad",
+      "description": "démission du président géorgien Edouard Chevardnadze (révolution des Roses).",
+      "source": "https://fr.wikipedia.org/wiki/Pr%C3%A9sident_de_la_G%C3%A9orgie",
       "highlighted": false
     },
     {
       "year": 2005,
-      "description": "la CDU ayant remporté des élections législatives, la présidente de ce parti politique chrétien-démocrate Angela Merkel, fille de pasteur physicienne éduquée en ex-R.D.A., devient chancelière d'Allemagne la première femme à cette fonction.",
-      "source": "https://fr.wikipedia.org/wiki/Angela_Merkel",
+      "description": "sortie du film parodique français Palais-Royal de Valérie Lemercier et avec elle-même, Catherine Deneuve, Lambert Wilson, Michel Aumont ou Maurane.",
+      "highlighted": false
+    },
+    {
+      "year": 2009,
+      "description": "massacre de Maguindanao, aux Philippines.",
+      "source": "https://fr.wikipedia.org/wiki/Massacre_de_Maguindanao",
       "highlighted": false
     },
     {
       "year": 2010,
-      "description": "Kanye West sort l'album My Beautiful Dark Twisted Fantasy.",
-      "source": "https://fr.wikipedia.org/wiki/Kanye_West",
+      "description": "bombardement de Yeonpyeong (conflit maritime inter-coréen).",
+      "source": "https://fr.wikipedia.org/wiki/Bombardement_de_Yeonpyeong",
       "highlighted": false
     },
     {
-      "year": 2013,
-      "description": "formation du Front islamique, pendant la guerre civile syrienne.",
-      "source": "https://fr.wikipedia.org/wiki/Front_islamique_(Syrie)",
-      "highlighted": false
-    },
-    {
-      "year": 2017,
-      "description": "condamnation à la prison à perpétuité, pour crimes de guerre et crimes contre l’humanité, de Ratko Mladić, surnommé « le boucher des Balkans », par le TPIY.",
-      "source": "https://fr.wikipedia.org/wiki/Crime_de_guerre",
+      "year": 2019,
+      "description": "en Papouasie-Nouvelle-Guinée, début du référendum sur l'indépendance de la région autonome de Bougainville, organisé jusqu'au 7 décembre 2019. Le vote découle de l'accord de paix de 2001, qui a mis fin à dix ans de conflit armé sur ce territoire.",
+      "source": "https://fr.wikipedia.org/wiki/Papouasie-Nouvelle-Guin%C3%A9e",
       "highlighted": false
     },
     {
       "year": 2020,
-      "description": "au Burkina Faso, l'élection présidentielle a lieu afin d'élire le chef de l'État. Roch Marc Christian Kaboré est réélu dès le premier tour. Des élections législatives ont lieu simultanément.",
-      "source": "https://fr.wikipedia.org/wiki/Burkina_Faso",
+      "description": "lancement réussi de la sonde spatiale chinoise Chang'e 5, visant à prélever des échantillons de la Lune.",
+      "source": "https://fr.wikipedia.org/wiki/Chang'e_5",
+      "highlighted": false
+    },
+    {
+      "year": 2020,
+      "description": "ouverture du procès de l’affaire Jallal Hami, soldat de l’École spéciale militaire de Saint-Cyr au tribunal de Rennes",
+      "source": "https://fr.wikipedia.org/wiki/Affaire_Jallal_Hami",
+      "highlighted": false
+    },
+    {
+      "year": 2021,
+      "description": "en Bulgarie, au moins 46 personnes sont tuées dans un accident de bus près de Bosnek, au sud-ouest de Sofia.",
+      "source": "https://fr.wikipedia.org/wiki/Bulgarie",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "aux Pays-Bas, les élections législatives ont lieu afin d'élire les 150 représentants de la 39e législature de la Seconde Chambre des États généraux pour un mandat de quatre ans. Et c'est le Parti pour la liberté de Geert Wilders qui arrive en tête.",
-      "source": "https://fr.wikipedia.org/wiki/Pays-Bas",
-      "highlighted": false
-    },
-    {
-      "year": 2024,
-      "description": "au Nicaragua, l'Assemblée nationale se prononce en faveur d'une révision constitutionnelle accroissant les pouvoirs du président de la République Daniel Ortega.",
-      "source": "https://fr.wikipedia.org/wiki/Nicaragua",
+      "description": "en Irlande, des émeutes (photo) ont lieu à Dublin, capitale du pays à la suite d'une attaque au couteau.",
+      "source": "https://fr.wikipedia.org/wiki/Irlande_(pays)",
       "highlighted": false
     }
   ],
   "births": [
     {
-      "year": 1428,
-      "description": "Richard Neville, homme politique anglais († 14 avril 1471).",
-      "source": "https://fr.wikipedia.org/wiki/Richard_Neville_(16e_comte_de_Warwick)",
+      "year": 912,
+      "description": "Otton Ier, empereur romain germanique de 962 à 973 († 7 mai 973).",
+      "source": "https://fr.wikipedia.org/wiki/Otton_Ier_(empereur_du_Saint-Empire)",
       "highlighted": false
     },
     {
-      "year": 1458,
-      "description": "Jacob Obrecht, compositeur néerlandais († 1505).",
-      "source": "https://fr.wikipedia.org/wiki/Jacob_Obrecht",
+      "year": 1160,
+      "description": "Innocent III (Lotario dei conti di Segni dit), 176e pape catholique de 1198 à sa mort († 16 juillet 1216).",
+      "source": "https://fr.wikipedia.org/wiki/Innocent_III",
       "highlighted": false
     },
     {
-      "year": 1515,
-      "description": "Marie de Guise, reine d'Écosse, mère de Marie Stuart († 10 juin 1560).",
-      "source": "https://fr.wikipedia.org/wiki/Marie_de_Guise_(1515-1560)",
+      "year": 1190,
+      "description": "Clément IV (Gui Foucois dit), 183e pape catholique en fonction de 1265 à 1268 († 29 novembre 1268).",
+      "source": "https://fr.wikipedia.org/wiki/Cl%C3%A9ment_IV",
       "highlighted": false
     },
     {
-      "year": 1602,
-      "description": "Élisabeth (princesse) de France, devenue reine d'Espagne, fille, sœur et épouse de rois († 6 octobre 1644).",
-      "source": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_de_France_(1602-1644)",
+      "year": 1553,
+      "description": "Prospero Alpini, médecin et botaniste vénitien († 6 février 1617).",
+      "source": "https://fr.wikipedia.org/wiki/Prospero_Alpini",
       "highlighted": false
     },
     {
-      "year": 1635,
-      "description": "Francis Willughby, ornithologue et ichthyologiste anglais († 3 juillet 1672).",
-      "source": "https://fr.wikipedia.org/wiki/Francis_Willughby",
+      "year": 1592,
+      "description": "Eustache de Chéry de Mongazon, prélat français, évêque de Nevers de 1643 à 1666 († 10 novembre 1669).",
+      "source": "https://fr.wikipedia.org/wiki/Eustache_de_Ch%C3%A9ry_de_Mongazon",
       "highlighted": false
     },
     {
-      "year": 1643,
-      "description": "René-Robert Cavelier de La Salle, explorateur français († 19 mars 1687).",
-      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9-Robert_Cavelier_de_La_Salle",
+      "year": 1608,
+      "description": "Francisco Manuel de Melo, écrivain, militaire et diplomate portugais († 24 août 1666).",
+      "source": "https://fr.wikipedia.org/wiki/Francisco_Manuel_de_Melo",
       "highlighted": false
     },
     {
-      "year": 1698,
-      "description": "Pierre de Rigaud de Vaudreuil, militaire français († 4 août 1778).",
-      "source": "https://fr.wikipedia.org/wiki/Pierre_de_Rigaud_de_Vaudreuil",
+      "year": 1616,
+      "description": "John Wallis, mathématicien anglais († 28 octobre 1703).",
+      "source": "https://fr.wikipedia.org/wiki/John_Wallis",
       "highlighted": false
     },
     {
-      "year": 1710,
-      "description": "Wilhelm Friedemann Bach, compositeur allemand († 1er juillet 1784).",
-      "source": "https://fr.wikipedia.org/wiki/Wilhelm_Friedemann_Bach",
+      "year": 1632,
+      "description": "Jean Mabillon, religieux et historien français († 27 décembre 1707).",
+      "source": "https://fr.wikipedia.org/wiki/Jean_Mabillon",
       "highlighted": false
     },
     {
-      "year": 1767,
-      "description": "Andreas Hofer, patriote tyrolien († 20 février 1810).",
-      "source": "https://fr.wikipedia.org/wiki/Andreas_Hofer",
+      "year": 1674,
+      "description": "Pierre du Mage, organiste et compositeur français († 2 octobre 1751).",
+      "source": "https://fr.wikipedia.org/wiki/Pierre_Du_Mage",
       "highlighted": false
     },
     {
-      "year": 1779,
-      "description": "Toussaint von Charpentier, géologue et entomologiste allemand († 4 mars 1847).",
-      "source": "https://fr.wikipedia.org/wiki/Toussaint_von_Charpentier",
+      "year": 1687,
+      "description": "Jean-Baptiste Senaillé, violoniste et compositeur français († 15 octobre 1730).",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Baptiste_Senaill%C3%A9",
       "highlighted": false
     },
     {
-      "year": 1808,
-      "description": "Thomas Cook, homme d'affaires britannique († 18 juillet 1892).",
-      "source": "https://fr.wikipedia.org/wiki/Thomas_Cook",
+      "year": 1690,
+      "description": "Ernst Johann von Biron, noble letton, duc de Courlande de 1737 à 1740 et de 1763 à 1769 († 29 décembre 1772).",
+      "source": "https://fr.wikipedia.org/wiki/Ernst_Johann_von_Biron",
       "highlighted": false
     },
     {
-      "year": 1819,
-      "description": "George Eliot, romancière britannique († 22 décembre 1880).",
-      "source": "https://fr.wikipedia.org/wiki/George_Eliot",
+      "year": 1703,
+      "description": "Louise Levesque, femme de lettres française († 18 mai 1745).",
+      "source": "https://fr.wikipedia.org/wiki/Louise_Levesque",
       "highlighted": false
     },
     {
-      "year": 1830,
-      "description": "Pierre Cuzacq, géomètre et écrivain français († 3 mai 1903).",
-      "source": "https://fr.wikipedia.org/wiki/Pierre_Cuzacq",
+      "year": 1705,
+      "description": "Thomas Birch, historien britannique († 9 janvier 1766).",
+      "source": "https://fr.wikipedia.org/wiki/Thomas_Birch",
       "highlighted": false
     },
     {
-      "year": 1842,
-      "description": "José-Maria de Heredia, écrivain et poète français († 2 octobre 1905).",
-      "source": "https://fr.wikipedia.org/wiki/Jos%C3%A9-Maria_de_Heredia",
+      "year": 1709,
+      "description": "Louis Dupuy, érudit français († 10 avril 1795).",
+      "source": "https://fr.wikipedia.org/wiki/Louis_Dupuy_(%C3%A9rudit)",
       "highlighted": false
     },
     {
-      "year": 1859,
-      "description": "Fusajirō Yamauchi, fondateur de la société Nintendo († janvier 1940).",
-      "source": "https://fr.wikipedia.org/wiki/Yamauchi_Fusajir%C5%8D",
+      "year": 1726,
+      "description": "Antoine Michel Perrache, sculpteur et ingénieur français († 12 octobre 1779).",
+      "source": "https://fr.wikipedia.org/wiki/Antoine-Michel_Perrache",
       "highlighted": false
     },
     {
-      "year": 1860,
-      "description": "Josef Allram, professeur et écrivain autrichien († 29 décembre 1941).",
-      "source": "https://fr.wikipedia.org/wiki/Josef_Allram",
+      "year": 1743,
+      "description": "Armand Joseph Dubernad, homme d'affaires et homme politique français († 9 mai 1799).",
+      "source": "https://fr.wikipedia.org/wiki/Armand_Joseph_Dubernad",
+      "highlighted": false
+    },
+    {
+      "year": 1743,
+      "description": "Théophile Malo Corret de la Tour d'Auvergne, militaire français († 27 juin 1800).",
+      "source": "https://fr.wikipedia.org/wiki/Th%C3%A9ophile-Malo_de_La_Tour_d'Auvergne-Corret",
+      "highlighted": false
+    },
+    {
+      "year": 1757,
+      "description": "Jean André Valletaux, militaire français († 23 juin 1811).",
+      "source": "https://fr.wikipedia.org/wiki/Jean_Andr%C3%A9_Valletaux",
+      "highlighted": false
+    },
+    {
+      "year": 1760,
+      "description": "Gracchus Babeuf (François Noël Babeuf dit), homme politique et révolutionnaire français († 27 mai 1797).",
+      "source": "https://fr.wikipedia.org/wiki/Gracchus_Babeuf",
+      "highlighted": false
+    },
+    {
+      "year": 1765,
+      "description": "Thomas Attwood, compositeur et organiste britannique († 24 mars 1838).",
+      "source": "https://fr.wikipedia.org/wiki/Thomas_Attwood",
+      "highlighted": false
+    },
+    {
+      "year": 1786,
+      "description": "Thomas Eastoe Abbott (en), poète britannique († 18 février 1854).",
+      "highlighted": false
+    },
+    {
+      "year": 1804,
+      "description": "Franklin Pierce, homme politique et avocat américain, 14e président des États-Unis de 1853 à 1857 († 8 octobre 1869).",
+      "source": "https://fr.wikipedia.org/wiki/Franklin_Pierce",
+      "highlighted": false
+    },
+    {
+      "year": 1810,
+      "description": "Margaret Aylward (en), religieuse catholique et philanthrope irlandaise († 11 octobre 1889).",
+      "highlighted": false
+    },
+    {
+      "year": 1837,
+      "description": "Johannes Diderik van der Waals, physicien néerlandais, prix Nobel de physique 1910 († 8 mars 1923).",
+      "source": "https://fr.wikipedia.org/wiki/Johannes_Diderik_van_der_Waals",
       "highlighted": false
     },
     {
       "year": 1861,
-      "description": "Ranavalona III, reine de Madagascar († 23 mai 1917).",
-      "source": "https://fr.wikipedia.org/wiki/Ranavalona_III",
-      "highlighted": false
-    },
-    {
-      "year": 1863,
-      "description": "Jean-Baptiste Marchand, militaire et explorateur français († 13 janvier 1934).",
-      "source": "https://fr.wikipedia.org/wiki/Jean-Baptiste_Marchand",
-      "highlighted": false
-    },
-    {
-      "year": 1868,
-      "description": "John Nance Garner, homme politique américain († 7 novembre 1967).",
-      "source": "https://fr.wikipedia.org/wiki/John_Nance_Garner",
-      "highlighted": false
-    },
-    {
-      "year": 1869,
-      "description": "André Gide, écrivain français Prix Nobel de littérature en 1947 († 19 février 1951).",
-      "source": "https://fr.wikipedia.org/wiki/Andr%C3%A9_Gide",
-      "highlighted": false
-    },
-    {
-      "year": 1869,
-      "description": "Augusta Gillabert, agricultrice suisse.",
-      "source": "https://fr.wikipedia.org/wiki/Augusta_Gillabert",
+      "description": "Charles Stewart Addis (en), banquier écossais († 14 décembre 1945).",
       "highlighted": false
     },
     {
       "year": 1876,
-      "description": "Pierre Petit de Julleville, prélat français († 10 décembre 1947).",
-      "source": "https://fr.wikipedia.org/wiki/Pierre_Petit_de_Julleville",
+      "description": "Manuel de Falla, compositeur espagnol († 14 novembre 1946).",
+      "source": "https://fr.wikipedia.org/wiki/Manuel_de_Falla",
       "highlighted": false
     },
     {
-      "year": 1877,
-      "description": "Endre Ady, poète et journaliste hongrois († 27 janvier 1919).",
-      "source": "https://fr.wikipedia.org/wiki/Endre_Ady",
+      "year": 1881,
+      "description": "Edward Atkinson, explorateur britannique († 20 février 1929).",
+      "source": "https://fr.wikipedia.org/wiki/Edward_Atkinson",
       "highlighted": false
     },
     {
-      "year": 1877,
-      "description": "Hans Gamper, homme d'affaires suisse († 30 juillet 1930).",
-      "source": "https://fr.wikipedia.org/wiki/Hans_Gamper",
+      "year": 1883,
+      "description": "José Clemente Orozco, peintre et muraliste mexicain († 7 septembre 1949).",
+      "source": "https://fr.wikipedia.org/wiki/Jos%C3%A9_Clemente_Orozco",
       "highlighted": false
     },
     {
-      "year": 1882,
-      "description": "Charles Vildrac, poète et dramaturge français († 25 juin 1971).",
-      "source": "https://fr.wikipedia.org/wiki/Charles_Vildrac",
+      "year": 1887,
+      "description": "Boris Karloff (William Henry Pratt dit), acteur britannique († 2 février 1969).",
+      "source": "https://fr.wikipedia.org/wiki/Boris_Karloff",
+      "highlighted": false
+    },
+    {
+      "year": 1887,
+      "description": "Henry Gwyn Jeffreys Moseley, physicien britannique († 10 août 1915)",
+      "source": "https://fr.wikipedia.org/wiki/Henry_Moseley",
+      "highlighted": false
+    },
+    {
+      "year": 1888,
+      "description": "Adolph « Harpo » Marx, acteur américain de la troupe fratrie des Marx Brothers († 28 septembre 1964).",
+      "source": "https://fr.wikipedia.org/wiki/Harpo_Marx",
       "highlighted": false
     },
     {
       "year": 1890,
-      "description": "Charles de Gaulle, militaire, résistant, constitutionnaliste, cofondateur et premier président de la Ve République française († 9 novembre 1970).",
-      "source": "https://fr.wikipedia.org/wiki/Charles_de_Gaulle",
+      "description": "Lazar Lissitzky, peintre d'avant-garde russe puis soviétique († 30 décembre 1941).",
+      "source": "https://fr.wikipedia.org/wiki/Lazar_Lissitzky",
       "highlighted": false
     },
     {
-      "year": 1892,
-      "description": "Emma Tillman, doyenne américaine de l'humanité pendant quatre jours († 28 janvier 2007).",
-      "source": "https://fr.wikipedia.org/wiki/Emma_Tillman",
+      "year": 1891,
+      "description": "Alexandre Rodtchenko (Александр Михайлович Родченко), dessinateur et photographe russe († 3 décembre 1956).",
+      "source": "https://fr.wikipedia.org/wiki/Alexandre_Rodtchenko",
       "highlighted": false
     },
     {
-      "year": 1897,
-      "description": "John Monk Saunders, scénariste et écrivain américain († 11 mars 1940).",
-      "source": "https://fr.wikipedia.org/wiki/John_Monk_Saunders",
+      "year": 1894,
+      "description": "John Roland Abbey, bibliophile britannique († 24 décembre 1969).",
+      "source": "https://fr.wikipedia.org/wiki/John_Roland_Abbey",
       "highlighted": false
     },
     {
-      "year": 1899,
-      "description": "Hoagy Carmichael, compositeur américain († 27 décembre 1981).",
-      "source": "https://fr.wikipedia.org/wiki/Hoagy_Carmichael",
+      "year": 1898,
+      "description": "Mikhaïl Artamonov (Михаил Илларионович Артамонов), historien et archéologue russe († 31 juillet 1972).",
+      "source": "https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Artamonov",
+      "highlighted": false
+    },
+    {
+      "year": 1900,
+      "description": "Mestre Bimba (Manuel dos Reis Machado dit), capoériste brésilien († 5 février 1974).",
+      "source": "https://fr.wikipedia.org/wiki/Mestre_Bimba",
       "highlighted": false
     },
     {
       "year": 1901,
-      "description": "Joaquín Rodrigo, compositeur espagnol († 6 juillet 1999).",
-      "source": "https://fr.wikipedia.org/wiki/Joaqu%C3%ADn_Rodrigo",
+      "description": "Fernand Fournier-Aubry, aventurier et voyageur français († 20 décembre 1972).",
+      "source": "https://fr.wikipedia.org/wiki/Fernand_Fournier-Aubry",
       "highlighted": false
     },
     {
       "year": 1902,
-      "description": "Albert Leduc, défenseur de hockey sur glace québécois († 31 juillet 1990).",
-      "source": "https://fr.wikipedia.org/wiki/Albert_Leduc",
-      "highlighted": false
-    },
-    {
-      "year": 1902,
-      "description": "Philippe Leclerc de Hauteclocque, militaire français († 28 novembre 1947).",
-      "source": "https://fr.wikipedia.org/wiki/Philippe_Leclerc_de_Hauteclocque",
-      "highlighted": false
-    },
-    {
-      "year": 1904,
-      "description": "Louis Néel, physicien français, prix Nobel de physique en 1970 († 17 novembre 2000).",
-      "source": "https://fr.wikipedia.org/wiki/Louis_N%C3%A9el",
+      "description": "Victor Jory, acteur canadien († 12 février 1982).",
+      "source": "https://fr.wikipedia.org/wiki/Victor_Jory",
       "highlighted": false
     },
     {
       "year": 1907,
-      "description": "Dora Maar, peintre et photographe française († 16 juillet 1997).",
-      "source": "https://fr.wikipedia.org/wiki/Dora_Maar",
+      "description": "Frédéric Hunsinger, résistant français de la police municipale de Colmar († 5 mai 1944).",
+      "source": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Hunsinger",
+      "highlighted": false
+    },
+    {
+      "year": 1912,
+      "description": "Manolo Bienvenida (Manuel Mejías Jiménez dit), matador espagnol († 31 août 1938).",
+      "source": "https://fr.wikipedia.org/wiki/Manolo_Bienvenida",
       "highlighted": false
     },
     {
       "year": 1913,
-      "description": "Benjamin Britten, compositeur britannique († 4 décembre 1976).",
-      "source": "https://fr.wikipedia.org/wiki/Benjamin_Britten",
+      "description": "Jean Chamant, homme politique français († 22 décembre 2010).",
+      "source": "https://fr.wikipedia.org/wiki/Jean_Chamant",
       "highlighted": false
     },
     {
       "year": 1913,
-      "description": "Jacqueline Vaudecrane, patineuse artistique et entraîneuse française devenue centenaire († 27 février 2018).",
-      "source": "https://fr.wikipedia.org/wiki/Jacqueline_Vaudecrane",
+      "description": "René Aleman, haltérophile français († ).",
+      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Aleman",
       "highlighted": false
     },
     {
-      "year": 1914,
-      "description": "Peter Townsend, pilote de chasse britannique, héros de la Seconde Guerre mondiale († 19 juin 1995).",
-      "source": "https://fr.wikipedia.org/wiki/Peter_Townsend",
+      "year": 1915,
+      "description": "John Dehner, acteur américain. († 4 février 1992).",
+      "source": "https://fr.wikipedia.org/wiki/John_Dehner",
       "highlighted": false
     },
     {
-      "year": 1914,
-      "description": "Roy Crowson, entomologiste britannique († 13 mai 1999).",
-      "source": "https://fr.wikipedia.org/wiki/Roy_Crowson",
+      "year": 1916,
+      "description": "Michael Gough, acteur américain († 17 mars 2011).",
+      "source": "https://fr.wikipedia.org/wiki/Michael_Gough",
       "highlighted": false
     },
     {
-      "year": 1917,
-      "description": "Andrew Huxley, biophysicien et physiologiste britannique lauréat du prix Nobel de physiologie ou médecine en 1963 († 30 mai 2012).",
-      "source": "https://fr.wikipedia.org/wiki/Andrew_Huxley",
-      "highlighted": false
-    },
-    {
-      "year": 1921,
-      "description": "Giuseppe Delfino, escrimeur italien, quadruple champion olympique († 10 août 1999).",
-      "source": "https://fr.wikipedia.org/wiki/Giuseppe_Delfino",
-      "highlighted": false
-    },
-    {
-      "year": 1921,
-      "description": "Rodney Dangerfield, acteur et scénariste américain († 5 octobre 2004).",
-      "source": "https://fr.wikipedia.org/wiki/Rodney_Dangerfield",
+      "year": 1920,
+      "description": "Paul Celan (Paul Pessach Antschel ou Ancel dit), poète et traducteur roumano-français d'expression germanophone († 20 avril 1970).",
+      "source": "https://fr.wikipedia.org/wiki/Paul_Celan",
       "highlighted": false
     },
     {
       "year": 1922,
-      "description": "Abdelaziz Mathari, économiste et homme politique tunisien († 20 mai 2004).",
-      "source": "https://fr.wikipedia.org/wiki/Abdelaziz_Mathari",
+      "description": "Manuel Fraga Iribarne, homme politique espagnol († 15 janvier 2012).",
+      "source": "https://fr.wikipedia.org/wiki/Manuel_Fraga",
       "highlighted": false
     },
     {
       "year": 1923,
-      "description": "Arthur Hiller, réalisateur et acteur canadien († 17 août 2016).",
-      "source": "https://fr.wikipedia.org/wiki/Arthur_Hiller",
-      "highlighted": false
-    },
-    {
-      "year": 1923,
-      "description": "Piéral (Pierre Aleyrangues dit), acteur français († 22 août 2003).",
-      "source": "https://fr.wikipedia.org/wiki/Pi%C3%A9ral",
-      "highlighted": false
-    },
-    {
-      "year": 1923,
-      "description": "Rosy Varte, comédienne française († 14 janvier 2012).",
-      "source": "https://fr.wikipedia.org/wiki/Rosy_Varte",
-      "highlighted": false
-    },
-    {
-      "year": 1924,
-      "description": "Geraldine Page, actrice américaine († 13 juin 1987).",
-      "source": "https://fr.wikipedia.org/wiki/Geraldine_Page",
+      "description": "Nadia Gray, actrice française († 13 juin 1994).",
+      "source": "https://fr.wikipedia.org/wiki/Nadia_Gray",
       "highlighted": false
     },
     {
       "year": 1925,
-      "description": "Gunther Schuller compositeur et chef d'orchestre américain († 21 juin 2015).",
-      "source": "https://fr.wikipedia.org/wiki/Gunther_Schuller",
+      "description": "John Alfred « Johnny » Mandel, compositeur et arrangeur musical américain († 29 juin 2020).",
+      "source": "https://fr.wikipedia.org/wiki/Johnny_Mandel",
+      "highlighted": false
+    },
+    {
+      "year": 1925,
+      "description": "José Napoleón Duarte, homme politique salvadorien, président du Salvador de 1984 à 1989 († 23 février 1990).",
+      "source": "https://fr.wikipedia.org/wiki/Jos%C3%A9_Napole%C3%B3n_Duarte",
       "highlighted": false
     },
     {
       "year": 1926,
-      "description": "Lew Burdette, lanceur de baseball américain († 6 février 2007).",
-      "source": "https://fr.wikipedia.org/wiki/Lew_Burdette",
+      "description": "Carlos Semprún Maura, écrivain espagnol († 23 mars 2009).",
+      "source": "https://fr.wikipedia.org/wiki/Carlos_Sempr%C3%BAn_Maura",
+      "highlighted": false
+    },
+    {
+      "year": 1926,
+      "description": "Robert Lee « R.L. » Burnside, chanteur, guitariste et compositeur de blues américain († 1er septembre 2005).",
+      "source": "https://fr.wikipedia.org/wiki/R._L._Burnside",
+      "highlighted": false
+    },
+    {
+      "year": 1927,
+      "description": "Angelo Sodano, prélat italien († 27 mai 2022).",
+      "source": "https://fr.wikipedia.org/wiki/Angelo_Sodano",
+      "highlighted": false
+    },
+    {
+      "year": 1927,
+      "description": "Sybil Jason (en) (née Sybil Jacobson), enfant actrice et chanteuse américaine de naissance sud-africaine († 23 août 2011).",
       "highlighted": false
     },
     {
       "year": 1928,
-      "description": "Maria Esperanza Medrano de Bianchini, laïc vénézuélienne, voyante des apparitions mariales de Betania, en cours de béatification († 7 août 2004).",
-      "source": "https://fr.wikipedia.org/wiki/Maria_Esperanza_Medrano_de_Bianchini",
+      "description": "Jerrold Lewis « Jerry » Bock, compositeur de comédies musicales américain († 3 novembre 2010).",
+      "source": "https://fr.wikipedia.org/wiki/Jerry_Bock",
       "highlighted": false
     },
     {
       "year": 1928,
-      "description": "Philippe Arthuys, musicien et réalisateur français († 6 janvier 2010).",
-      "source": "https://fr.wikipedia.org/wiki/Philippe_Arthuys",
+      "description": "Pierre Étaix, acteur et cinéaste français († 14 octobre 2016).",
+      "source": "https://fr.wikipedia.org/wiki/Pierre_%C3%89taix",
       "highlighted": false
     },
     {
-      "year": 1928,
-      "description": "Rosy Varte, comédienne française († 14 janvier 2012).",
-      "source": "https://fr.wikipedia.org/wiki/Rosy_Varte",
+      "year": 1929,
+      "description": "Georges Lagrange, prélat français, évêque de Gap de 1988 à 2003 († 11 décembre 2014).",
+      "source": "https://fr.wikipedia.org/wiki/Georges_Lagrange_(%C3%A9v%C3%AAque)",
       "highlighted": false
     },
     {
-      "year": 1928,
-      "description": "Teddy Vrignault, humoriste français du duo Les Frères ennemis (disparu le 1er novembre 1984, présumé puis déclaré \"absent\" le 1er novembre 2004 où officiellement †).",
-      "source": "https://fr.wikipedia.org/wiki/Teddy_Vrignault",
+      "year": 1929,
+      "description": "Jacques Couture, prêtre jésuite et homme politique québécois († 10 août 1995).",
+      "source": "https://fr.wikipedia.org/wiki/Jacques_Couture",
       "highlighted": false
     },
     {
       "year": 1930,
-      "description": "Owen Garriott, astronaute américain († 15 avril 2019).",
-      "source": "https://fr.wikipedia.org/wiki/Owen_Garriott",
+      "description": "Herberto Helder, poète portugais († 23 mars 2015).",
+      "source": "https://fr.wikipedia.org/wiki/Herberto_Helder",
+      "highlighted": false
+    },
+    {
+      "year": 1930,
+      "description": "John Aloysius « Jake » McKeon, gérant de baseball américain.",
+      "source": "https://fr.wikipedia.org/wiki/Jack_McKeon",
       "highlighted": false
     },
     {
       "year": 1932,
-      "description": "Robert Vaughn, acteur américain († 11 novembre 2016).",
-      "source": "https://fr.wikipedia.org/wiki/Robert_Vaughn",
+      "description": "Clive Toye (en) (Clive Roy Toye), écrivain et journaliste sportif britannique anglo-américain.",
+      "highlighted": false
+    },
+    {
+      "year": 1932,
+      "description": "Renato Martino, prélat italien.",
+      "source": "https://fr.wikipedia.org/wiki/Renato_Martino",
       "highlighted": false
     },
     {
       "year": 1933,
-      "description": "Philippine de Rothschild dite parfois Philippine Pascal, comédienne principalement au théâtre et personnalité française du monde du vin († 22 août 2014).",
-      "source": "https://fr.wikipedia.org/wiki/Philippine_de_Rothschild",
+      "description": "Clémence DesRochers, humoriste, actrice, scénariste et chanteuse québécoise.",
+      "source": "https://fr.wikipedia.org/wiki/Cl%C3%A9mence_DesRochers",
       "highlighted": false
     },
     {
-      "year": 1936,
-      "description": "Jean-Marie Le Chevallier, homme politique français, ancien maire de Toulon († 30 octobre 2020).",
-      "source": "https://fr.wikipedia.org/wiki/Jean-Marie_Le_Chevallier",
+      "year": 1933,
+      "description": "Krzysztof Penderecki, compositeur et chef d'orchestre polonais († 29 mars 2020).",
+      "source": "https://fr.wikipedia.org/wiki/Krzysztof_Penderecki",
       "highlighted": false
     },
     {
-      "year": 1937,
-      "description": "Lionel Stoléru, haut fonctionnaire et homme politique français, père d'une autre ex-ministre († 1er décembre 2016).",
-      "source": "https://fr.wikipedia.org/wiki/Lionel_Stol%C3%A9ru",
+      "year": 1934,
+      "description": "Lewis Alan « Lew » Hoad, joueur de tennis australien († 3 juillet 1994).",
+      "source": "https://fr.wikipedia.org/wiki/Lew_Hoad",
       "highlighted": false
     },
     {
-      "year": 1937,
-      "description": "Pierre Léna, astrophysicien français.",
-      "source": "https://fr.wikipedia.org/wiki/Pierre_L%C3%A9na",
+      "year": 1935,
+      "description": "Vladislav Volkov (Владислав Николаевич Волков), cosmonaute soviétique († 30 juin 1971).",
+      "source": "https://fr.wikipedia.org/wiki/Vladislav_Volkov",
       "highlighted": false
     },
     {
-      "year": 1937,
-      "description": "René Abjean, compositeur breton et français, veuf de la speakerine brittophone M. Kermar(r)ec.",
-      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Abjean",
+      "year": 1939,
+      "description": "Betty Everett, chanteuse américaine († 19 août 2001).",
+      "source": "https://fr.wikipedia.org/wiki/Betty_Everett",
+      "highlighted": false
+    },
+    {
+      "year": 1939,
+      "description": "Gérard Petipas, navigateur et organisateur normand et français de courses au large.",
+      "source": "https://fr.wikipedia.org/wiki/G%C3%A9rard_Petipas",
+      "highlighted": false
+    },
+    {
+      "year": 1939,
+      "description": "Maurice de Germiny, prélat français.",
+      "source": "https://fr.wikipedia.org/wiki/Maurice_de_Germiny",
       "highlighted": false
     },
     {
       "year": 1940,
-      "description": "Andrzej Żuławski, réalisateur, scénariste et écrivain polonais († 17 février 2016).",
-      "source": "https://fr.wikipedia.org/wiki/Andrzej_%C5%BBu%C5%82awski",
+      "description": "Gösta Pettersson, coureur cycliste suédois.",
+      "source": "https://fr.wikipedia.org/wiki/G%C3%B6sta_Pettersson",
       "highlighted": false
     },
     {
       "year": 1940,
-      "description": "Terry Gilliam, réalisateur américain.",
-      "source": "https://fr.wikipedia.org/wiki/Terry_Gilliam",
+      "description": "Luis Tiant, joueur de baseball cubain.",
+      "source": "https://fr.wikipedia.org/wiki/Luis_Tiant",
       "highlighted": false
     },
     {
       "year": 1941,
-      "description": "Jacques Laperrière, défenseur de hockey sur glace québécois.",
-      "source": "https://fr.wikipedia.org/wiki/Jacques_Laperri%C3%A8re",
+      "description": "Franco Nero, acteur italien.",
+      "source": "https://fr.wikipedia.org/wiki/Franco_Nero",
       "highlighted": false
     },
     {
       "year": 1941,
-      "description": "Jesse Colin Young, chanteur-compositeur et guitariste américain du groupe The Youngbloods.",
-      "source": "https://fr.wikipedia.org/wiki/Jesse_Colin_Young",
+      "description": "Simon Nolet, hockeyeur professionnel québécois.",
+      "source": "https://fr.wikipedia.org/wiki/Simon_Nolet",
       "highlighted": false
     },
     {
       "year": 1942,
-      "description": "Bernard Stora, réalisateur et scénariste français.",
-      "source": "https://fr.wikipedia.org/wiki/Bernard_Stora",
-      "highlighted": false
-    },
-    {
-      "year": 1942,
-      "description": "Guion Bluford, astronaute américain.",
-      "source": "https://fr.wikipedia.org/wiki/Guion_Bluford",
+      "description": "Benny Luke, danseur et acteur afro-américain († 13 janvier 2013).",
+      "source": "https://fr.wikipedia.org/wiki/Benny_Luke",
       "highlighted": false
     },
     {
       "year": 1943,
-      "description": "Billie Jean King, joueuse de tennis américaine.",
-      "source": "https://fr.wikipedia.org/wiki/Billie_Jean_King",
+      "description": "Denis Sassou-Nguesso, président de la République du Congo.",
+      "source": "https://fr.wikipedia.org/wiki/Denis_Sassou-Nguesso",
       "highlighted": false
     },
     {
       "year": 1943,
-      "description": "Jean-Louis Bruguès, prélat français.",
-      "source": "https://fr.wikipedia.org/wiki/Jean-Louis_Brugu%C3%A8s",
-      "highlighted": false
-    },
-    {
-      "year": 1943,
-      "description": "Yvan Cournoyer, hockeyeur canadien.",
-      "source": "https://fr.wikipedia.org/wiki/Yvan_Cournoyer",
+      "description": "Yohanna Petros Mouche, prélat irakien, archevêque syro-catholique de Mossoul depuis 2010.",
+      "source": "https://fr.wikipedia.org/wiki/Yohanna_Petros_Mouche",
       "highlighted": false
     },
     {
       "year": 1944,
-      "description": "Pierre Morissette, évêque québécois.",
-      "source": "https://fr.wikipedia.org/wiki/Pierre_Morissette",
+      "description": "Peter Lindbergh, photographe de mode, portraitiste, et réalisateur allemand († 3 septembre 2019).",
+      "source": "https://fr.wikipedia.org/wiki/Peter_Lindbergh",
       "highlighted": false
     },
     {
       "year": 1945,
-      "description": "Roger Bambuck (Cécilien Alexandre Roger dit), athlète français guadeloupéen, sprinteur recordman puis secrétaire d’État.",
-      "source": "https://fr.wikipedia.org/wiki/Roger_Bambuck",
-      "highlighted": false
-    },
-    {
-      "year": 1945,
-      "description": "Roger Giguère, acteur et marionnettiste québécois.",
-      "source": "https://fr.wikipedia.org/wiki/Roger_Gigu%C3%A8re",
+      "description": "Raúl Rivero, poète et journaliste cubain († 6 novembre 2021).",
+      "source": "https://fr.wikipedia.org/wiki/Ra%C3%BAl_Rivero",
       "highlighted": false
     },
     {
       "year": 1946,
-      "description": "Aston Barrett, musicien jamaïcain.",
-      "source": "https://fr.wikipedia.org/wiki/Aston_Barrett",
+      "description": "Élisabeth Wiener, actrice et chanteuse française.",
+      "source": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_Wiener",
       "highlighted": false
     },
     {
       "year": 1947,
-      "description": "Max Romeo, chanteur jamaïcain.",
-      "source": "https://fr.wikipedia.org/wiki/Max_Romeo",
+      "description": "Jean-Pierre Foucault, animateur de télévision français et marseillais.",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Pierre_Foucault",
       "highlighted": false
     },
     {
       "year": 1948,
-      "description": "Adalberto Álvarez, musicien cubain († 1er septembre 2021).",
-      "source": "https://fr.wikipedia.org/wiki/Adalberto_%C3%81lvarez",
+      "description": "Chantal Nobel (Chantal Bonneau dite), actrice française.",
+      "source": "https://fr.wikipedia.org/wiki/Chantal_Nobel",
+      "highlighted": false
+    },
+    {
+      "year": 1948,
+      "description": "Fadila (Dominique-France Picard dite), veuve du dernier roi d'Égypte.",
+      "source": "https://fr.wikipedia.org/wiki/Dominique-France_Picard",
       "highlighted": false
     },
     {
       "year": 1949,
-      "description": "Olivier Metzner, avocat français († 17 mars 2013).",
-      "source": "https://fr.wikipedia.org/wiki/Olivier_Metzner",
+      "description": "Gilles Delaigue, joueur de rugby à XV français.",
+      "source": "https://fr.wikipedia.org/wiki/Gilles_Delaigue",
+      "highlighted": false
+    },
+    {
+      "year": 1949,
+      "description": "Viktor Poganovsky, cavalier ukrainien, champion olympique.",
+      "source": "https://fr.wikipedia.org/wiki/Viktor_Poganovsky",
       "highlighted": false
     },
     {
       "year": 1950,
-      "description": "Art Sullivan, chanteur belge.",
-      "source": "https://fr.wikipedia.org/wiki/Art_Sullivan",
+      "description": "Jean-François Phliponeau, joueur de rugby à XV français († 8 mai 1976).",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Phliponeau",
       "highlighted": false
     },
     {
       "year": 1951,
-      "description": "Basile de Koch (Bruno Tellenne), humoriste duettiste français avec sa femme, devenus polémistes.",
-      "source": "https://fr.wikipedia.org/wiki/Basile_de_Koch",
-      "highlighted": false
-    },
-    {
-      "year": 1951,
-      "description": "Kent Nagano, chef d’orchestre américain.",
-      "source": "https://fr.wikipedia.org/wiki/Kent_Nagano",
+      "description": "René Charrier, footballeur français.",
+      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Charrier",
       "highlighted": false
     },
     {
       "year": 1952,
-      "description": "José Luis Palomar, matador espagnol.",
-      "source": "https://fr.wikipedia.org/wiki/Jos%C3%A9_Luis_Palomar",
+      "description": "Bernard Morlino, écrivain français.",
+      "source": "https://fr.wikipedia.org/wiki/Bernard_Morlino",
       "highlighted": false
     },
     {
       "year": 1953,
-      "description": "Matija Ljubek, céiste croate, double champion olympique († 11 octobre 2000).",
-      "source": "https://fr.wikipedia.org/wiki/Matija_Ljubek",
+      "description": "Francis Cabrel, auteur, compositeur, interprète chanteur et guitariste français et occitan.",
+      "source": "https://fr.wikipedia.org/wiki/Francis_Cabrel",
       "highlighted": false
     },
     {
       "year": 1954,
-      "description": "Paolo Gentiloni, homme politique italien, président du Conseil italien des ministres puis commissaire européen à partir de 2019.",
-      "source": "https://fr.wikipedia.org/wiki/Paolo_Gentiloni",
-      "highlighted": false
-    },
-    {
-      "year": 1954,
-      "description": "Pascal Bressy, enfant et adolescent comédien français, voix française de \"Mowgli\" dans \"Le livre de la jungle\" adapté en long-métrage animé par les studios Disney.",
-      "source": "https://fr.wikipedia.org/wiki/Pascal_Bressy",
+      "description": "Bruce Hornsby, chanteur, pianiste et compositeur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Bruce_Hornsby",
       "highlighted": false
     },
     {
       "year": 1956,
-      "description": "Bogusław Psujek, athlète polonais († 21 avril 1990).",
-      "source": "https://fr.wikipedia.org/wiki/Bogus%C5%82aw_Psujek",
+      "description": "Dominique Demers, écrivaine québécoise.",
+      "source": "https://fr.wikipedia.org/wiki/Dominique_Demers",
       "highlighted": false
     },
     {
       "year": 1956,
-      "description": "Lawrence Gowan, claviériste et chanteur canadien d'origine écossaise du groupe Styx.",
-      "source": "https://fr.wikipedia.org/wiki/Lawrence_Gowan",
+      "description": "Gaston Mandeville, auteur-compositeur et interprète québécois († 16 juin 1997).",
+      "source": "https://fr.wikipedia.org/wiki/Gaston_Mandeville",
+      "highlighted": false
+    },
+    {
+      "year": 1956,
+      "description": "King Kester Emeneya, auteur-compositeur-interprète de musique et danseur congolais († 13 février 2014).",
+      "source": "https://fr.wikipedia.org/wiki/King_Kester_Emeneya",
+      "highlighted": false
+    },
+    {
+      "year": 1956,
+      "description": "Michel Boutant, homme politique français.",
+      "source": "https://fr.wikipedia.org/wiki/Michel_Boutant",
+      "highlighted": false
+    },
+    {
+      "year": 1956,
+      "description": "Shane Gould, nageuse australienne.",
+      "source": "https://fr.wikipedia.org/wiki/Shane_Gould",
       "highlighted": false
     },
     {
       "year": 1957,
-      "description": "Alan Stern, planétologue et astronome américain.",
-      "source": "https://fr.wikipedia.org/wiki/Alan_Stern",
-      "highlighted": false
-    },
-    {
-      "year": 1957,
-      "description": "Alwyn Morris, céiste canadien champion olympique.",
-      "source": "https://fr.wikipedia.org/wiki/Alwyn_Morris",
+      "description": "Martina Bischof, kayakiste allemande, championne olympique.",
+      "source": "https://fr.wikipedia.org/wiki/Martina_Bischof",
       "highlighted": false
     },
     {
       "year": 1958,
-      "description": "Jamie Lee Curtis, actrice américaine.",
-      "source": "https://fr.wikipedia.org/wiki/Jamie_Lee_Curtis",
+      "description": "Frank Johnson, basketteur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Frank_Johnson",
       "highlighted": false
     },
     {
       "year": 1959,
-      "description": "Jean-Marie Besset, auteur français.",
-      "source": "https://fr.wikipedia.org/wiki/Jean-Marie_Besset",
+      "description": "Dominique Dunne, actrice américaine († 4 novembre 1982).",
+      "source": "https://fr.wikipedia.org/wiki/Dominique_Dunne",
+      "highlighted": false
+    },
+    {
+      "year": 1959,
+      "description": "Maxwell Caulfield, acteur et producteur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Maxwell_Caulfield",
       "highlighted": false
     },
     {
       "year": 1960,
-      "description": "Leos Carax, réalisateur français.",
-      "source": "https://fr.wikipedia.org/wiki/Leos_Carax",
+      "description": "Jane Philpott, femme politique canadienne.",
+      "source": "https://fr.wikipedia.org/wiki/Jane_Philpott",
       "highlighted": false
     },
     {
-      "year": 1961,
-      "description": "Mariel Hemingway, actrice américaine.",
-      "source": "https://fr.wikipedia.org/wiki/Mariel_Hemingway",
+      "year": 1960,
+      "description": "Jean-François Zygel, pianiste français.",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Zygel",
       "highlighted": false
     },
     {
       "year": 1962,
-      "description": "Victor Pelevine, écrivain russe.",
-      "source": "https://fr.wikipedia.org/wiki/Viktor_Pelevine",
+      "description": "Philippe Renaud, céiste français, médaillé olympique.",
+      "source": "https://fr.wikipedia.org/wiki/Philippe_Renaud",
       "highlighted": false
     },
     {
       "year": 1963,
-      "description": "Benoît Sauvageau, homme politique québécois († 28 août 2006).",
-      "source": "https://fr.wikipedia.org/wiki/Beno%C3%AEt_Sauvageau",
-      "highlighted": false
-    },
-    {
-      "year": 1963,
-      "description": "Nova Iriansyah, homme politique indonésien.",
-      "source": "https://fr.wikipedia.org/wiki/Nova_Iriansyah",
-      "highlighted": false
-    },
-    {
-      "year": 1963,
-      "description": "Winsor Harmon, acteur de télévision et chanteur américain.",
-      "source": "https://fr.wikipedia.org/wiki/Winsor_Harmon",
+      "description": "Nicolás Maduro, président du Venezuela depuis 2013.",
+      "source": "https://fr.wikipedia.org/wiki/Nicol%C3%A1s_Maduro",
       "highlighted": false
     },
     {
       "year": 1965,
-      "description": "Mads Mikkelsen, acteur de cinéma et de télévision danois.",
-      "source": "https://fr.wikipedia.org/wiki/Mads_Mikkelsen",
-      "highlighted": false
-    },
-    {
-      "year": 1965,
-      "description": "Nicolas Moreau-Delacquis, écrivain français.",
-      "source": "https://fr.wikipedia.org/wiki/Nicolas_Moreau-Delacquis",
+      "description": "Rodion Gataullin, athlète soviétique, spécialiste du saut à la perche.",
+      "source": "https://fr.wikipedia.org/wiki/Rodion_Gataullin",
       "highlighted": false
     },
     {
       "year": 1966,
-      "description": "Anne Brochet, actrice française.",
-      "source": "https://fr.wikipedia.org/wiki/Anne_Brochet",
+      "description": "Michelle Gomez, actrice écossaise.",
+      "source": "https://fr.wikipedia.org/wiki/Michelle_Gomez",
       "highlighted": false
     },
     {
       "year": 1966,
-      "description": "Jean-Michel Anctil, humoriste, acteur et animateur de radio québécois.",
-      "source": "https://fr.wikipedia.org/wiki/Jean-Michel_Anctil",
-      "highlighted": false
-    },
-    {
-      "year": 1966,
-      "description": "Laurent Camiade, évêque français de Cahors",
-      "source": "https://fr.wikipedia.org/wiki/Laurent_Camiade",
+      "description": "Vincent Cassel (Vincent Crochon dit), acteur français.",
+      "source": "https://fr.wikipedia.org/wiki/Vincent_Cassel",
       "highlighted": false
     },
     {
       "year": 1967,
-      "description": "Boris Becker, joueur de tennis germano-monégasque.",
-      "source": "https://fr.wikipedia.org/wiki/Boris_Becker",
-      "highlighted": false
-    },
-    {
-      "year": 1967,
-      "description": "Mark Ruffalo, acteur américain.",
-      "source": "https://fr.wikipedia.org/wiki/Mark_Ruffalo",
-      "highlighted": false
-    },
-    {
-      "year": 1968,
-      "description": "Irina Privalova, athlète russe, spécialiste du sprint et du sprint long, championne olympique du 400 m haies.",
-      "source": "https://fr.wikipedia.org/wiki/Irina_Privalova",
-      "highlighted": false
-    },
-    {
-      "year": 1968,
-      "description": "Sidse Babett Knudsen, actrice danoise.",
-      "source": "https://fr.wikipedia.org/wiki/Sidse_Babett_Knudsen",
+      "description": "Christophe Cocard, footballeur français.",
+      "source": "https://fr.wikipedia.org/wiki/Christophe_Cocard",
       "highlighted": false
     },
     {
       "year": 1969,
-      "description": "Marjane Satrapi, auteure de bande dessinée française d'origine iranienne.",
-      "source": "https://fr.wikipedia.org/wiki/Marjane_Satrapi",
+      "description": "Olivier Beretta, pilote de F1 et de courses automobile d'endurance monégasque.",
+      "source": "https://fr.wikipedia.org/wiki/Olivier_Beretta",
+      "highlighted": false
+    },
+    {
+      "year": 1970,
+      "description": "Isabelle Bouysse, danseuse, comédienne et animatrice française.",
+      "source": "https://fr.wikipedia.org/wiki/Isabelle_Bouysse",
       "highlighted": false
     },
     {
       "year": 1972,
-      "description": "Xavier Fagnon, comédien français.",
-      "source": "https://fr.wikipedia.org/wiki/Xavier_Fagnon",
+      "description": "Alexis Hénon, comédien, auteur et metteur en scène français.",
+      "source": "https://fr.wikipedia.org/wiki/Alexis_H%C3%A9non",
       "highlighted": false
     },
     {
-      "year": 1973,
-      "description": "Chadwick Trujillo, astronome américain.",
-      "source": "https://fr.wikipedia.org/wiki/Chadwick_Trujillo",
-      "highlighted": false
-    },
-    {
-      "year": 1974,
-      "description": "David Pelletier, patineur canadien.",
-      "source": "https://fr.wikipedia.org/wiki/David_Pelletier",
+      "year": 1972,
+      "description": "Veronica Avluv, actrice pornographique américaine.",
+      "source": "https://fr.wikipedia.org/wiki/Veronica_Avluv",
       "highlighted": false
     },
     {
       "year": 1974,
-      "description": "Fathimath Dhiyana Saeed, juriste et diplomate maldivienne.",
-      "source": "https://fr.wikipedia.org/wiki/Fathimath_Dhiyana_Saeed",
-      "highlighted": false
-    },
-    {
-      "year": 1974,
-      "description": "Joe Nathan, lanceur de baseball américain.",
-      "source": "https://fr.wikipedia.org/wiki/Joe_Nathan",
+      "description": "Saku Koivu, hockeyeur finlandais.",
+      "source": "https://fr.wikipedia.org/wiki/Saku_Koivu",
       "highlighted": false
     },
     {
       "year": 1975,
-      "description": "Aiko, chanteuse japonaise.",
-      "source": "https://fr.wikipedia.org/wiki/Aiko_(chanteuse)",
+      "description": "Page Kennedy, acteur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Page_Kennedy",
       "highlighted": false
     },
     {
       "year": 1976,
-      "description": "Fred Pellerin, conteur, scénariste et auteur québécois.",
-      "source": "https://fr.wikipedia.org/wiki/Fred_Pellerin",
+      "description": "Joseph « Joe » Sumner, chanteur britannique, chanteur du groupe Fiction Plane.",
+      "source": "https://fr.wikipedia.org/wiki/Joe_Sumner",
       "highlighted": false
     },
     {
       "year": 1976,
-      "description": "Torsten Frings, footballeur allemand.",
-      "source": "https://fr.wikipedia.org/wiki/Torsten_Frings",
-      "highlighted": false
-    },
-    {
-      "year": 1976,
-      "description": "Ville Valo chanteur finlandais du groupe HIM.",
-      "source": "https://fr.wikipedia.org/wiki/Ville_Valo",
+      "description": "Tony Renna, pilote de courses automobile américain († 22 octobre 2003).",
+      "source": "https://fr.wikipedia.org/wiki/Tony_Renna",
       "highlighted": false
     },
     {
       "year": 1977,
-      "description": "David Clinger, cycliste sur route américain.",
-      "source": "https://fr.wikipedia.org/wiki/David_Clinger",
+      "description": "Jean-Baptiste Élissalde, joueur de rugby français.",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Baptiste_%C3%89lissalde",
       "highlighted": false
     },
     {
       "year": 1978,
-      "description": "Francis Obikwelu, athlète portugais.",
-      "source": "https://fr.wikipedia.org/wiki/Francis_Obikwelu",
+      "description": "Hugo St-Cyr, acteur et animateur québécois († 24 septembre 2015).",
+      "source": "https://fr.wikipedia.org/wiki/Hugo_St-Cyr",
       "highlighted": false
     },
     {
       "year": 1978,
-      "description": "Mélanie Doutey, actrice française.",
-      "source": "https://fr.wikipedia.org/wiki/M%C3%A9lanie_Doutey",
+      "description": "Robert Sassone, cycliste sur piste et sur route français († 21 janvier 2016).",
+      "source": "https://fr.wikipedia.org/wiki/Robert_Sassone",
+      "highlighted": false
+    },
+    {
+      "year": 1978,
+      "description": "Terrence Trammell, athlète de haies américain.",
+      "source": "https://fr.wikipedia.org/wiki/Terrence_Trammell",
+      "highlighted": false
+    },
+    {
+      "year": 1980,
+      "description": "Jonathan Papelbon, joueur de baseball américain.",
+      "source": "https://fr.wikipedia.org/wiki/Jonathan_Papelbon",
       "highlighted": false
     },
     {
       "year": 1981,
-      "description": "Seweryn Gancarczyk, footballeur polonais.",
-      "source": "https://fr.wikipedia.org/wiki/Seweryn_Gancarczyk",
-      "highlighted": false
-    },
-    {
-      "year": 1981,
-      "description": "Song Hye-kyo, actrice et mannequin sud-coréenne.",
-      "source": "https://fr.wikipedia.org/wiki/Song_Hye-kyo",
-      "highlighted": false
-    },
-    {
-      "year": 1981,
-      "description": "Stefan Mücke, pilote de courses automobile allemand.",
-      "source": "https://fr.wikipedia.org/wiki/Stefan_M%C3%BCcke",
+      "description": "Guillermo Guiz, humoriste et chroniqueur belge.",
+      "source": "https://fr.wikipedia.org/wiki/Guillermo_Guiz",
       "highlighted": false
     },
     {
       "year": 1982,
-      "description": "Chen Zhong, taekwondoïste chinoise, double championne olympique.",
-      "source": "https://fr.wikipedia.org/wiki/Chen_Zhong",
+      "description": "Asafa Powell, athlète jamaïcain.",
+      "source": "https://fr.wikipedia.org/wiki/Asafa_Powell",
       "highlighted": false
     },
     {
       "year": 1982,
-      "description": "Isild Le Besco, actrice française.",
-      "source": "https://fr.wikipedia.org/wiki/Isild_Le_Besco",
+      "description": "Colby Armstrong, hockeyeur professionnel canadien.",
+      "source": "https://fr.wikipedia.org/wiki/Colby_Armstrong",
       "highlighted": false
     },
     {
       "year": 1982,
-      "description": "Mathieu Bodmer, footballeur français.",
-      "source": "https://fr.wikipedia.org/wiki/Mathieu_Bodmer",
+      "description": "Saïd Haddou, coureur cycliste français.",
+      "source": "https://fr.wikipedia.org/wiki/Sa%C3%AFd_Haddou",
       "highlighted": false
     },
     {
       "year": 1983,
-      "description": "Peter Niemeyer, footballeur allemand.",
-      "source": "https://fr.wikipedia.org/wiki/Peter_Niemeyer",
+      "description": "Alain Koffi, basketteur français.",
+      "source": "https://fr.wikipedia.org/wiki/Alain_Koffi",
+      "highlighted": false
+    },
+    {
+      "year": 1983,
+      "description": "Emma Daumas (Manuelle Daumas dite), chanteuse française.",
+      "source": "https://fr.wikipedia.org/wiki/Emma_Daumas",
       "highlighted": false
     },
     {
       "year": 1984,
-      "description": "Kate Ground, mannequin canadien.",
-      "highlighted": false
-    },
-    {
-      "year": 1984,
-      "description": "Kevyn Ista, cycliste sur route belge.",
-      "source": "https://fr.wikipedia.org/wiki/Kevyn_Ista",
-      "highlighted": false
-    },
-    {
-      "year": 1984,
-      "description": "Scarlett Johansson, actrice américaine.",
-      "source": "https://fr.wikipedia.org/wiki/Scarlett_Johansson",
-      "highlighted": false
-    },
-    {
-      "year": 1984,
-      "description": "Siti Nordiana, actrice et chanteuse malaisienne.",
-      "source": "https://fr.wikipedia.org/wiki/Siti_Nordiana",
-      "highlighted": false
-    },
-    {
-      "year": 1985,
-      "description": "Asamoah Gyan, footballeur ghanéen.",
-      "source": "https://fr.wikipedia.org/wiki/Asamoah_Gyan",
-      "highlighted": false
-    },
-    {
-      "year": 1985,
-      "description": "Thomas Roussel, hockeyeur sur glace français.",
-      "source": "https://fr.wikipedia.org/wiki/Thomas_Roussel_(hockey_sur_glace)",
+      "description": "Lucas Grabeel, chanteur et acteur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Lucas_Grabeel",
       "highlighted": false
     },
     {
       "year": 1986,
-      "description": "Andrew James West, acteur américain.",
-      "source": "https://fr.wikipedia.org/wiki/Andrew_James_West",
+      "description": "Alexandra Rosenfeld, Miss France 2006 et Miss Europe 2006.",
+      "source": "https://fr.wikipedia.org/wiki/Alexandra_Rosenfeld",
       "highlighted": false
     },
     {
       "year": 1986,
-      "description": "Oscar Pistorius, athlète sud-africain de sprint « paralympique » (emprisonné et condamné).",
-      "source": "https://fr.wikipedia.org/wiki/Oscar_Pistorius",
+      "description": "Handgod Abraham, poète haïtien.",
+      "source": "https://fr.wikipedia.org/wiki/Handgod_Abraham",
       "highlighted": false
     },
     {
       "year": 1987,
-      "description": "Marouane Fellaini, footballeur belge.",
-      "source": "https://fr.wikipedia.org/wiki/Marouane_Fellaini",
+      "description": "Caroline Pizzala, footballeuse française.",
+      "source": "https://fr.wikipedia.org/wiki/Caroline_Pizzala",
+      "highlighted": false
+    },
+    {
+      "year": 1987,
+      "description": "Nicklas Backstrom, hockeyeur sur glace suédois.",
+      "source": "https://fr.wikipedia.org/wiki/Nicklas_B%C3%A4ckstr%C3%B6m",
       "highlighted": false
     },
     {
       "year": 1988,
-      "description": "Drew Pomeranz, joueur de baseball américain.",
-      "source": "https://fr.wikipedia.org/wiki/Drew_Pomeranz",
+      "description": "Andrew Talansky, cycliste sur route américain.",
+      "source": "https://fr.wikipedia.org/wiki/Andrew_Talansky",
       "highlighted": false
     },
     {
       "year": 1988,
-      "description": "Jamie Campbell Bower, acteur, chanteur et mannequin britannique.",
-      "source": "https://fr.wikipedia.org/wiki/Jamie_Campbell_Bower",
-      "highlighted": false
-    },
-    {
-      "year": 1988,
-      "description": "Oleg Chen, haltérophile russe.",
-      "source": "https://fr.wikipedia.org/wiki/Oleg_Chen",
+      "description": "Jens Keukeleire, cycliste sur route belge.",
+      "source": "https://fr.wikipedia.org/wiki/Jens_Keukeleire",
       "highlighted": false
     },
     {
       "year": 1989,
-      "description": "Chris Smalling, footballeur anglais.",
-      "source": "https://fr.wikipedia.org/wiki/Chris_Smalling",
-      "highlighted": false
-    },
-    {
-      "year": 1989,
-      "description": "Dorian Lévêque, footballeur français.",
-      "source": "https://fr.wikipedia.org/wiki/Dorian_L%C3%A9v%C3%AAque",
+      "description": "Rachel Moret, joueuse de tennis de table suisse.",
+      "source": "https://fr.wikipedia.org/wiki/Rachel_Moret",
       "highlighted": false
     },
     {
       "year": 1990,
-      "description": "Jayathma Wickramanayake, militante srilankaise et fonctionnaire des Nations unies.",
-      "source": "https://fr.wikipedia.org/wiki/Jayathma_Wickramanayake",
-      "highlighted": false
-    },
-    {
-      "year": 1991,
-      "description": "Sébastien Bézy, joueur de rugby à XV français.",
-      "source": "https://fr.wikipedia.org/wiki/S%C3%A9bastien_B%C3%A9zy",
+      "description": "Maxime Courby, basketteur français.",
+      "source": "https://fr.wikipedia.org/wiki/Maxime_Courby",
       "highlighted": false
     },
     {
       "year": 1992,
-      "description": "Vladislav Namestnikov, hockeyeur sur glace russo-américain.",
-      "source": "https://fr.wikipedia.org/wiki/Vladislav_Namestnikov",
+      "description": "Destiny Hope « Miley » Cyrus, chanteuse et actrice américaine.",
+      "source": "https://fr.wikipedia.org/wiki/Miley_Cyrus",
       "highlighted": false
     },
     {
-      "year": 1993,
-      "description": "Adèle Exarchopoulos, actrice française.",
-      "source": "https://fr.wikipedia.org/wiki/Ad%C3%A8le_Exarchopoulos",
+      "year": 1992,
+      "description": "Gabriel Landeskog, hockeyeur professionnel suédois.",
+      "source": "https://fr.wikipedia.org/wiki/Gabriel_Landeskog",
       "highlighted": false
     },
     {
-      "year": 2000,
-      "description": "Mohammed Dawood, footballeur irakien.",
-      "source": "https://fr.wikipedia.org/wiki/Mohammed_Dawood",
+      "year": 1995,
+      "description": "Christopher Velez Muñoz, chanteur américain du boys band CNCO.",
+      "source": "https://fr.wikipedia.org/wiki/CNCO",
+      "highlighted": false
+    },
+    {
+      "year": 1998,
+      "description": "Bradley Steven Perry, acteur américain.",
+      "source": "https://fr.wikipedia.org/wiki/Bradley_Steven_Perry",
       "highlighted": false
     }
   ],
   "deaths": [
     {
-      "year": 365,
-      "description": "Félix II, antipape (° inconnue).",
-      "source": "https://fr.wikipedia.org/wiki/F%C3%A9lix_II",
+      "year": 615,
+      "description": "Colomban de Luxeuil, moine irlandais (° vers 543 ?).",
+      "source": "https://fr.wikipedia.org/wiki/Colomban_de_Luxeuil",
       "highlighted": false
     },
     {
-      "year": 1249,
-      "description": "Malik al-Salih Ayyoub, sultan d'Égypte et émir de Damas (° 5 novembre 1205).",
-      "source": "https://fr.wikipedia.org/wiki/Malik_al-Salih_Ayyoub",
+      "year": 955,
+      "description": "Eadred, roi d'Angleterre de 946 à 955 (° entre 920 et 925).",
+      "source": "https://fr.wikipedia.org/wiki/Eadred",
       "highlighted": false
     },
     {
-      "year": 1286,
-      "description": "Éric V, roi de Danemark (° 1249).",
-      "source": "https://fr.wikipedia.org/wiki/%C3%89ric_V_(roi_de_Danemark)",
+      "year": 985,
+      "description": "Aligern, abbé du Mont-Cassin (° vers 915).",
+      "source": "https://fr.wikipedia.org/wiki/Aligern_(abb%C3%A9)",
       "highlighted": false
     },
     {
-      "year": 1617,
-      "description": "Ahmed Ier, sultan ottoman (° 18 avril 1590).",
-      "source": "https://fr.wikipedia.org/wiki/Ahmed_Ier",
+      "year": 1227,
+      "description": "Lech le Blanc, duc de Pologne (° 1186 ou 1187).",
+      "source": "https://fr.wikipedia.org/wiki/Lech_le_Blanc",
       "highlighted": false
     },
     {
-      "year": 1718,
-      "description": "Barbe Noire, pirate anglais (° v. 1680).",
-      "source": "https://fr.wikipedia.org/wiki/Barbe_Noire",
+      "year": 1246,
+      "description": "Richard de Barking (en), abbé de Westminster.",
+      "source": "https://fr.wikipedia.org/wiki/Abbaye_de_Westminster",
       "highlighted": false
     },
     {
-      "year": 1878,
-      "description": "Sándor Rózsa, hors-la-loi et bandit de grand chemin (betyár) hongrois (° 10 juillet 1813).",
-      "source": "https://fr.wikipedia.org/wiki/S%C3%A1ndor_R%C3%B3zsa",
+      "year": 1407,
+      "description": "Louis Ier d'Orléans, prince français (° 13 mars 1372).",
+      "source": "https://fr.wikipedia.org/wiki/Louis_Ier_d'Orl%C3%A9ans",
+      "highlighted": false
+    },
+    {
+      "year": 1471,
+      "description": "John Chadworth (en), évêque de Lincoln.",
+      "source": "https://fr.wikipedia.org/wiki/%C3%89v%C3%AAque_de_Lincoln",
+      "highlighted": false
+    },
+    {
+      "year": 1572,
+      "description": "Agnolo di Cosimo di Mariano dit Bronzino, peintre florentin (° 17 novembre 1503).",
+      "source": "https://fr.wikipedia.org/wiki/Bronzino",
+      "highlighted": false
+    },
+    {
+      "year": 1585,
+      "description": "Thomas Tallis, compositeur et organiste anglais (° vers 1505).",
+      "source": "https://fr.wikipedia.org/wiki/Thomas_Tallis",
+      "highlighted": false
+    },
+    {
+      "year": 1590,
+      "description": "André Thevet, explorateur et écrivain français (° vers 1502).",
+      "source": "https://fr.wikipedia.org/wiki/Andr%C3%A9_Thevet",
+      "highlighted": false
+    },
+    {
+      "year": 1682,
+      "description": "Claude Gellée dit Le Lorrain, peintre, dessinateur et graveur lorrain (° vers 1600).",
+      "source": "https://fr.wikipedia.org/wiki/Claude_Gell%C3%A9e",
+      "highlighted": false
+    },
+    {
+      "year": 1685,
+      "description": "Bernard de Gomme, ingénieur militaire néerlandais (° 1620).",
+      "source": "https://fr.wikipedia.org/wiki/Bernard_de_Gomme",
+      "highlighted": false
+    },
+    {
+      "year": 1694,
+      "description": "Jean Talon, premier intendant de la Nouvelle-France (° baptisé le 8 janvier 1626).",
+      "source": "https://fr.wikipedia.org/wiki/Jean_Talon",
+      "highlighted": false
+    },
+    {
+      "year": 1699,
+      "description": "Joseph Beaumont (en), poète et prélat anglais (° 13 mars 1616).",
+      "highlighted": false
+    },
+    {
+      "year": 1726,
+      "description": "Thomas Tudway (en), organiste et compositeur anglais (° vers 1656).",
+      "source": "https://fr.wikipedia.org/wiki/1656",
+      "highlighted": false
+    },
+    {
+      "year": 1757,
+      "description": "James Dodson, mathématicien anglais (° vers 1705).",
+      "source": "https://fr.wikipedia.org/wiki/James_Dodson",
+      "highlighted": false
+    },
+    {
+      "year": 1770,
+      "description": "Matthias Mawson, évêque d'Ely (° baptisé le 19 juillet 1683).",
+      "source": "https://fr.wikipedia.org/wiki/Matthias_Mawson",
+      "highlighted": false
+    },
+    {
+      "year": 1793,
+      "description": "Claude Antoine Capon de Château-Thierry, général de la Révolution française guillotiné (° 13 juillet 1722).",
+      "source": "https://fr.wikipedia.org/wiki/Claude_Antoine_Capon_de_Ch%C3%A2teau-Thierry",
+      "highlighted": false
+    },
+    {
+      "year": 1798,
+      "description": "David Samwell (en), médecin et poète gallois (° 15 octobre 1751).",
+      "highlighted": false
+    },
+    {
+      "year": 1833,
+      "description": "Jean-Baptiste Jourdan, militaire français et maréchal de France (° 29 avril 1762).",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Baptiste_Jourdan",
+      "highlighted": false
+    },
+    {
+      "year": 1834,
+      "description": "Julie Philipault, peintre française (° 9 mai 1780)",
+      "source": "https://fr.wikipedia.org/wiki/Julie_Philipault",
+      "highlighted": false
+    },
+    {
+      "year": 1840,
+      "description": "Louis-Gabriel de Bonald, écrivain français (° 2 octobre 1754).",
+      "source": "https://fr.wikipedia.org/wiki/Louis_de_Bonald",
+      "highlighted": false
+    },
+    {
+      "year": 1848,
+      "description": "John Barrow, explorateur et administrateur britannique (° 19 juin 1764).",
+      "source": "https://fr.wikipedia.org/wiki/John_Barrow_(1764-1848)",
+      "highlighted": false
+    },
+    {
+      "year": 1858,
+      "description": "Edmund Lyons, amiral britannique (° 29 novembre 1790).",
+      "source": "https://fr.wikipedia.org/wiki/Edmund_Lyons",
+      "highlighted": false
+    },
+    {
+      "year": 1861,
+      "description": "Salvatore Viale, poète français (° 6 septembre 1787).",
+      "source": "https://fr.wikipedia.org/wiki/Salvatore_Viale",
+      "highlighted": false
+    },
+    {
+      "year": 1863,
+      "description": "George Jerrard, mathématicien britannique (° 25 novembre 1804).",
+      "source": "https://fr.wikipedia.org/wiki/George_Jerrard",
+      "highlighted": false
+    },
+    {
+      "year": 1866,
+      "description": "Paul Gavarni, aquarelliste et dessinateur français (° 13 janvier 1804).",
+      "source": "https://fr.wikipedia.org/wiki/Paul_Gavarni",
+      "highlighted": false
+    },
+    {
+      "year": 1867,
+      "description": "les martyrs de Manchester.",
+      "source": "https://fr.wikipedia.org/wiki/Martyrs_de_Manchester",
       "highlighted": false
     },
     {
       "year": 1886,
-      "description": "Jules Rieffel, ingénieur agronome français (° 5 décembre 1806).",
-      "source": "https://fr.wikipedia.org/wiki/Jules_Rieffel",
+      "description": "Leopold Kompert, écrivain autrichien (° 15 mai 1822).",
+      "source": "https://fr.wikipedia.org/wiki/Leopold_Kompert",
       "highlighted": false
     },
     {
       "year": 1886,
-      "description": "Mary Boykin Chesnut, écrivaine américaine (° 31 mars 1823).",
-      "source": "https://fr.wikipedia.org/wiki/Mary_Boykin_Chesnut",
+      "description": "Louis-Charles-Emmanuel de Coëtlogon, militaire et écrivain français (° 10 août 1814).",
+      "source": "https://fr.wikipedia.org/wiki/Louis-Charles-Emmanuel_de_Co%C3%ABtlogon",
       "highlighted": false
     },
     {
-      "year": 1893,
-      "description": "Charles-Auguste Fraikin, sculpteur statuaire belge académicien ès beaux-arts, conservateur de musée (° 14 juin 1817).",
-      "source": "https://fr.wikipedia.org/wiki/Charles-Auguste_Fraikin",
+      "year": 1886,
+      "description": "Marguerite Bellanger, actrice française (° 9 juin 1838).",
+      "source": "https://fr.wikipedia.org/wiki/Marguerite_Bellanger",
       "highlighted": false
     },
     {
-      "year": 1900,
-      "description": "« Torerito » (Rafael Bejarano Carrasco dit), matador espagnol (° 5 décembre 1863).",
-      "source": "https://fr.wikipedia.org/wiki/Torerito_(Rafael_Bejarano_Carrasco)",
+      "year": 1886,
+      "description": "Omer Ablay, général belge (° 16 février 1801).",
+      "source": "https://fr.wikipedia.org/wiki/Omer_Ablay",
       "highlighted": false
     },
     {
-      "year": 1900,
-      "description": "Arthur Sullivan, compositeur britannique d’opérettes (° 13 mai 1842).",
-      "source": "https://fr.wikipedia.org/wiki/Arthur_Sullivan",
+      "year": 1887,
+      "description": "Paul Bernard Labrosse-Luuyt, ingénieur français (° 15 décembre 1825).",
+      "source": "https://fr.wikipedia.org/wiki/Paul_Bernard_Labrosse-Luuyt",
       "highlighted": false
     },
     {
-      "year": 1907,
-      "description": "Asaph Hall, astronome américain (° 15 octobre 1829).",
-      "source": "https://fr.wikipedia.org/wiki/Asaph_Hall",
+      "year": 1890,
+      "description": "Guillaume III, roi des Pays-Bas et grand-duc de Luxembourg de 1849 à 1890 (° 19 février 1817).",
+      "source": "https://fr.wikipedia.org/wiki/Guillaume_III_(roi_des_Pays-Bas)",
       "highlighted": false
     },
     {
-      "year": 1916,
-      "description": "Jack London, écrivain américain (° 12 janvier 1876).",
-      "source": "https://fr.wikipedia.org/wiki/Jack_London",
+      "year": 1902,
+      "description": "Walter Reed, médecin militaire américain (° 13 septembre 1851).",
+      "source": "https://fr.wikipedia.org/wiki/Walter_Reed",
       "highlighted": false
     },
     {
-      "year": 1943,
-      "description": "Léa Maury, résistante française (° 24 mars 1905).",
-      "source": "https://fr.wikipedia.org/wiki/L%C3%A9a_Maury",
+      "year": 1910,
+      "description": "Alfred Ander.",
+      "source": "https://fr.wikipedia.org/wiki/Alfred_Ander",
       "highlighted": false
     },
     {
-      "year": 1943,
-      "description": "Lorenz Hart, parolier et librettiste américain (° 2 mai 1895).",
-      "source": "https://fr.wikipedia.org/wiki/Lorenz_Hart",
+      "year": 1926,
+      "description": "Gueorgui Jacobson, entomologiste russe (° 19 janvier 1871).",
+      "source": "https://fr.wikipedia.org/wiki/Gueorgui_Jacobson",
+      "highlighted": false
+    },
+    {
+      "year": 1937,
+      "description": "George Albert Boulenger, zoologiste britannique (° 19 octobre 1858).",
+      "source": "https://fr.wikipedia.org/wiki/George_Albert_Boulenger",
+      "highlighted": false
+    },
+    {
+      "year": 1937,
+      "description": "Jagadish Chandra Bose (জগদীশ চন্দ্র বসু), physicien indien (° 30 novembre 1858).",
+      "source": "https://fr.wikipedia.org/wiki/Jagadish_Chandra_Bose",
+      "highlighted": false
+    },
+    {
+      "year": 1941,
+      "description": "Carola Lorenzini, aviatrice argentine (° 15 août 1899).",
+      "source": "https://fr.wikipedia.org/wiki/Carola_Lorenzini",
       "highlighted": false
     },
     {
       "year": 1944,
-      "description": "Arthur Eddington, astronome et physicien britannique (° 28 décembre 1882).",
-      "source": "https://fr.wikipedia.org/wiki/Arthur_Eddington",
+      "description": "Albert Zimmer, résistant français et combattant de la 2e DB mort, à quelques kilomètres de chez lui, en participant à la libération de Strasbourg (°12 juillet 1922).",
+      "source": "https://fr.wikipedia.org/wiki/Albert_Zimmer",
       "highlighted": false
     },
     {
-      "year": 1955,
-      "description": "Guy Ropartz, compositeur français (° 15 juin 1864).",
-      "source": "https://fr.wikipedia.org/wiki/Guy_Ropartz",
+      "year": 1944,
+      "description": "Robert Fleig, résistant français pendant la Seconde Guerre mondiale, qui guide la 2e division blindée lors de la libération de Strasbourg (°28 juin 1893).",
+      "source": "https://fr.wikipedia.org/wiki/Robert_Fleig",
       "highlighted": false
     },
     {
-      "year": 1962,
-      "description": "René Coty, chef d'État français, président de la IVe république française (° 20 mars 1882).",
-      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Coty",
+      "year": 1959,
+      "description": "William McNair Snadden, homme politique britannique (° 15 janvier 1896).",
+      "source": "https://fr.wikipedia.org/wiki/William_McNair_Snadden",
       "highlighted": false
     },
     {
-      "year": 1963,
-      "description": "Aldous Huxley, écrivain britannique (° 26 juillet 1894).",
-      "source": "https://fr.wikipedia.org/wiki/Aldous_Huxley",
+      "year": 1965,
+      "description": "Élisabeth en Bavière, troisième reine des Belges, épouse du roi Albert Ier (° 25 juillet 1876).",
+      "source": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_en_Bavi%C3%A8re_(1876-1965)",
       "highlighted": false
     },
     {
-      "year": 1963,
-      "description": "Clive Staples Lewis, écrivain britannique (° 29 novembre 1898).",
-      "source": "https://fr.wikipedia.org/wiki/C._S._Lewis",
+      "year": 1966,
+      "description": "Seán T. O'Kelly, homme politique irlandais, président de l’Irlande de 1945 à 1959 (° 25 juin 1882).",
+      "source": "https://fr.wikipedia.org/wiki/Se%C3%A1n_T._O'Kelly",
       "highlighted": false
     },
     {
-      "year": 1963,
-      "description": "J. D. Tippit, officier de police américain (° 18 septembre 1924).",
-      "source": "https://fr.wikipedia.org/wiki/J._D._Tippit",
+      "year": 1970,
+      "description": "Yusuf Ishak, journaliste et homme politique singapourien, président de Singapour de 1965 à 1970 (° 12 août 1910).",
+      "source": "https://fr.wikipedia.org/wiki/Yusof_Ishak",
       "highlighted": false
     },
     {
-      "year": 1963,
-      "description": "John Fitzgerald Kennedy, 35e président des États-Unis, assassiné (° 29 mai 1917).",
-      "source": "https://fr.wikipedia.org/wiki/John_Fitzgerald_Kennedy",
+      "year": 1973,
+      "description": "Claire Dodd, Ziegfeld girl et actrice américaine (° 29 décembre 1911).",
+      "source": "https://fr.wikipedia.org/wiki/Claire_Dodd",
       "highlighted": false
     },
     {
-      "year": 1972,
-      "description": "Raymond Souplex, acteur et chansonnier français (° 1er juin 1901).",
-      "source": "https://fr.wikipedia.org/wiki/Raymond_Souplex",
+      "year": 1973,
+      "description": "Sessue Hayakawa (早川 雪洲), acteur et cinéaste japonais (° 10 juin 1889).",
+      "source": "https://fr.wikipedia.org/wiki/Sessue_Hayakawa",
       "highlighted": false
     },
     {
-      "year": 1980,
-      "description": "Jules Léger, diplomate et homme politique canadien, 21e gouverneur général du Canada (° 4 avril 1913).",
-      "source": "https://fr.wikipedia.org/wiki/Jules_L%C3%A9ger",
+      "year": 1974,
+      "description": "Cornelius Ryan, journaliste et écrivain américain (° 5 juin 1920).",
+      "source": "https://fr.wikipedia.org/wiki/Cornelius_Ryan",
       "highlighted": false
     },
     {
-      "year": 1980,
-      "description": "Mae West, actrice américaine (° 17 août 1893).",
-      "source": "https://fr.wikipedia.org/wiki/Mae_West",
+      "year": 1976,
+      "description": "André Malraux, écrivain et homme politique français (° 3 novembre 1901).",
+      "source": "https://fr.wikipedia.org/wiki/Andr%C3%A9_Malraux",
+      "highlighted": false
+    },
+    {
+      "year": 1979,
+      "description": "Merle Oberon (Estelle Merle O'Brien Thompson dite), actrice britannique (° 19 février 1911).",
+      "source": "https://fr.wikipedia.org/wiki/Merle_Oberon",
       "highlighted": false
     },
     {
       "year": 1984,
-      "description": "John Gilling, réalisateur britannique (° 29 mai 1912).",
-      "source": "https://fr.wikipedia.org/wiki/John_Gilling",
+      "description": "Michel Emer, parolier français (° 19 juin 1906).",
+      "source": "https://fr.wikipedia.org/wiki/Michel_Emer",
+      "highlighted": false
+    },
+    {
+      "year": 1987,
+      "description": "Philippe Erlanger, haut fonctionnaire et historien français (° 11 juillet 1903).",
+      "source": "https://fr.wikipedia.org/wiki/Philippe_Erlanger",
       "highlighted": false
     },
     {
       "year": 1989,
-      "description": "René Moawad, chef d'État libanais (° 17 avril 1925).",
-      "source": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Moawad",
+      "description": "Armand Salacrou, auteur dramatique, doyen de l'Académie Goncourt (° 9 juin 1899).",
+      "source": "https://fr.wikipedia.org/wiki/Armand_Salacrou",
+      "highlighted": false
+    },
+    {
+      "year": 1990,
+      "description": "Roald Dahl, romancier britannique (° 13 septembre 1916).",
+      "source": "https://fr.wikipedia.org/wiki/Roald_Dahl",
+      "highlighted": false
+    },
+    {
+      "year": 1991,
+      "description": "Klaus Kinski (Klaus Günter Karl Nakszynski dit), acteur germano-polonais (° 18 octobre 1926).",
+      "source": "https://fr.wikipedia.org/wiki/Klaus_Kinski",
       "highlighted": false
     },
     {
       "year": 1992,
-      "description": "Sterling Holloway, acteur américain (° 4 janvier 1905).",
-      "source": "https://fr.wikipedia.org/wiki/Sterling_Holloway",
+      "description": "Roy Acuff, chanteur et auteur-compositeur américain de musique country (° 15 septembre 1903).",
+      "source": "https://fr.wikipedia.org/wiki/Roy_Acuff",
       "highlighted": false
     },
     {
       "year": 1993,
-      "description": "Aurora Calvo Hernández-Agero, laïque espagnole, vénérable (° 9 décembre 1901).",
-      "source": "https://fr.wikipedia.org/wiki/Aurora_Calvo_Hern%C3%A1ndez-Agero",
+      "description": "Hervé Bromberger, réalisateur français (° 30 novembre 1918).",
+      "source": "https://fr.wikipedia.org/wiki/Herv%C3%A9_Bromberger",
       "highlighted": false
     },
     {
-      "year": 1993,
-      "description": "Tatiana Nikolaïeva, musicienne russe (° 4 mai 1924).",
-      "source": "https://fr.wikipedia.org/wiki/Tatiana_Nikola%C3%AFeva",
+      "year": 1994,
+      "description": "Tommy Boyce, compositeur américain (° 29 septembre 1939).",
+      "source": "https://fr.wikipedia.org/wiki/Boyce_and_Hart",
       "highlighted": false
     },
     {
       "year": 1995,
-      "description": "Ginés Cartagena, rejoneador espagnol (° 19 septembre 1968).",
-      "source": "https://fr.wikipedia.org/wiki/Gin%C3%A9s_Cartagena",
-      "highlighted": false
-    },
-    {
-      "year": 1996,
-      "description": "Maria Casarès, comédienne française (° 21 novembre 1922).",
-      "source": "https://fr.wikipedia.org/wiki/Maria_Casar%C3%A8s",
-      "highlighted": false
-    },
-    {
-      "year": 1997,
-      "description": "Michael Hutchence, chanteur australien du groupe INXS (° 22 janvier 1960).",
-      "source": "https://fr.wikipedia.org/wiki/Michael_Hutchence",
-      "highlighted": false
-    },
-    {
-      "year": 1998,
-      "description": "Nicky Blair, acteur américain (° 26 juillet 1926).",
-      "source": "https://fr.wikipedia.org/wiki/Nicky_Blair",
-      "highlighted": false
-    },
-    {
-      "year": 1998,
-      "description": "Peter Deman, agent des services secrets britannique (° 30 avril 1921).",
-      "source": "https://fr.wikipedia.org/wiki/Peter_Deman",
-      "highlighted": false
-    },
-    {
-      "year": 1998,
-      "description": "Stu Ungar, joueur de poker américain (° 8 septembre 1953).",
-      "source": "https://fr.wikipedia.org/wiki/Stu_Ungar",
-      "highlighted": false
-    },
-    {
-      "year": 1998,
-      "description": "Yves Blais, homme politique québécois (° 5 juin 1931).",
-      "source": "https://fr.wikipedia.org/wiki/Yves_Blais",
-      "highlighted": false
-    },
-    {
-      "year": 1999,
-      "description": "Flávio Costa, footballeur puis entraîneur brésilien (° 14 septembre 1906).",
-      "source": "https://fr.wikipedia.org/wiki/Fl%C3%A1vio_Costa",
-      "highlighted": false
-    },
-    {
-      "year": 2000,
-      "description": "Christian Marquand, acteur et réalisateur français (° 15 mars 1927).",
-      "source": "https://fr.wikipedia.org/wiki/Christian_Marquand",
-      "highlighted": false
-    },
-    {
-      "year": 2000,
-      "description": "Emil Zátopek, athlète tchèque (° 19 septembre 1922).",
-      "source": "https://fr.wikipedia.org/wiki/Emil_Z%C3%A1topek",
-      "highlighted": false
-    },
-    {
-      "year": 2000,
-      "description": "Théodore Monod, naturaliste et humaniste français (° 9 avril 1902).",
-      "source": "https://fr.wikipedia.org/wiki/Th%C3%A9odore_Monod",
-      "highlighted": false
-    },
-    {
-      "year": 2001,
-      "description": "Mary Kay Ash, dirigeante d’entreprise américaine (° 12 mai 1918).",
-      "source": "https://fr.wikipedia.org/wiki/Mary_Kay_Ash",
-      "highlighted": false
-    },
-    {
-      "year": 2001,
-      "description": "Norman Granz, imprésario et producteur américain de musique de jazz (° 6 août 1918).",
-      "source": "https://fr.wikipedia.org/wiki/Norman_Granz",
-      "highlighted": false
-    },
-    {
-      "year": 2001,
-      "description": "Seydou Keïta, photographe malien (° 1921).",
-      "source": "https://fr.wikipedia.org/wiki/Seydou_Ke%C3%AFta_(photographe)",
+      "description": "Louis Malle, réalisateur français (° 30 octobre 1932).",
+      "source": "https://fr.wikipedia.org/wiki/Louis_Malle",
       "highlighted": false
     },
     {
       "year": 2002,
-      "description": "Parley Baer, acteur américain (° 5 août 1914).",
-      "source": "https://fr.wikipedia.org/wiki/Parley_Baer",
+      "description": "Maritie Carpentier, productrice de télévision française (° 12 décembre 1921).",
+      "source": "https://fr.wikipedia.org/wiki/Maritie_et_Gilbert_Carpentier",
+      "highlighted": false
+    },
+    {
+      "year": 2002,
+      "description": "Roberto Matta, peintre chilien (° 11 novembre 1911)",
+      "source": "https://fr.wikipedia.org/wiki/Roberto_Matta",
       "highlighted": false
     },
     {
       "year": 2005,
-      "description": "Madeleine Vincent, résistante et femme politique française (° 4 mai 1920).",
-      "source": "https://fr.wikipedia.org/wiki/Madeleine_Vincent",
+      "description": "Constance Cummings, actrice britannique d’origine américaine (° 15 mai 1910).",
+      "source": "https://fr.wikipedia.org/wiki/Constance_Cummings",
       "highlighted": false
     },
     {
       "year": 2006,
-      "description": "Gilles Grégoire, homme politique québécois (° 6 mai 1926).",
-      "source": "https://fr.wikipedia.org/wiki/Gilles_Gr%C3%A9goire",
+      "description": "Anita O'Day (Anita Belle Colton dite), chanteuse américaine (° 18 octobre 1919).",
+      "source": "https://fr.wikipedia.org/wiki/Anita_O'Day",
       "highlighted": false
     },
     {
-      "year": 2007,
-      "description": "Maurice Béjart, danseur et chorégraphe franco-suisse, académicien ès beaux-arts (° 1er janvier 1927).",
-      "source": "https://fr.wikipedia.org/wiki/Maurice_B%C3%A9jart",
+      "year": 2006,
+      "description": "Betty Comden (Basya Cohen dite), scénariste et parolière américaine (° 3 mai 1917).",
+      "source": "https://fr.wikipedia.org/wiki/Betty_Comden",
       "highlighted": false
     },
     {
-      "year": 2007,
-      "description": "Reg Park, culturiste et acteur britannique (° 7 juin 1928).",
-      "source": "https://fr.wikipedia.org/wiki/Reg_Park",
+      "year": 2006,
+      "description": "Philippe Noiret, acteur français (° 1er octobre 1930).",
+      "source": "https://fr.wikipedia.org/wiki/Philippe_Noiret",
       "highlighted": false
     },
     {
       "year": 2008,
-      "description": "Ibrahim Nasir, homme d'État maldivien, président de 1968 à 1978 (° 2 septembre 1926).",
-      "source": "https://fr.wikipedia.org/wiki/Ibrahim_Nasir",
-      "highlighted": false
-    },
-    {
-      "year": 2009,
-      "description": "Francisco Rodríguez, boxeur vénézuélien (° 20 septembre 1945).",
-      "source": "https://fr.wikipedia.org/wiki/Francisco_Rodr%C3%ADguez_(boxe_anglaise)",
-      "highlighted": false
-    },
-    {
-      "year": 2009,
-      "description": "Juan Carlos Muñoz, footballeur argentin (° 6 mai 1919).",
-      "source": "https://fr.wikipedia.org/wiki/Juan_Carlos_Mu%C3%B1oz",
-      "highlighted": false
-    },
-    {
-      "year": 2010,
-      "description": "Frank Fenner, scientifique australien (° 21 décembre 1914).",
-      "source": "https://fr.wikipedia.org/wiki/Frank_Fenner",
-      "highlighted": false
-    },
-    {
-      "year": 2010,
-      "description": "Jean Moxhet, cycliste sur route belge (° 20 septembre 1932).",
-      "source": "https://fr.wikipedia.org/wiki/Jean_Moxhet",
-      "highlighted": false
-    },
-    {
-      "year": 2010,
-      "description": "Julien Guiomar, acteur français (° 3 mai 1928).",
-      "source": "https://fr.wikipedia.org/wiki/Julien_Guiomar",
-      "highlighted": false
-    },
-    {
-      "year": 2010,
-      "description": "Len Lunde, hockeyeur sur glace canadien (° 13 novembre 1936).",
-      "source": "https://fr.wikipedia.org/wiki/Len_Lunde",
-      "highlighted": false
-    },
-    {
-      "year": 2010,
-      "description": "Urbano Navarrete, jésuite et cardinal espagnol (° 25 mai 1920).",
-      "source": "https://fr.wikipedia.org/wiki/Urbano_Navarrete",
+      "description": "Jean Markale (Jacques Bertrand dit), enseignant, écrivain, poète, conteur et conférencier français et breton d'adoption (° 23 mai 1928).",
+      "source": "https://fr.wikipedia.org/wiki/Jean_Markale",
       "highlighted": false
     },
     {
       "year": 2011,
-      "description": "Danielle Mitterrand, femme politique française, veuve de François Mitterrand (° 29 octobre 1924).",
-      "source": "https://fr.wikipedia.org/wiki/Danielle_Mitterrand",
+      "description": "Achta Toné Gossingar, militante des droits des femmes et personnalité politique du Tchad.",
+      "source": "https://fr.wikipedia.org/wiki/Achta_Ton%C3%A9_Gossingar",
       "highlighted": false
     },
     {
-      "year": 2011,
-      "description": "Élisabeth de Luxembourg, fille de la grande-duchesse Charlotte et de Félix de Bourbon (° 22 décembre 1922).",
-      "source": "https://fr.wikipedia.org/wiki/%C3%89lisabeth_de_Luxembourg_(1922-2011)",
+      "year": 2012,
+      "description": "Larry Hagman, acteur américain (° 21 septembre 1931).",
+      "source": "https://fr.wikipedia.org/wiki/Larry_Hagman",
       "highlighted": false
     },
     {
-      "year": 2011,
-      "description": "Georg Kreisler, musicien, auteur-compositeur-interprète austro-américain (° 18 juillet 1922).",
-      "source": "https://fr.wikipedia.org/wiki/Georg_Kreisler",
-      "highlighted": false
-    },
-    {
-      "year": 2011,
-      "description": "Hans Reichel, guitariste et créateur d'instruments allemand (° 10 mai 1949).",
-      "source": "https://fr.wikipedia.org/wiki/Hans_Reichel_(musicien)",
-      "highlighted": false
-    },
-    {
-      "year": 2011,
-      "description": "Lynn Margulis, microbiologiste américaine (° 5 mars 1938).",
-      "source": "https://fr.wikipedia.org/wiki/Lynn_Margulis",
-      "highlighted": false
-    },
-    {
-      "year": 2011,
-      "description": "Paul Motian, batteur et percussionniste de jazz américain (° 25 mars 1931).",
-      "source": "https://fr.wikipedia.org/wiki/Paul_Motian",
-      "highlighted": false
-    },
-    {
-      "year": 2011,
-      "description": "Sena Jurinac, chanteuse lyrique autrichienne (° 24 octobre 1921).",
-      "source": "https://fr.wikipedia.org/wiki/Sena_Jurinac",
-      "highlighted": false
-    },
-    {
-      "year": 2011,
-      "description": "Svetlana Allilouïeva, fille de Joseph Staline (° 28 février 1926).",
-      "source": "https://fr.wikipedia.org/wiki/Svetlana_Allilou%C3%AFeva",
+      "year": 2012,
+      "description": "Nelson Prudêncio, athlète de triple-saut brésilien (° 4 avril 1944).",
+      "source": "https://fr.wikipedia.org/wiki/Nelson_Prud%C3%AAncio",
       "highlighted": false
     },
     {
       "year": 2013,
-      "description": "Georges Lautner, réalisateur et scénariste français (° 24 janvier 1926).",
-      "source": "https://fr.wikipedia.org/wiki/Georges_Lautner",
+      "description": "Connie Broden, hockeyeur sur glace canadien (° 6 avril 1932).",
+      "source": "https://fr.wikipedia.org/wiki/Connie_Broden",
+      "highlighted": false
+    },
+    {
+      "year": 2013,
+      "description": "Costanzo Preve, philosophe et intellectuel italien (° 14 avril 1943).",
+      "source": "https://fr.wikipedia.org/wiki/Costanzo_Preve",
+      "highlighted": false
+    },
+    {
+      "year": 2013,
+      "description": "Yvon Harmegnies, homme politique belge (° 15 juillet 1943).",
+      "source": "https://fr.wikipedia.org/wiki/Yvon_Harmegnies",
       "highlighted": false
     },
     {
       "year": 2014,
-      "description": "Lewis Baltz, photographe américain (° 12 septembre 1945).",
-      "source": "https://fr.wikipedia.org/wiki/Lewis_Baltz",
+      "description": "Dorothy Bundy, joueuse de tennis américaine (° 1er septembre 1916).",
+      "source": "https://fr.wikipedia.org/wiki/Dorothy_Bundy",
+      "highlighted": false
+    },
+    {
+      "year": 2014,
+      "description": "Hélène Duc (Marcelle Duc dite), comédienne française (° 22 mars 1917).",
+      "source": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_Duc",
+      "highlighted": false
+    },
+    {
+      "year": 2014,
+      "description": "Jean-François Arrigoni Neri, peintre, illustrateur, graveur et lithographe français (° 28 mars 1937).",
+      "source": "https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Arrigoni_Neri",
+      "highlighted": false
+    },
+    {
+      "year": 2014,
+      "description": "John Brian Patrick « Pat » Quinn, joueur et entraîneur de hockey sur glace canadien (° 29 janvier 1943).",
+      "source": "https://fr.wikipedia.org/wiki/Patrick_Quinn",
+      "highlighted": false
+    },
+    {
+      "year": 2014,
+      "description": "Rudolf Reichling, rameur d'aviron suisse (° 23 septembre 1924).",
+      "source": "https://fr.wikipedia.org/wiki/Rudolf_Reichling",
       "highlighted": false
     },
     {
       "year": 2015,
-      "description": "Kim Young-sam, ancien président de la Corée du Sud de 1993 à 1998 (° 20 décembre 1927).",
-      "source": "https://fr.wikipedia.org/wiki/Kim_Young-sam",
+      "description": "Cynthia Robinson, trompettiste et chanteuse américaine du groupe Sly and the Family Stone (° 12 janvier 1944).",
+      "source": "https://fr.wikipedia.org/wiki/Cynthia_Robinson",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Dan Fante, écrivain américain (° 19 février 1944).",
+      "source": "https://fr.wikipedia.org/wiki/Dan_Fante",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Douglass North, économiste américain (° 5 novembre 1920).",
+      "source": "https://fr.wikipedia.org/wiki/Douglass_North",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Jouni Kaipainen, compositeur finlandais (° 24 novembre 1956).",
+      "source": "https://fr.wikipedia.org/wiki/Jouni_Kaipainen",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Lev Okun, physicien soviétique puis russe (° 7 juillet 1929).",
+      "source": "https://fr.wikipedia.org/wiki/Lev_Okun",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Otto J. Schaden, égyptologue américain (° 26 août 1937).",
+      "source": "https://fr.wikipedia.org/wiki/Otto_J._Schaden",
+      "highlighted": false
+    },
+    {
+      "year": 2015,
+      "description": "Pierre Bernard, graphiste français (° 25 février 1942).",
+      "source": "https://fr.wikipedia.org/wiki/Pierre_Bernard_(graphiste)",
       "highlighted": false
     },
     {
       "year": 2016,
-      "description": "Balamuralikrishna, chanteur indien (° 6 octobre 1930).",
-      "source": "https://fr.wikipedia.org/wiki/Balamuralikrishna",
+      "description": "Abdul-Karim Mousavi Ardebili (عبدالکریم موسوی اردبیلی), homme politique iranien (° 28 janvier 1926).",
+      "source": "https://fr.wikipedia.org/wiki/Abdolkarim_Moussavi_Ardabili",
       "highlighted": false
     },
     {
       "year": 2016,
-      "description": "Ram Naresh Yadav, homme politique indien (° 1er juillet 1927).",
-      "source": "https://fr.wikipedia.org/wiki/Ram_Naresh_Yadav",
+      "description": "Claude Imbert, journaliste français (° 12 novembre 1929).",
+      "source": "https://fr.wikipedia.org/wiki/Claude_Imbert_(journaliste)",
       "highlighted": false
     },
     {
-      "year": 2017,
-      "description": "Dmitri Khvorostovski, baryton soviétique puis russe (° 16 octobre 1962).",
-      "source": "https://fr.wikipedia.org/wiki/Dmitri_Khvorostovski",
+      "year": 2016,
+      "description": "Ralph Branca, joueur de baseball américain (° 6 janvier 1926).",
+      "source": "https://fr.wikipedia.org/wiki/Ralph_Branca",
       "highlighted": false
     },
     {
-      "year": 2017,
-      "description": "Jean Anglade, écrivain et traducteur français (° 18 mars 1915).",
-      "source": "https://fr.wikipedia.org/wiki/Jean_Anglade",
-      "highlighted": false
-    },
-    {
-      "year": 2017,
-      "description": "Jon Hendricks, chanteur et compositeur de jazz américain (° 16 septembre 1921).",
-      "source": "https://fr.wikipedia.org/wiki/Jon_Hendricks",
-      "highlighted": false
-    },
-    {
-      "year": 2017,
-      "description": "Maurice Hinchey, homme politique américain (° 27 octobre 1938).",
-      "source": "https://fr.wikipedia.org/wiki/Maurice_Hinchey",
-      "highlighted": false
-    },
-    {
-      "year": 2017,
-      "description": "Norman Baker, explorateur américain (° 18 novembre 1928).",
-      "source": "https://fr.wikipedia.org/wiki/Norman_Baker_(explorateur)",
-      "highlighted": false
-    },
-    {
-      "year": 2017,
-      "description": "Said Boukhari, homme politique algérien (° 28 août 1962).",
-      "source": "https://fr.wikipedia.org/wiki/Said_Boukhari",
+      "year": 2016,
+      "description": "Rita Barberá, femme politique espagnole, maire de Valence de 1991 à 2015 (° 26 juillet 1948).",
+      "source": "https://fr.wikipedia.org/wiki/Rita_Barber%C3%A1",
       "highlighted": false
     },
     {
       "year": 2018,
-      "description": "Andrzej Fischer, footballeur polonais (° 15 janvier 1952).",
-      "source": "https://fr.wikipedia.org/wiki/Andrzej_Fischer",
+      "description": "Bernard Gauthier, cycliste sur route français (° 22 septembre 1924).",
+      "source": "https://fr.wikipedia.org/wiki/Bernard_Gauthier_(cyclisme)",
       "highlighted": false
     },
     {
       "year": 2018,
-      "description": "Imrat Khan, joueur de sitar, de surbahar et de luth indien (° 17 novembre 1935).",
-      "source": "https://fr.wikipedia.org/wiki/Imrat_Khan",
-      "highlighted": false
-    },
-    {
-      "year": 2018,
-      "description": "Soslan Andiyev, lutteur soviétique puis russe (° 21 avril 1952).",
-      "source": "https://fr.wikipedia.org/wiki/Soslan_Andiyev",
-      "highlighted": false
-    },
-    {
-      "year": 2018,
-      "description": "Willie Naulls, basketteur américain (° 7 octobre 1934).",
-      "source": "https://fr.wikipedia.org/wiki/Willie_Naulls",
+      "description": "Nicolas Roeg, cinéaste britannique (° 15 août 1928).",
+      "source": "https://fr.wikipedia.org/wiki/Nicolas_Roeg",
       "highlighted": false
     },
     {
       "year": 2020,
-      "description": "Noëlla Rouget, résistante déportée française opposée à l'exécution de l'un de ses « bourreaux » après guerre, témoin devenue centenaire (° 25 décembre 1919).",
-      "source": "https://fr.wikipedia.org/wiki/No%C3%ABlla_Rouget",
+      "description": "David Dinkins, ancien maire démocrate de New York.",
+      "source": "https://fr.wikipedia.org/wiki/David_Dinkins",
       "highlighted": false
     },
     {
       "year": 2021,
-      "description": "Miquel Barceló García, Janvier Dénagan Honfo, Kim Friele, Fayez Ghosn, Noah Gordon, Bernard Holley, Paolo Pietrangeli, Marie Versini.",
+      "description": "Chun Doo-hwan, James Fitz-Allen Mitchell, Marko Grilc, Romuald Schild, Bill Virdon.",
+      "source": "https://fr.wikipedia.org/wiki/Chun_Doo-hwan",
       "highlighted": false
     },
     {
       "year": 2022,
-      "description": "Roberto Maroni, Pablo Milanés.",
+      "description": "Paula D'Hondt-Van Opdenbosch, David Johnson (football).",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "Ánchel Conte, écrivain, poète et historien espagnol (° 15 octobre 1942).",
-      "source": "https://fr.wikipedia.org/wiki/%C3%81nchel_Conte",
+      "description": "Fathima Beevi, magistrate et femme politique indienne (° 30 avril 1927).",
+      "source": "https://fr.wikipedia.org/wiki/Fathima_Beevi",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "Antonio Genato, basketteur philippin (° 9 juin 1929).",
-      "source": "https://fr.wikipedia.org/wiki/Antonio_Genato",
+      "description": "Harald Hasselbach, joueur néerlandais de football canadien et de football américain (° 22 septembre 1967).",
+      "source": "https://fr.wikipedia.org/wiki/Harald_Hasselbach",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "Christiane Rimbaud, historienne française (° 22 juillet 1944).",
-      "source": "https://fr.wikipedia.org/wiki/Christiane_Rimbaud",
+      "description": "Rona Hartner, actrice, chanteuse et compositrice franco-roumaine (° 9 mars 1973).",
+      "source": "https://fr.wikipedia.org/wiki/Rona_Hartner",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "Émile Martel, diplomate, poète, conteur et traducteur canadien (° 10 août 1941).",
-      "source": "https://fr.wikipedia.org/wiki/%C3%89mile_Martel",
+      "description": "Rubens Minelli, footballeur puis entraîneur devenu entraîneur (° 19 décembre 1928).",
+      "source": "https://fr.wikipedia.org/wiki/Rubens_Minelli",
       "highlighted": false
     },
     {
       "year": 2023,
-      "description": "Emmanuel Le Roy Ladurie, universitaire et historien français (° 19 juillet 1929).",
-      "source": "https://fr.wikipedia.org/wiki/Emmanuel_Le_Roy_Ladurie",
-      "highlighted": false
-    },
-    {
-      "year": 2023,
-      "description": "François Musy, ingénieur du son franco-suisse (° 6 octobre 1955).",
-      "source": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Musy",
-      "highlighted": false
-    },
-    {
-      "year": 2023,
-      "description": "Jean Knight, chanteuse américaine (° 26 janvier 1943).",
-      "source": "https://fr.wikipedia.org/wiki/Jean_Knight",
-      "highlighted": false
-    },
-    {
-      "year": 2023,
-      "description": "Mike D'Amato, joueur américain de football américain et de football canadien (° 3 mars 1941).",
-      "source": "https://fr.wikipedia.org/wiki/Mike_D'Amato",
-      "highlighted": false
-    },
-    {
-      "year": 2023,
-      "description": "Sture Ohlin, biathlète suédois (° 3 mai 1935).",
-      "source": "https://fr.wikipedia.org/wiki/Sture_Ohlin",
-      "highlighted": false
-    },
-    {
-      "year": 2024,
-      "description": "Dragan Marković, homme politique yougoslave puis serbe (° 2 mai 1960).",
-      "source": "https://fr.wikipedia.org/wiki/Dragan_Markovi%C4%87",
-      "highlighted": false
-    },
-    {
-      "year": 2024,
-      "description": "Hervé Bride, journaliste sportif français (° 22 décembre 1947).",
-      "source": "https://fr.wikipedia.org/wiki/Herv%C3%A9_Bride",
-      "highlighted": false
-    },
-    {
-      "year": 2025,
-      "description": "Madeleine Poulin, journaliste québécoise (° 1938).",
-      "source": "https://fr.wikipedia.org/wiki/Madeleine_Poulin",
+      "description": "Steve Jurczyk, ingénieur américain (° 20 février 1962).",
+      "source": "https://fr.wikipedia.org/wiki/Steve_Jurczyk",
       "highlighted": false
     }
   ],
   "verification": {
     "policyVersion": 2,
-    "date": "2026-11-22",
-    "lastUpdate": "2026-11-22T11:13:55.728Z",
+    "date": "2026-11-23",
+    "lastUpdate": "2026-11-23T12:24:33.695Z",
     "counts": {
       "total": 3706,
       "matched": 125,
@@ -1682,7 +1646,7 @@
         "isoDate": "1757-06-23",
         "era": "modernes",
         "source": "https://www.wikidata.org/wiki/Q203233",
-        "verifiedAt": "2026-11-22T11:13:55.728Z"
+        "verifiedAt": "2026-11-23T12:24:33.695Z"
       },
       {
         "key": "[\"country-syrie\",\"Accords Sykes-Picot\",\"1916\"]",
@@ -1697,7 +1661,7 @@
         "isoDate": "1916-05-16",
         "era": "contemporain",
         "source": "https://www.wikidata.org/wiki/Q211674",
-        "verifiedAt": "2026-11-22T11:13:55.728Z"
+        "verifiedAt": "2026-11-23T12:24:33.695Z"
       }
     ],
     "unresolved": [
